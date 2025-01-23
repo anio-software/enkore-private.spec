@@ -1,0 +1,23 @@
+import type {EntityOfKind} from "#~src/EntityOfKind.d.mts"
+
+export type Definition ={
+	project: {
+		root: string
+		config: EntityOfKind<false, "FourtuneConfig">
+	}
+
+	emit: {
+		warning: (id: string|undefined, message: string) => undefined
+		error: (id: string|undefined, message: string) => undefined
+	}
+
+	realm: {
+		_integration: {
+			setInternalData: (data: any) => unknown
+			getInternalData: () => unknown
+		}
+
+		getOptions: () => unknown
+		getDependency: (dependencyName: string) => unknown
+	}
+}

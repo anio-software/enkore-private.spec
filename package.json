@@ -1,0 +1,21 @@
+{
+  "name": "@fourtune/entities",
+  "version": "0.0.0",
+  "author": "Anio Software <info@anio.software>",
+  "description": "Entities are public versioned object structures used by the fourtune project.",
+  "license": "MIT",
+  "exports": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fourtune-org/entities.git"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@aniojs/event-emitter": "^0.0.7",
+    "@aniojs/node-fs-scandir": "^0.2.2",
+    "@fourtune/core": "^0.1101.0",
+    "@fourtune/primitives": "^0.3.0",
+    "@fourtune/realm-js": "^0.31010.0",
+    "fourtune": "^0.30000.1"
+  }
+}
