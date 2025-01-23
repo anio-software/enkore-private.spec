@@ -22,5 +22,8 @@
     "@fourtune/primitives": "^0.3.0",
     "@fourtune/realm-js": "^0.31010.0",
     "fourtune": "^0.30000.1"
-  }
+  },
+  "files": [
+    "./dist"
+  ]
 }
