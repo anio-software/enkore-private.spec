@@ -1,3 +1,5 @@
-# fourtune-spec
+# @fourtune/entities
 
-Contains 
+Entities are the object structures fourtune uses in its public API.
+
+All entities are versioned.
