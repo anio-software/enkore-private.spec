@@ -6,7 +6,7 @@ import type {FourtuneVersionedEntity} from "#~src/FourtuneVersionedEntity.d.mts"
 
 type ProducedByPackage = FourtuneVersionedEntity["_fourtuneEntityDescriptor"]["producedBy"]
 
-export function createEntity<
+export function createEntityGeneric<
 	Kind extends Kinds,
 	MajorVersion extends AllPossibleMajorVersions,
 	Revision extends AllPossibleRevisions
