@@ -23,6 +23,9 @@
     "@fourtune/realm-js": "^0.31010.0",
     "fourtune": "^0.30000.1"
   },
+  "scripts": {
+    "prepare": "./node_modules/.bin/fourtune ."
+  },
   "files": [
     "./dist/"
   ]
