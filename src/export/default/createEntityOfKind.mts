@@ -2,6 +2,7 @@ import type {Kinds} from "#~src/Kinds.d.mts"
 import type {AllPossibleMajorVersions} from "#~src/AllPossibleMajorVersions.d.mts"
 import type {AllPossibleRevisions} from "#~src/AllPossibleRevisions.d.mts"
 import type {Entities} from "#~src/maps/Entities.d.mts"
+import type {EntitiesByKind} from "#~src/maps/EntitiesByKind.d.mts"
 import type {FourtuneVersionedEntity} from "#~src/FourtuneVersionedEntity.d.mts"
 import {createEntityGeneric} from "./createEntityGeneric.mts"
 
@@ -17,6 +18,6 @@ export function createEntityOfKind<
 	revision: Revision,
 	entityData: Omit<Entities[Kind][MajorVersion][Revision], "_fourtuneEntityDescriptor">,
 	createdByPackage?: ProducedByPackage|null|undefined
-) : Entities[Kind] {
+) : EntitiesByKind[Kind] {
 	return createEntityGeneric(kind, majorVersion, revision, entityData, createdByPackage) as any
 }
