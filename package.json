@@ -4,7 +4,12 @@
   "author": "Anio Software <info@anio.software>",
   "description": "Entities are public versioned object structures used by the fourtune project.",
   "license": "MIT",
-  "exports": {},
+  "exports": {
+    ".": {
+      "types": "./dist/default/index.d.mts",
+      "import": "./dist/default/index.mjs"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fourtune-org/entities.git"
