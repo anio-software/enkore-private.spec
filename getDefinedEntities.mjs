@@ -39,7 +39,7 @@ export async function getDefinedEntities() {
 				code += `${entityMajorVersion}, `
 				code += `${entityRevision}, `
 				code += `${definitionType}`
-				code += `>\n`
+				code += `>`
 
 				return code
 			}
