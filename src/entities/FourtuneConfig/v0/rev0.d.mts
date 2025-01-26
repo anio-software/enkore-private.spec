@@ -12,7 +12,7 @@ export type Definition = {
 		config: EntityOfKind<"FourtuneRealmWebConfig">
 	}
 
-	autogenerate: Record<string, (
+	autogenerate?: Record<string, (
 		session: EntityOfKind<"FourtuneSession">,
 		filePath: string
 	) => Promise<string> | string>
