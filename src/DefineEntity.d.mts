@@ -1,5 +1,11 @@
 import type {Kinds} from "#~src/Kinds.d.mts"
 
+//
+// defines a versioned entity type
+//
+
+// NB: this data type SHOULD NEVER change in the lifecycle
+// of the "fourtune" project
 export type DefineEntity<
 	Kind extends Kinds,
 	MajorVersion extends number,
