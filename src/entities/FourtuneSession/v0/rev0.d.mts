@@ -17,7 +17,12 @@ export type Definition = {
 			getInternalData: () => unknown
 		}
 
-		getConfig: () => unknown
+		getConfig: () => EntityOfKind<
+			"FourtuneRealmJSConfig"  |
+			"FourtuneRealmCConfig"   |
+			"FourtuneRealmWebConfig"
+		>
+
 		getDependency: (dependencyName: string) => unknown
 	}
 }
