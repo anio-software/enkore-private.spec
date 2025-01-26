@@ -17,7 +17,7 @@ export type Definition = {
 			getInternalData: () => unknown
 		}
 
-		getOptions: () => unknown
+		getConfig: () => unknown
 		getDependency: (dependencyName: string) => unknown
 	}
 }
