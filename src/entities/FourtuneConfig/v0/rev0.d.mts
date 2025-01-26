@@ -1,14 +1,16 @@
 import type {EntityOfKind} from "#~src/export/EntityOfKind.d.mts"
-import type {RealmName} from "@fourtune/primitives"
 
 export type Definition = {
 	realm: {
-		name: RealmName
-	} & EntityOfKind<
-		"FourtuneRealmJSConfig"  |
-		"FourtuneRealmWebConfig" |
-		"FourtuneRealmCConfig"
-	>
+		name: "js"
+		config: EntityOfKind<"FourtuneRealmJSConfig">
+	} | {
+		name: "c"
+		config: EntityOfKind<"FourtuneRealmCConfig">
+	} | {
+		name: "web"
+		config: EntityOfKind<"FourtuneRealmWebConfig">
+	}
 
 	autogenerate: Record<string, (
 		session: EntityOfKind<"FourtuneSession">,
