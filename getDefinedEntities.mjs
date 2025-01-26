@@ -24,14 +24,10 @@ export async function getDefinedEntities() {
 		const entityMap = map.get(entityName)
 
 		if (!entityMap.has(entityMajorVersion)) {
-			entityMap.set(entityMajorVersion, {
-				importPath: `#~src/entities/${entry.relative_path}`,
-				importNameAlias: `${entityName}_V${entityMajorVersion}Rev${entityRevision}`,
-				revisions: []
-			})
+			entityMap.set(entityMajorVersion, [])
 		}
 
-		entityMap.get(entityMajorVersion).revisions.push(entityRevision)
+		entityMap.get(entityMajorVersion).push(entityRevision)
 	}
 
 	return map
