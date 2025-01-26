@@ -29,22 +29,22 @@ export type Definition = {
 	/**
 	 * @brief Tag of context, can be empty.
 	 */
-	tag : string
+	tag: string
 
 	/**
 	 * @brief Retrieve the current log level.
 	 */
-	getCurrentLogLevel: ContextOptionsGetCurrentLogLevel,
+	getCurrentLogLevel: ContextOptionsGetCurrentLogLevel
 
 	/**
 	 * @brief Print a line.
 	 */
-	printLine: ContextOptionsPrintLine,
+	printLine: ContextOptionsPrintLine
 
 	/**
 	 * @brief Log lines with a specific log level.
 	 */
-	logWithLevel: ContextOptionsLogWithLevel,
+	logWithLevel: ContextOptionsLogWithLevel
 
 	/**
 	 * @brief Determine whether a message should be logged.
