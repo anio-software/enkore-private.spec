@@ -27,7 +27,23 @@ export async function getDefinedEntities() {
 			entityMap.set(entityMajorVersion, [])
 		}
 
-		entityMap.get(entityMajorVersion).push(entityRevision)
+		entityMap.get(entityMajorVersion).push({
+			importPath: `#~src/entities/${entry.relative_path}`,
+			importAliasName: `${entityName}_V${entityMajorVersion}Rev${entityRevision}`,
+			revision: entityRevision,
+			entityType(definitionType) {
+				let code = ``
+
+				code += `DefineEntity<`
+				code += `"${entityName}", `
+				code += `${entityMajorVersion}, `
+				code += `${entityRevision}, `
+				code += `${definitionType}`
+				code += `>\n`
+
+				return code
+			}
+		})
 	}
 
 	return map
