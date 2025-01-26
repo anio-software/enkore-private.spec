@@ -1,6 +1,6 @@
 import type {EntityOfKind} from "#~src/export/EntityOfKind.d.mts"
 
-export type Definition ={
+export type Definition = {
 	project: {
 		root: string
 		config: EntityOfKind<"FourtuneConfig">
