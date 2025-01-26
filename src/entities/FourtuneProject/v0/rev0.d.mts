@@ -1,6 +1,10 @@
 import type {EntityOfKind} from "#~src/export/EntityOfKind.d.mts"
 import type {DefineEvent, EventEmitter} from "@aniojs/event-emitter"
 
+type MessageEvent = DefineEvent<"message", {
+	message: string
+}>
+
 type WarningEvent = DefineEvent<"warning", {
 	id: string|undefined
 	message: string
@@ -11,7 +15,7 @@ type ErrorEvent = DefineEvent<"error", {
 	message: string
 }>
 
-type Events = [WarningEvent, ErrorEvent]
+type Events = [MessageEvent, WarningEvent, ErrorEvent]
 
 type Message = {
 	severity: "warn" | "error"
