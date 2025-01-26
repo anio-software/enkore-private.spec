@@ -1,6 +1,6 @@
 import type {Kinds} from "#~src/Kinds.d.mts"
 import type {EntitiesByKind} from "#~src/maps/EntitiesByKind.d.mts"
-import type {GenericEntity} from "./GenericEntity.d.mts"
+import type {UnknownEntity} from "./UnknownEntity.d.mts"
 
 export function isEntityOfKind<
 	Kind extends Kinds
@@ -8,7 +8,7 @@ export function isEntityOfKind<
 	objToTest: unknown,
 	kind: Kind
 ) : objToTest is EntitiesByKind[Kind] {
-	const entity = objToTest as GenericEntity
+	const entity = objToTest as UnknownEntity
 
 	return entity.entityKind === kind
 }

@@ -1,6 +1,6 @@
 import type {AllDefinedEntities} from "#~synthetic/user/AllDefinedEntities.d.mts"
-import type {GenericEntity} from "#~src/export/GenericEntity.d.mts"
+import type {UnknownEntity} from "#~src/export/UnknownEntity.d.mts"
 
-type MajorVersionOf<T> = T extends GenericEntity ? T["entityMajorVersion"] : never
+type MajorVersionOf<T> = T extends UnknownEntity ? T["entityMajorVersion"] : never
 
 export type AllDefinedMajorVersions = MajorVersionOf<AllDefinedEntities>
