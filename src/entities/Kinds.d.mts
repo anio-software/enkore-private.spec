@@ -11,5 +11,4 @@ export type Kinds =
                     "FourtuneRealmJSRuntimeContext"        |
                     "FourtuneRealmJSRuntimeContextOptions" |
                     "FourtuneRealmWebConfig"               |
-                    "FourtuneRealmCConfig"                 |
-                    "FourtuneSession"
+                    "FourtuneRealmCConfig"

@@ -1,5 +1,5 @@
 import type {
-	FourtuneSession
+	FourtuneSessionAPI
 } from "#~src/export/__star_export.mts"
 
 type ObjectFile = {
@@ -9,11 +9,11 @@ type ObjectFile = {
 
 export type Definition = {
 	preInitialize: (
-		f: FourtuneSession
+		f: FourtuneSessionAPI
 	) => Promise<undefined>
 
 	initialize: (
-		f: FourtuneSession
+		f: FourtuneSessionAPI
 	) => Promise<undefined>
 
 //	runHook: (
@@ -25,11 +25,11 @@ export type Definition = {
 
 	preprocessSourceFile?: (
 		sourceFilePath: string,
-		f: FourtuneSession
+		f: FourtuneSessionAPI
 	) => Promise<string>
 
 	generateObjectFile: (
 		sourceFilePath: string,
-		f: FourtuneSession
+		f: FourtuneSessionAPI
 	) => Promise<ObjectFile | ObjectFile[]>
 }

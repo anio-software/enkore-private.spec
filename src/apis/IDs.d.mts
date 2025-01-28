@@ -3,6 +3,7 @@
 export type IDs = 
                   "FourtuneCoreAPI"                     |
                   "FourtuneNodeAPI"                     |
+                  "FourtuneSessionAPI"                  |
                   "FourtuneRealmIntegrationAPI"         |
                   "FourtuneRealmJSRuntimeProjectAPI"    |
                   "FourtuneRealmJSRuntimeRuntimeAPI"    |

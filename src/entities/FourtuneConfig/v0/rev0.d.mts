@@ -2,7 +2,7 @@ import type {
 	FourtuneRealmJSConfig,
 	FourtuneRealmCConfig,
 	FourtuneRealmWebConfig,
-	FourtuneSession
+	FourtuneSessionAPI
 } from "#~src/export/__star_export.mts"
 
 export type Definition = {
@@ -18,7 +18,7 @@ export type Definition = {
 	}
 
 	autogenerate?: Record<string, (
-		session: FourtuneSession,
+		session: FourtuneSessionAPI,
 		filePath: string
 	) => Promise<string> | string>
 }

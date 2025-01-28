@@ -1,6 +1,6 @@
 import type {
 	FourtuneConfig,
-	FourtuneSession,
+	FourtuneSessionAPI,
 	FourtuneNodeAPIOptions
 } from "#~src/export/__star_export.mts"
 import type {DefineEvent, EventEmitter} from "@aniojs/event-emitter"
@@ -48,7 +48,7 @@ export type Definition = {
 		readonly config: FourtuneConfig
 
 		readonly init: () => Promise<{
-			session: Readonly<FourtuneSession>,
+			session: Readonly<FourtuneSessionAPI>,
 			compile: Compile
 		}>
 	}>
