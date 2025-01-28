@@ -1,7 +1,6 @@
 import type {DefineEntity} from "#~src/DefineEntity.d.mts"
 
 import type {Definition as FourtuneConfig_V0_Rev0Definition} from "#~src/entities/FourtuneConfig/v0/rev0.d.mts"
-import type {Definition as FourtuneCore_V0_Rev0Definition} from "#~src/entities/FourtuneCore/v0/rev0.d.mts"
 import type {Definition as FourtuneCoreData_V0_Rev0Definition} from "#~src/entities/FourtuneCoreData/v0/rev0.d.mts"
 import type {Definition as FourtuneCoreDependency_V0_Rev0Definition} from "#~src/entities/FourtuneCoreDependency/v0/rev0.d.mts"
 import type {Definition as FourtuneCoreLoadedDependency_V0_Rev0Definition} from "#~src/entities/FourtuneCoreLoadedDependency/v0/rev0.d.mts"
@@ -15,7 +14,6 @@ import type {Definition as FourtuneRealmWebConfig_V0_Rev0Definition} from "#~src
 import type {Definition as FourtuneSession_V0_Rev0Definition} from "#~src/entities/FourtuneSession/v0/rev0.d.mts"
 
 export type FourtuneConfig_V0_Rev0 = DefineEntity<"FourtuneConfig", 0, 0, FourtuneConfig_V0_Rev0Definition>
-export type FourtuneCore_V0_Rev0 = DefineEntity<"FourtuneCore", 0, 0, FourtuneCore_V0_Rev0Definition>
 export type FourtuneCoreData_V0_Rev0 = DefineEntity<"FourtuneCoreData", 0, 0, FourtuneCoreData_V0_Rev0Definition>
 export type FourtuneCoreDependency_V0_Rev0 = DefineEntity<"FourtuneCoreDependency", 0, 0, FourtuneCoreDependency_V0_Rev0Definition>
 export type FourtuneCoreLoadedDependency_V0_Rev0 = DefineEntity<"FourtuneCoreLoadedDependency", 0, 0, FourtuneCoreLoadedDependency_V0_Rev0Definition>
@@ -29,7 +27,6 @@ export type FourtuneRealmWebConfig_V0_Rev0 = DefineEntity<"FourtuneRealmWebConfi
 export type FourtuneSession_V0_Rev0 = DefineEntity<"FourtuneSession", 0, 0, FourtuneSession_V0_Rev0Definition>
 
 export type FourtuneConfig_V0 = FourtuneConfig_V0_Rev0
-export type FourtuneCore_V0 = FourtuneCore_V0_Rev0
 export type FourtuneCoreData_V0 = FourtuneCoreData_V0_Rev0
 export type FourtuneCoreDependency_V0 = FourtuneCoreDependency_V0_Rev0
 export type FourtuneCoreLoadedDependency_V0 = FourtuneCoreLoadedDependency_V0_Rev0
@@ -43,7 +40,6 @@ export type FourtuneRealmWebConfig_V0 = FourtuneRealmWebConfig_V0_Rev0
 export type FourtuneSession_V0 = FourtuneSession_V0_Rev0
 
 export type FourtuneConfig = FourtuneConfig_V0
-export type FourtuneCore = FourtuneCore_V0
 export type FourtuneCoreData = FourtuneCoreData_V0
 export type FourtuneCoreDependency = FourtuneCoreDependency_V0
 export type FourtuneCoreLoadedDependency = FourtuneCoreLoadedDependency_V0
@@ -56,4 +52,4 @@ export type FourtuneRealmJSRuntimeProject = FourtuneRealmJSRuntimeProject_V0
 export type FourtuneRealmWebConfig = FourtuneRealmWebConfig_V0
 export type FourtuneSession = FourtuneSession_V0
 
-export type AllDefinedEntities = FourtuneConfig | FourtuneCore | FourtuneCoreData | FourtuneCoreDependency | FourtuneCoreLoadedDependency | FourtuneProject | FourtuneRealmCConfig | FourtuneRealmJSConfig | FourtuneRealmJSRuntimeContext | FourtuneRealmJSRuntimeContextOptions | FourtuneRealmJSRuntimeProject | FourtuneRealmWebConfig | FourtuneSession
+export type AllDefinedEntities = FourtuneConfig | FourtuneCoreData | FourtuneCoreDependency | FourtuneCoreLoadedDependency | FourtuneProject | FourtuneRealmCConfig | FourtuneRealmJSConfig | FourtuneRealmJSRuntimeContext | FourtuneRealmJSRuntimeContextOptions | FourtuneRealmJSRuntimeProject | FourtuneRealmWebConfig | FourtuneSession
