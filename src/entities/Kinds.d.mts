@@ -2,8 +2,6 @@
 // and is intentionally written by hand
 export type Kinds = 
                     "FourtuneCoreData"                     |
-                    "FourtuneCoreDependency"               |
-                    "FourtuneCoreLoadedDependency"         |
                     "FourtuneConfig"                       |
                     "FourtuneNodeAPIOptions"               |
                     "FourtuneRealmJSConfig"                |
