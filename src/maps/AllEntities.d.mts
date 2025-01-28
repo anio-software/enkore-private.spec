@@ -1,6 +1,6 @@
-import type {Kinds} from "#~src/Kinds.d.mts"
-import type {AllDefinedMajorVersions} from "#~src/AllDefinedMajorVersions.d.mts"
-import type {AllDefinedRevisions} from "#~src/AllDefinedRevisions.d.mts"
+import type {Kinds} from "#~src/entities/Kinds.d.mts"
+import type {AllDefinedMajorVersions} from "#~src/entities/AllDefinedMajorVersions.d.mts"
+import type {AllDefinedRevisions} from "#~src/entities/AllDefinedRevisions.d.mts"
 import type {AllDefinedEntities} from "#~synthetic/user/AllDefinedEntities.d.mts"
 
 export type AllEntities = {

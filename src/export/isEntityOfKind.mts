@@ -1,4 +1,4 @@
-import type {Kinds} from "#~src/Kinds.d.mts"
+import type {Kinds} from "#~src/entities/Kinds.d.mts"
 import type {EntitiesByKind} from "#~src/maps/EntitiesByKind.d.mts"
 import type {UnknownEntity} from "./UnknownEntity.d.mts"
 
