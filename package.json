@@ -19,7 +19,7 @@
     "@aniojs/event-emitter": "^0.0.8",
     "@aniojs/node-fs-scandir": "^0.2.2",
     "@fourtune/core": "^0.1101.0",
-    "@fourtune/primitives": "^0.3.0",
+    "@fourtune/primitives": "^0.4.0",
     "@fourtune/realm-js": "^0.31010.0",
     "fourtune": "^0.30000.1"
   },
