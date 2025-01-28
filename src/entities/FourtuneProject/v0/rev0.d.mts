@@ -1,4 +1,7 @@
-import type {EntityOfKind} from "#~src/export/EntityOfKind.d.mts"
+import type {
+	FourtuneConfig,
+	FourtuneSession
+} from "#~src/export/__star_export.mts"
 import type {DefineEvent, EventEmitter} from "@aniojs/event-emitter"
 
 type MessageEvent = DefineEvent<"message", {
@@ -37,12 +40,10 @@ type Compile = () => Promise<{
 
 export type Definition = EventEmitter<Events> & {
 	readonly root: string
-	readonly config: EntityOfKind<"FourtuneConfig">
+	readonly config: FourtuneConfig
 
 	readonly init: () => Promise<{
-		session: Readonly<
-			EntityOfKind<"FourtuneSession">
-		>,
+		session: Readonly<FourtuneSession>,
 		compile: Compile
 	}>
 }

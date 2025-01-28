@@ -1,25 +1,23 @@
 import type {RealmJSRuntimeLogLevel, RealmJSRuntimePackageInformation} from "@fourtune/primitives"
-import type {EntityOfKind} from "#~src/export/EntityOfKind.d.mts"
-
-type ContextInstance = EntityOfKind<"FourtuneRealmJSRuntimeContext">
+import type {FourtuneRealmJSRuntimeContext} from "#~src/export/__star_export.mts"
 
 type ContextOptionsGetCurrentLogLevel = (
-	context: ContextInstance
+	context: FourtuneRealmJSRuntimeContext
 ) => RealmJSRuntimeLogLevel|null
 
 type ContextOptionsPrintLine = (
-	context: ContextInstance,
+	context: FourtuneRealmJSRuntimeContext,
 	line: string
 ) => undefined
 
 type ContextOptionsLogWithLevel = (
-	context: ContextInstance,
+	context: FourtuneRealmJSRuntimeContext,
 	level: RealmJSRuntimeLogLevel,
 	lines: string[]
 ) => undefined
 
 type ContextOptionsShouldLog = (
-	context: ContextInstance,
+	context: FourtuneRealmJSRuntimeContext,
 	level: RealmJSRuntimeLogLevel,
 	pkg: RealmJSRuntimePackageInformation,
 	tag: string

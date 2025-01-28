@@ -1,5 +1,8 @@
 import type {RealmJSRuntimeLogLevel, RealmJSRuntimePackageInformation} from "@fourtune/primitives"
-import type {EntityOfKind} from "#~src/export/EntityOfKind.d.mts"
+import type {
+	FourtuneRealmJSRuntimeProject,
+	FourtuneRealmJSRuntimeContextOptions
+} from "#~src/export/__star_export.mts"
 
 type LogMethod = {
 	[K in RealmJSRuntimeLogLevel]: (...messages: string[]) => undefined
@@ -17,6 +20,6 @@ export type Definition = {
 
 	log: LogMethod
 
-	project: EntityOfKind<"FourtuneRealmJSRuntimeProject">
-	options: EntityOfKind<"FourtuneRealmJSRuntimeContextOptions">
+	project: FourtuneRealmJSRuntimeProject
+	options: FourtuneRealmJSRuntimeContextOptions
 }

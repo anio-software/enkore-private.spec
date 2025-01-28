@@ -1,9 +1,14 @@
-import type {EntityOfKind} from "#~src/export/EntityOfKind.d.mts"
+import type {
+	FourtuneConfig,
+	FourtuneRealmJSConfig,
+	FourtuneRealmCConfig,
+	FourtuneRealmWebConfig
+} from "#~src/export/__star_export.mts"
 
 export type Definition = {
 	project: {
 		root: string
-		config: EntityOfKind<"FourtuneConfig">
+		config: FourtuneConfig
 	}
 
 	emit: {
@@ -17,11 +22,10 @@ export type Definition = {
 			getInternalData: () => unknown
 		}
 
-		getConfig: () => EntityOfKind<
-			"FourtuneRealmJSConfig"  |
-			"FourtuneRealmCConfig"   |
-			"FourtuneRealmWebConfig"
-		>
+		getConfig: () => 
+			FourtuneRealmJSConfig  |
+			FourtuneRealmCConfig   |
+			FourtuneRealmWebConfig
 
 		getDependency: (dependencyName: string) => unknown
 	}

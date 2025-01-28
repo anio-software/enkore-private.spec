@@ -1,19 +1,24 @@
-import type {EntityOfKind} from "#~src/export/EntityOfKind.d.mts"
+import type {
+	FourtuneRealmJSConfig,
+	FourtuneRealmCConfig,
+	FourtuneRealmWebConfig,
+	FourtuneSession
+} from "#~src/export/__star_export.mts"
 
 export type Definition = {
 	realm: {
 		name: "js"
-		config: EntityOfKind<"FourtuneRealmJSConfig">
+		config: FourtuneRealmJSConfig
 	} | {
 		name: "c"
-		config: EntityOfKind<"FourtuneRealmCConfig">
+		config: FourtuneRealmCConfig
 	} | {
 		name: "web"
-		config: EntityOfKind<"FourtuneRealmWebConfig">
+		config: FourtuneRealmWebConfig
 	}
 
 	autogenerate?: Record<string, (
-		session: EntityOfKind<"FourtuneSession">,
+		session: FourtuneSession,
 		filePath: string
 	) => Promise<string> | string>
 }
