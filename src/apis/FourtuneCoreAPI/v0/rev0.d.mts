@@ -24,13 +24,13 @@ type Dependency = {
 
 export type Definition = {
 	loadRealmDependency: (
-		projectRoot: string | 1337,
+		projectRoot: string | ["inferFromCLIArgs"],
 		realm: RealmName,
 		dependencyName: string
 	) => Promise<LoadedDependency>
 
 	installRealmDependencies: (
-		projectRoot: string | 1337,
+		projectRoot: string | ["inferFromCLIArgs"],
 		realm: RealmName,
 		dependencies: {
 			[dependencyName: string]: Dependency
