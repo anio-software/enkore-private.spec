@@ -2,6 +2,7 @@
 // and is intentionally written by hand
 export type Kinds = 
                     "FourtuneCoreData"                     |
+                    "FourtuneLockfile"                     |
                     "FourtuneConfig"                       |
                     "FourtuneNodeAPIOptions"               |
                     "FourtuneRealmJSConfig"                |
