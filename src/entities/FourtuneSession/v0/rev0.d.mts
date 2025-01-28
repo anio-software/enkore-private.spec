@@ -2,7 +2,8 @@ import type {
 	FourtuneConfig,
 	FourtuneRealmJSConfig,
 	FourtuneRealmCConfig,
-	FourtuneRealmWebConfig
+	FourtuneRealmWebConfig,
+	FourtuneRealmIntegrationAPI
 } from "#~src/export/__star_export.mts"
 
 export type Definition = {
@@ -17,10 +18,7 @@ export type Definition = {
 	}
 
 	realm: {
-		_integration: {
-			setInternalData: (data: any) => unknown
-			getInternalData: () => unknown
-		}
+		_integration: FourtuneRealmIntegrationAPI
 
 		getConfig: () => 
 			FourtuneRealmJSConfig  |
