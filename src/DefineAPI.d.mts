@@ -10,7 +10,7 @@ export type DefineAPI<
 	ID extends IDs,
 	MajorVersion extends number,
 	Revision extends number,
-	T extends {} | unknown
+	T extends object | unknown
 > = {
 	readonly apiID: ID
 	readonly apiMajorVersion: MajorVersion

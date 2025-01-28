@@ -10,7 +10,7 @@ export type DefineEntity<
 	Kind extends Kinds,
 	MajorVersion extends number,
 	Revision extends number,
-	T extends {} | unknown
+	T extends object | unknown
 > = {
 	readonly entityKind: Kind
 	readonly entityMajorVersion: MajorVersion
