@@ -19,9 +19,9 @@ type JSONCompatible<T> = unknown extends T ? never : {
 type IsArray<T> = T extends unknown[] ? true : false
 
 // [] extends object is true so we have to check if T is an array first
-type IsObject<T> = IsArray<T> extends 0 ? T extends object ? true : false : false
+type IsObject<T> = IsArray<T> extends false ? T extends object ? true : false : false
 
-type RemoveNeverProperties<T> = IsObject<T> extends 1 ? {[K in keyof T as T[K] extends never ? never : K]: RemoveNeverProperties<T[K]> } : T
+type RemoveNeverProperties<T> = IsObject<T> extends true ? {[K in keyof T as T[K] extends never ? never : K]: RemoveNeverProperties<T[K]> } : T
 
 export type JSONCompatibleType<T> = RemoveNeverProperties<
 	JSONCompatible<T>
