@@ -5,6 +5,7 @@ export type Kinds =
                     "FourtuneCoreDependency"               |
                     "FourtuneCoreLoadedDependency"         |
                     "FourtuneConfig"                       |
+                    "FourtuneNodeAPIOptions"               |
                     "FourtuneRealmJSConfig"                |
                     "FourtuneRealmJSRuntimeProject"        |
                     "FourtuneRealmJSRuntimeContext"        |
