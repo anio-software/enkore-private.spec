@@ -1,4 +1,4 @@
-# @fourtune/entities
+# @fourtune/spec
 
 Entities are the object structures fourtune uses in its public API.
 

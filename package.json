@@ -1,5 +1,5 @@
 {
-  "name": "@fourtune/entities",
+  "name": "@fourtune/spec",
   "version": "0.0.0",
   "author": "Anio Software <info@anio.software>",
   "description": "Entities are public versioned object structures used by the fourtune project.",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fourtune-org/entities.git"
+    "url": "git+https://github.com/fourtune-org/spec.git"
   },
   "type": "module",
   "devDependencies": {
