@@ -1,6 +1,6 @@
 {
   "name": "@fourtune/spec",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Anio Software <info@anio.software>",
   "description": "Entities are public versioned object structures used by the fourtune project.",
   "license": "MIT",
