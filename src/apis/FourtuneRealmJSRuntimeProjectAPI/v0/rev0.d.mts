@@ -1,21 +1,12 @@
 import type {FourtuneConfig} from "#~src/export/__star_export.mts"
 import type {JSONCompatibleType} from "#~src/export/JSONCompatibleType.d.mts"
-
-type PackageJSON = {
-	name: string
-	version: string
-	description?: string
-	author?: string
-	license?: string
-
-	[prop : string]: any
-}
+import type {NodePackageJSON} from "@fourtune/primitives"
 
 export type Definition = {
-	getProjectPackageJSON: () => PackageJSON
+	getProjectPackageJSON: () => NodePackageJSON
 	getFourtuneConfiguration: () => JSONCompatibleType<FourtuneConfig>
 	getProject: () => {
-		packageJSON: PackageJSON
+		packageJSON: NodePackageJSON
 		fourtuneConfiguration: JSONCompatibleType<FourtuneConfig>
 	}
 }

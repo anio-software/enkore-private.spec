@@ -1,10 +1,11 @@
 import type {RealmName} from "@fourtune/primitives"
+import type {NodePackageJSON} from "@fourtune/primitives"
 
 type LoadedDependency = {
 	path: string
 	version: string
 	importedDependencyObject: unknown
-	dependencyPackageJSON: Record<string, unknown>
+	dependencyPackageJSON: NodePackageJSON
 }
 
 type Dependency = {
