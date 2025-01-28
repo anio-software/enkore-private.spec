@@ -39,7 +39,7 @@ export type Definition = {
 			npmBinaryPath?: string,
 			force?: boolean
 		}
-	) => {}
+	) => Promise<undefined>
 
 	findProjectRootFromDirectory: (
 		startDirectory: string
