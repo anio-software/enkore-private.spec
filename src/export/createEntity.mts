@@ -3,7 +3,7 @@ import type {Kinds} from "#~src/entities/Kinds.d.mts"
 import type {AllDefinedMajorVersions} from "#~src/entities/AllDefinedMajorVersions.d.mts"
 import type {AllDefinedRevisions} from "#~src/entities/AllDefinedRevisions.d.mts"
 import type {UnknownEntity} from "./UnknownEntity.d.mts"
-import type {StripEntityProperties} from "./StripEntityProperties.d.mts"
+import type {RawType} from "./RawType.d.mts"
 
 export function createEntity<
 	Kind extends Kinds,
@@ -13,7 +13,7 @@ export function createEntity<
 	kind: Kind,
 	majorVersion: MajorVersion,
 	revision: Revision,
-	entityData: StripEntityProperties<AllEntities[Kind][MajorVersion][Revision]>,
+	entityData: RawType<AllEntities[Kind][MajorVersion][Revision]>,
 	createdBy?: UnknownEntity["entityCreatedBy"]
 ) : AllEntities[Kind][MajorVersion][Revision] {
 	const header : UnknownEntity = {
