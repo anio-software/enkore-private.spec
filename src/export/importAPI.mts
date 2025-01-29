@@ -6,8 +6,8 @@ import type {UnknownAPI} from "./UnknownAPI.d.mts"
 
 export async function importAPI<
 	ID extends IDs,
-	MajorVersion extends AllDefinedMajorVersions | undefined,
-	Revision extends AllDefinedRevisions | undefined
+	MajorVersion extends AllDefinedMajorVersions,
+	Revision extends AllDefinedRevisions
 >(
 	path: string,
 	apiID: ID,
