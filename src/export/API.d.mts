@@ -6,8 +6,8 @@ import type {APIsByIDAndMajorVersion} from "#~src/maps/APIsByIDAndMajorVersion.d
 import type {APIsByID} from "#~src/maps/APIsByID.d.mts"
 import type {AllAPIs} from "#~src/maps/AllAPIs.d.mts"
 
-type MajorVersions = AllDefinedMajorVersions | void
-type Revisions = AllDefinedRevisions | void
+type MajorVersions = AllDefinedMajorVersions | void | undefined
+type Revisions = AllDefinedRevisions | void | undefined
 
 export type API<
 	ID extends IDs,
