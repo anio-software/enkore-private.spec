@@ -23,7 +23,7 @@ type Dependency = {
 })
 
 export type Definition = {
-	setDebugMode: (mode: boolean) => boolean,
+	setDebugMode: (mode: boolean) => boolean
 
 	loadRealmDependency: (
 		projectRoot: string | ["inferFromCLIArgs"],
