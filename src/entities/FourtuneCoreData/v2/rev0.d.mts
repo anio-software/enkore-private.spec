@@ -5,6 +5,7 @@ export type Definition = {
 	platform: string
 
 	realmDependenciesHash: string
+	realmDependenciesIntegrityHash: string
 
 	realmDependencies: {
 		name: string
