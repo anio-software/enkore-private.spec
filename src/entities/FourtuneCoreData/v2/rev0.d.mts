@@ -7,6 +7,7 @@ export type Definition = {
 	realmDependencies: {
 		name: string
 		importPath: string
+		useDefaultImport: boolean
 		version: string
 		isolated: boolean
 	}[]
