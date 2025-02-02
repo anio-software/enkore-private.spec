@@ -4,6 +4,8 @@ export type Definition = {
 	realm: RealmName
 	platform: string
 
+	realmDependenciesHash: string
+
 	realmDependencies: {
 		name: string
 		importPath: string
