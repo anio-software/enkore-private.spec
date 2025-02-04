@@ -1,4 +1,6 @@
 export type Definition = {
+	realmDependenciesStamp: string
+
 	realmDependencies: {
 		[dependencyName: string]: {
 			version: string
