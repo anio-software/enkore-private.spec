@@ -39,7 +39,8 @@ export type Definition = {
 		},
 		options?: {
 			npmBinaryPath?: string,
-			force?: boolean
+			force?: boolean,
+			updateLockFile?: boolean
 		}
 	) => Promise<undefined>
 
