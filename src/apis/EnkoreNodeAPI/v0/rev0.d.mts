@@ -1,7 +1,7 @@
 import type {
-	FourtuneConfig,
-	FourtuneSessionAPI,
-	FourtuneNodeAPIOptions
+	EnkoreConfig,
+	EnkoreSessionAPI,
+	EnkoreNodeAPIOptions
 } from "#~src/export/__star_export.mts"
 import type {DefineEvent, EventEmitter} from "@aniojs/event-emitter"
 
@@ -40,15 +40,15 @@ type Compile = () => Promise<{
 }>
 
 export type Definition = {
-	fourtune: (
+	enkore: (
 		projectRoot: string,
-		options?: FourtuneNodeAPIOptions
+		options?: EnkoreNodeAPIOptions
 	) => Promise<EventEmitter<Events> & {
 		readonly root: string
-		readonly config: FourtuneConfig
+		readonly config: EnkoreConfig
 
 		readonly init: () => Promise<{
-			session: Readonly<FourtuneSessionAPI>,
+			session: Readonly<EnkoreSessionAPI>,
 			compile: Compile
 		}>
 	}>

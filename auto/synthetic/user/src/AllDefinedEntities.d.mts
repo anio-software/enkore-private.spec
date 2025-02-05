@@ -1,47 +1,47 @@
 import type {DefineEntity} from "#~src/DefineEntity.d.mts"
 
-import type {Definition as FourtuneConfig_V0_Rev0Definition} from "#~src/entities/FourtuneConfig/v0/rev0.d.mts"
-import type {Definition as FourtuneCoreData_V0_Rev0Definition} from "#~src/entities/FourtuneCoreData/v0/rev0.d.mts"
-import type {Definition as FourtuneLockfile_V0_Rev0Definition} from "#~src/entities/FourtuneLockfile/v0/rev0.d.mts"
-import type {Definition as FourtuneNodeAPIOptions_V0_Rev0Definition} from "#~src/entities/FourtuneNodeAPIOptions/v0/rev0.d.mts"
-import type {Definition as FourtuneRealmCConfig_V0_Rev0Definition} from "#~src/entities/FourtuneRealmCConfig/v0/rev0.d.mts"
-import type {Definition as FourtuneRealmJSConfig_V0_Rev0Definition} from "#~src/entities/FourtuneRealmJSConfig/v0/rev0.d.mts"
-import type {Definition as FourtuneRealmJSRuntimeContext_V0_Rev0Definition} from "#~src/entities/FourtuneRealmJSRuntimeContext/v0/rev0.d.mts"
-import type {Definition as FourtuneRealmJSRuntimeContextOptions_V0_Rev0Definition} from "#~src/entities/FourtuneRealmJSRuntimeContextOptions/v0/rev0.d.mts"
-import type {Definition as FourtuneRealmJSRuntimeProject_V0_Rev0Definition} from "#~src/entities/FourtuneRealmJSRuntimeProject/v0/rev0.d.mts"
-import type {Definition as FourtuneRealmWebConfig_V0_Rev0Definition} from "#~src/entities/FourtuneRealmWebConfig/v0/rev0.d.mts"
+import type {Definition as EnkoreConfig_V0_Rev0Definition} from "#~src/entities/EnkoreConfig/v0/rev0.d.mts"
+import type {Definition as EnkoreCoreData_V0_Rev0Definition} from "#~src/entities/EnkoreCoreData/v0/rev0.d.mts"
+import type {Definition as EnkoreLockfile_V0_Rev0Definition} from "#~src/entities/EnkoreLockfile/v0/rev0.d.mts"
+import type {Definition as EnkoreNodeAPIOptions_V0_Rev0Definition} from "#~src/entities/EnkoreNodeAPIOptions/v0/rev0.d.mts"
+import type {Definition as EnkoreRealmCConfig_V0_Rev0Definition} from "#~src/entities/EnkoreRealmCConfig/v0/rev0.d.mts"
+import type {Definition as EnkoreRealmJSConfig_V0_Rev0Definition} from "#~src/entities/EnkoreRealmJSConfig/v0/rev0.d.mts"
+import type {Definition as EnkoreRealmJSRuntimeContext_V0_Rev0Definition} from "#~src/entities/EnkoreRealmJSRuntimeContext/v0/rev0.d.mts"
+import type {Definition as EnkoreRealmJSRuntimeContextOptions_V0_Rev0Definition} from "#~src/entities/EnkoreRealmJSRuntimeContextOptions/v0/rev0.d.mts"
+import type {Definition as EnkoreRealmJSRuntimeProject_V0_Rev0Definition} from "#~src/entities/EnkoreRealmJSRuntimeProject/v0/rev0.d.mts"
+import type {Definition as EnkoreRealmWebConfig_V0_Rev0Definition} from "#~src/entities/EnkoreRealmWebConfig/v0/rev0.d.mts"
 
-export type FourtuneConfig_V0_Rev0 = DefineEntity<"FourtuneConfig", 0, 0, FourtuneConfig_V0_Rev0Definition>
-export type FourtuneCoreData_V0_Rev0 = DefineEntity<"FourtuneCoreData", 0, 0, FourtuneCoreData_V0_Rev0Definition>
-export type FourtuneLockfile_V0_Rev0 = DefineEntity<"FourtuneLockfile", 0, 0, FourtuneLockfile_V0_Rev0Definition>
-export type FourtuneNodeAPIOptions_V0_Rev0 = DefineEntity<"FourtuneNodeAPIOptions", 0, 0, FourtuneNodeAPIOptions_V0_Rev0Definition>
-export type FourtuneRealmCConfig_V0_Rev0 = DefineEntity<"FourtuneRealmCConfig", 0, 0, FourtuneRealmCConfig_V0_Rev0Definition>
-export type FourtuneRealmJSConfig_V0_Rev0 = DefineEntity<"FourtuneRealmJSConfig", 0, 0, FourtuneRealmJSConfig_V0_Rev0Definition>
-export type FourtuneRealmJSRuntimeContext_V0_Rev0 = DefineEntity<"FourtuneRealmJSRuntimeContext", 0, 0, FourtuneRealmJSRuntimeContext_V0_Rev0Definition>
-export type FourtuneRealmJSRuntimeContextOptions_V0_Rev0 = DefineEntity<"FourtuneRealmJSRuntimeContextOptions", 0, 0, FourtuneRealmJSRuntimeContextOptions_V0_Rev0Definition>
-export type FourtuneRealmJSRuntimeProject_V0_Rev0 = DefineEntity<"FourtuneRealmJSRuntimeProject", 0, 0, FourtuneRealmJSRuntimeProject_V0_Rev0Definition>
-export type FourtuneRealmWebConfig_V0_Rev0 = DefineEntity<"FourtuneRealmWebConfig", 0, 0, FourtuneRealmWebConfig_V0_Rev0Definition>
+export type EnkoreConfig_V0_Rev0 = DefineEntity<"EnkoreConfig", 0, 0, EnkoreConfig_V0_Rev0Definition>
+export type EnkoreCoreData_V0_Rev0 = DefineEntity<"EnkoreCoreData", 0, 0, EnkoreCoreData_V0_Rev0Definition>
+export type EnkoreLockfile_V0_Rev0 = DefineEntity<"EnkoreLockfile", 0, 0, EnkoreLockfile_V0_Rev0Definition>
+export type EnkoreNodeAPIOptions_V0_Rev0 = DefineEntity<"EnkoreNodeAPIOptions", 0, 0, EnkoreNodeAPIOptions_V0_Rev0Definition>
+export type EnkoreRealmCConfig_V0_Rev0 = DefineEntity<"EnkoreRealmCConfig", 0, 0, EnkoreRealmCConfig_V0_Rev0Definition>
+export type EnkoreRealmJSConfig_V0_Rev0 = DefineEntity<"EnkoreRealmJSConfig", 0, 0, EnkoreRealmJSConfig_V0_Rev0Definition>
+export type EnkoreRealmJSRuntimeContext_V0_Rev0 = DefineEntity<"EnkoreRealmJSRuntimeContext", 0, 0, EnkoreRealmJSRuntimeContext_V0_Rev0Definition>
+export type EnkoreRealmJSRuntimeContextOptions_V0_Rev0 = DefineEntity<"EnkoreRealmJSRuntimeContextOptions", 0, 0, EnkoreRealmJSRuntimeContextOptions_V0_Rev0Definition>
+export type EnkoreRealmJSRuntimeProject_V0_Rev0 = DefineEntity<"EnkoreRealmJSRuntimeProject", 0, 0, EnkoreRealmJSRuntimeProject_V0_Rev0Definition>
+export type EnkoreRealmWebConfig_V0_Rev0 = DefineEntity<"EnkoreRealmWebConfig", 0, 0, EnkoreRealmWebConfig_V0_Rev0Definition>
 
-export type FourtuneConfig_V0 = FourtuneConfig_V0_Rev0
-export type FourtuneCoreData_V0 = FourtuneCoreData_V0_Rev0
-export type FourtuneLockfile_V0 = FourtuneLockfile_V0_Rev0
-export type FourtuneNodeAPIOptions_V0 = FourtuneNodeAPIOptions_V0_Rev0
-export type FourtuneRealmCConfig_V0 = FourtuneRealmCConfig_V0_Rev0
-export type FourtuneRealmJSConfig_V0 = FourtuneRealmJSConfig_V0_Rev0
-export type FourtuneRealmJSRuntimeContext_V0 = FourtuneRealmJSRuntimeContext_V0_Rev0
-export type FourtuneRealmJSRuntimeContextOptions_V0 = FourtuneRealmJSRuntimeContextOptions_V0_Rev0
-export type FourtuneRealmJSRuntimeProject_V0 = FourtuneRealmJSRuntimeProject_V0_Rev0
-export type FourtuneRealmWebConfig_V0 = FourtuneRealmWebConfig_V0_Rev0
+export type EnkoreConfig_V0 = EnkoreConfig_V0_Rev0
+export type EnkoreCoreData_V0 = EnkoreCoreData_V0_Rev0
+export type EnkoreLockfile_V0 = EnkoreLockfile_V0_Rev0
+export type EnkoreNodeAPIOptions_V0 = EnkoreNodeAPIOptions_V0_Rev0
+export type EnkoreRealmCConfig_V0 = EnkoreRealmCConfig_V0_Rev0
+export type EnkoreRealmJSConfig_V0 = EnkoreRealmJSConfig_V0_Rev0
+export type EnkoreRealmJSRuntimeContext_V0 = EnkoreRealmJSRuntimeContext_V0_Rev0
+export type EnkoreRealmJSRuntimeContextOptions_V0 = EnkoreRealmJSRuntimeContextOptions_V0_Rev0
+export type EnkoreRealmJSRuntimeProject_V0 = EnkoreRealmJSRuntimeProject_V0_Rev0
+export type EnkoreRealmWebConfig_V0 = EnkoreRealmWebConfig_V0_Rev0
 
-export type FourtuneConfig = FourtuneConfig_V0
-export type FourtuneCoreData = FourtuneCoreData_V0
-export type FourtuneLockfile = FourtuneLockfile_V0
-export type FourtuneNodeAPIOptions = FourtuneNodeAPIOptions_V0
-export type FourtuneRealmCConfig = FourtuneRealmCConfig_V0
-export type FourtuneRealmJSConfig = FourtuneRealmJSConfig_V0
-export type FourtuneRealmJSRuntimeContext = FourtuneRealmJSRuntimeContext_V0
-export type FourtuneRealmJSRuntimeContextOptions = FourtuneRealmJSRuntimeContextOptions_V0
-export type FourtuneRealmJSRuntimeProject = FourtuneRealmJSRuntimeProject_V0
-export type FourtuneRealmWebConfig = FourtuneRealmWebConfig_V0
+export type EnkoreConfig = EnkoreConfig_V0
+export type EnkoreCoreData = EnkoreCoreData_V0
+export type EnkoreLockfile = EnkoreLockfile_V0
+export type EnkoreNodeAPIOptions = EnkoreNodeAPIOptions_V0
+export type EnkoreRealmCConfig = EnkoreRealmCConfig_V0
+export type EnkoreRealmJSConfig = EnkoreRealmJSConfig_V0
+export type EnkoreRealmJSRuntimeContext = EnkoreRealmJSRuntimeContext_V0
+export type EnkoreRealmJSRuntimeContextOptions = EnkoreRealmJSRuntimeContextOptions_V0
+export type EnkoreRealmJSRuntimeProject = EnkoreRealmJSRuntimeProject_V0
+export type EnkoreRealmWebConfig = EnkoreRealmWebConfig_V0
 
-export type AllDefinedEntities = FourtuneConfig | FourtuneCoreData | FourtuneLockfile | FourtuneNodeAPIOptions | FourtuneRealmCConfig | FourtuneRealmJSConfig | FourtuneRealmJSRuntimeContext | FourtuneRealmJSRuntimeContextOptions | FourtuneRealmJSRuntimeProject | FourtuneRealmWebConfig
+export type AllDefinedEntities = EnkoreConfig | EnkoreCoreData | EnkoreLockfile | EnkoreNodeAPIOptions | EnkoreRealmCConfig | EnkoreRealmJSConfig | EnkoreRealmJSRuntimeContext | EnkoreRealmJSRuntimeContextOptions | EnkoreRealmJSRuntimeProject | EnkoreRealmWebConfig

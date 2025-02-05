@@ -1,8 +1,8 @@
 import type {RealmJSRuntimeLogLevel} from "@enkore/primitives"
 
 import type {
-	FourtuneRealmJSRuntimeContext,
-	FourtuneRealmJSRuntimeContextOptions
+	EnkoreRealmJSRuntimeContext,
+	EnkoreRealmJSRuntimeContextOptions
 } from "#~src/export/__star_export.mts"
 
 type Operator = 
@@ -13,8 +13,8 @@ type Operator =
 
 export type Definition = {
 	createContext: (
-		ctxOrOptions: FourtuneRealmJSRuntimeContext | FourtuneRealmJSRuntimeContextOptions
-	) => FourtuneRealmJSRuntimeContext
+		ctxOrOptions: EnkoreRealmJSRuntimeContext | EnkoreRealmJSRuntimeContextOptions
+	) => EnkoreRealmJSRuntimeContext
 
 	compareLogLevel: (
 		left: RealmJSRuntimeLogLevel,

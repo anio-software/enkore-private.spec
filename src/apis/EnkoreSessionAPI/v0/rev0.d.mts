@@ -1,15 +1,15 @@
 import type {
-	FourtuneConfig,
-	FourtuneRealmJSConfig,
-	FourtuneRealmCConfig,
-	FourtuneRealmWebConfig,
-	FourtuneRealmIntegrationAPI
+	EnkoreConfig,
+	EnkoreRealmJSConfig,
+	EnkoreRealmCConfig,
+	EnkoreRealmWebConfig,
+	EnkoreRealmIntegrationAPI
 } from "#~src/export/__star_export.mts"
 
 export type Definition = {
 	project: {
 		root: string
-		config: FourtuneConfig
+		config: EnkoreConfig
 	}
 
 	emit: {
@@ -18,12 +18,12 @@ export type Definition = {
 	}
 
 	realm: {
-		_integration: FourtuneRealmIntegrationAPI
+		_integration: EnkoreRealmIntegrationAPI
 
 		getConfig: () => 
-			FourtuneRealmJSConfig  |
-			FourtuneRealmCConfig   |
-			FourtuneRealmWebConfig
+			EnkoreRealmJSConfig  |
+			EnkoreRealmCConfig   |
+			EnkoreRealmWebConfig
 
 		getDependency: (dependencyName: string) => unknown
 	}

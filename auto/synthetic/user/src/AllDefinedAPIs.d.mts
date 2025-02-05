@@ -1,35 +1,35 @@
 import type {DefineAPI} from "#~src/DefineAPI.d.mts"
 
-import type {Definition as FourtuneCoreAPI_V0_Rev0Definition} from "#~src/apis/FourtuneCoreAPI/v0/rev0.d.mts"
-import type {Definition as FourtuneNodeAPI_V0_Rev0Definition} from "#~src/apis/FourtuneNodeAPI/v0/rev0.d.mts"
-import type {Definition as FourtuneRealmIntegrationAPI_V0_Rev0Definition} from "#~src/apis/FourtuneRealmIntegrationAPI/v0/rev0.d.mts"
-import type {Definition as FourtuneRealmJSRuntimeAssetsAPI_V0_Rev0Definition} from "#~src/apis/FourtuneRealmJSRuntimeAssetsAPI/v0/rev0.d.mts"
-import type {Definition as FourtuneRealmJSRuntimeProjectAPI_V0_Rev0Definition} from "#~src/apis/FourtuneRealmJSRuntimeProjectAPI/v0/rev0.d.mts"
-import type {Definition as FourtuneRealmJSRuntimeRuntimeAPI_V0_Rev0Definition} from "#~src/apis/FourtuneRealmJSRuntimeRuntimeAPI/v0/rev0.d.mts"
-import type {Definition as FourtuneSessionAPI_V0_Rev0Definition} from "#~src/apis/FourtuneSessionAPI/v0/rev0.d.mts"
+import type {Definition as EnkoreCoreAPI_V0_Rev0Definition} from "#~src/apis/EnkoreCoreAPI/v0/rev0.d.mts"
+import type {Definition as EnkoreNodeAPI_V0_Rev0Definition} from "#~src/apis/EnkoreNodeAPI/v0/rev0.d.mts"
+import type {Definition as EnkoreRealmIntegrationAPI_V0_Rev0Definition} from "#~src/apis/EnkoreRealmIntegrationAPI/v0/rev0.d.mts"
+import type {Definition as EnkoreRealmJSRuntimeAssetsAPI_V0_Rev0Definition} from "#~src/apis/EnkoreRealmJSRuntimeAssetsAPI/v0/rev0.d.mts"
+import type {Definition as EnkoreRealmJSRuntimeProjectAPI_V0_Rev0Definition} from "#~src/apis/EnkoreRealmJSRuntimeProjectAPI/v0/rev0.d.mts"
+import type {Definition as EnkoreRealmJSRuntimeRuntimeAPI_V0_Rev0Definition} from "#~src/apis/EnkoreRealmJSRuntimeRuntimeAPI/v0/rev0.d.mts"
+import type {Definition as EnkoreSessionAPI_V0_Rev0Definition} from "#~src/apis/EnkoreSessionAPI/v0/rev0.d.mts"
 
-export type FourtuneCoreAPI_V0_Rev0 = DefineAPI<"FourtuneCoreAPI", 0, 0, FourtuneCoreAPI_V0_Rev0Definition>
-export type FourtuneNodeAPI_V0_Rev0 = DefineAPI<"FourtuneNodeAPI", 0, 0, FourtuneNodeAPI_V0_Rev0Definition>
-export type FourtuneRealmIntegrationAPI_V0_Rev0 = DefineAPI<"FourtuneRealmIntegrationAPI", 0, 0, FourtuneRealmIntegrationAPI_V0_Rev0Definition>
-export type FourtuneRealmJSRuntimeAssetsAPI_V0_Rev0 = DefineAPI<"FourtuneRealmJSRuntimeAssetsAPI", 0, 0, FourtuneRealmJSRuntimeAssetsAPI_V0_Rev0Definition>
-export type FourtuneRealmJSRuntimeProjectAPI_V0_Rev0 = DefineAPI<"FourtuneRealmJSRuntimeProjectAPI", 0, 0, FourtuneRealmJSRuntimeProjectAPI_V0_Rev0Definition>
-export type FourtuneRealmJSRuntimeRuntimeAPI_V0_Rev0 = DefineAPI<"FourtuneRealmJSRuntimeRuntimeAPI", 0, 0, FourtuneRealmJSRuntimeRuntimeAPI_V0_Rev0Definition>
-export type FourtuneSessionAPI_V0_Rev0 = DefineAPI<"FourtuneSessionAPI", 0, 0, FourtuneSessionAPI_V0_Rev0Definition>
+export type EnkoreCoreAPI_V0_Rev0 = DefineAPI<"EnkoreCoreAPI", 0, 0, EnkoreCoreAPI_V0_Rev0Definition>
+export type EnkoreNodeAPI_V0_Rev0 = DefineAPI<"EnkoreNodeAPI", 0, 0, EnkoreNodeAPI_V0_Rev0Definition>
+export type EnkoreRealmIntegrationAPI_V0_Rev0 = DefineAPI<"EnkoreRealmIntegrationAPI", 0, 0, EnkoreRealmIntegrationAPI_V0_Rev0Definition>
+export type EnkoreRealmJSRuntimeAssetsAPI_V0_Rev0 = DefineAPI<"EnkoreRealmJSRuntimeAssetsAPI", 0, 0, EnkoreRealmJSRuntimeAssetsAPI_V0_Rev0Definition>
+export type EnkoreRealmJSRuntimeProjectAPI_V0_Rev0 = DefineAPI<"EnkoreRealmJSRuntimeProjectAPI", 0, 0, EnkoreRealmJSRuntimeProjectAPI_V0_Rev0Definition>
+export type EnkoreRealmJSRuntimeRuntimeAPI_V0_Rev0 = DefineAPI<"EnkoreRealmJSRuntimeRuntimeAPI", 0, 0, EnkoreRealmJSRuntimeRuntimeAPI_V0_Rev0Definition>
+export type EnkoreSessionAPI_V0_Rev0 = DefineAPI<"EnkoreSessionAPI", 0, 0, EnkoreSessionAPI_V0_Rev0Definition>
 
-export type FourtuneCoreAPI_V0 = FourtuneCoreAPI_V0_Rev0
-export type FourtuneNodeAPI_V0 = FourtuneNodeAPI_V0_Rev0
-export type FourtuneRealmIntegrationAPI_V0 = FourtuneRealmIntegrationAPI_V0_Rev0
-export type FourtuneRealmJSRuntimeAssetsAPI_V0 = FourtuneRealmJSRuntimeAssetsAPI_V0_Rev0
-export type FourtuneRealmJSRuntimeProjectAPI_V0 = FourtuneRealmJSRuntimeProjectAPI_V0_Rev0
-export type FourtuneRealmJSRuntimeRuntimeAPI_V0 = FourtuneRealmJSRuntimeRuntimeAPI_V0_Rev0
-export type FourtuneSessionAPI_V0 = FourtuneSessionAPI_V0_Rev0
+export type EnkoreCoreAPI_V0 = EnkoreCoreAPI_V0_Rev0
+export type EnkoreNodeAPI_V0 = EnkoreNodeAPI_V0_Rev0
+export type EnkoreRealmIntegrationAPI_V0 = EnkoreRealmIntegrationAPI_V0_Rev0
+export type EnkoreRealmJSRuntimeAssetsAPI_V0 = EnkoreRealmJSRuntimeAssetsAPI_V0_Rev0
+export type EnkoreRealmJSRuntimeProjectAPI_V0 = EnkoreRealmJSRuntimeProjectAPI_V0_Rev0
+export type EnkoreRealmJSRuntimeRuntimeAPI_V0 = EnkoreRealmJSRuntimeRuntimeAPI_V0_Rev0
+export type EnkoreSessionAPI_V0 = EnkoreSessionAPI_V0_Rev0
 
-export type FourtuneCoreAPI = FourtuneCoreAPI_V0
-export type FourtuneNodeAPI = FourtuneNodeAPI_V0
-export type FourtuneRealmIntegrationAPI = FourtuneRealmIntegrationAPI_V0
-export type FourtuneRealmJSRuntimeAssetsAPI = FourtuneRealmJSRuntimeAssetsAPI_V0
-export type FourtuneRealmJSRuntimeProjectAPI = FourtuneRealmJSRuntimeProjectAPI_V0
-export type FourtuneRealmJSRuntimeRuntimeAPI = FourtuneRealmJSRuntimeRuntimeAPI_V0
-export type FourtuneSessionAPI = FourtuneSessionAPI_V0
+export type EnkoreCoreAPI = EnkoreCoreAPI_V0
+export type EnkoreNodeAPI = EnkoreNodeAPI_V0
+export type EnkoreRealmIntegrationAPI = EnkoreRealmIntegrationAPI_V0
+export type EnkoreRealmJSRuntimeAssetsAPI = EnkoreRealmJSRuntimeAssetsAPI_V0
+export type EnkoreRealmJSRuntimeProjectAPI = EnkoreRealmJSRuntimeProjectAPI_V0
+export type EnkoreRealmJSRuntimeRuntimeAPI = EnkoreRealmJSRuntimeRuntimeAPI_V0
+export type EnkoreSessionAPI = EnkoreSessionAPI_V0
 
-export type AllDefinedAPIs = FourtuneCoreAPI | FourtuneNodeAPI | FourtuneRealmIntegrationAPI | FourtuneRealmJSRuntimeAssetsAPI | FourtuneRealmJSRuntimeProjectAPI | FourtuneRealmJSRuntimeRuntimeAPI | FourtuneSessionAPI
+export type AllDefinedAPIs = EnkoreCoreAPI | EnkoreNodeAPI | EnkoreRealmIntegrationAPI | EnkoreRealmJSRuntimeAssetsAPI | EnkoreRealmJSRuntimeProjectAPI | EnkoreRealmJSRuntimeRuntimeAPI | EnkoreSessionAPI

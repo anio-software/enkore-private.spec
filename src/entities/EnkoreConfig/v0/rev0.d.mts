@@ -1,24 +1,24 @@
 import type {
-	FourtuneRealmJSConfig,
-	FourtuneRealmCConfig,
-	FourtuneRealmWebConfig,
-	FourtuneSessionAPI
+	EnkoreRealmJSConfig,
+	EnkoreRealmCConfig,
+	EnkoreRealmWebConfig,
+	EnkoreSessionAPI
 } from "#~src/export/__star_export.mts"
 
 export type Definition = {
 	realm: {
 		name: "js"
-		config: FourtuneRealmJSConfig
+		config: EnkoreRealmJSConfig
 	} | {
 		name: "c"
-		config: FourtuneRealmCConfig
+		config: EnkoreRealmCConfig
 	} | {
 		name: "web"
-		config: FourtuneRealmWebConfig
+		config: EnkoreRealmWebConfig
 	}
 
 	autogenerate?: Record<string, (
-		session: FourtuneSessionAPI,
+		session: EnkoreSessionAPI,
 		filePath: string
 	) => Promise<string> | string>
 }
