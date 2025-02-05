@@ -1,4 +1,4 @@
-import type {RealmName} from "@fourtune/primitives"
+import type {RealmName} from "@enkore/primitives"
 
 export type Definition = {
 	realm: RealmName

@@ -5,7 +5,7 @@ import type {Kinds} from "#~src/entities/Kinds.d.mts"
 //
 
 // NB: this data type SHOULD NEVER change in the lifecycle
-// of the "fourtune" project
+// of the "enkore" project
 export type DefineEntity<
 	Kind extends Kinds,
 	MajorVersion extends number,

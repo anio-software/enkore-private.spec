@@ -1,5 +1,5 @@
-import type {RealmName} from "@fourtune/primitives"
-import type {NodePackageJSON} from "@fourtune/primitives"
+import type {RealmName} from "@enkore/primitives"
+import type {NodePackageJSON} from "@enkore/primitives"
 
 type LoadedDependency = {
 	path: string

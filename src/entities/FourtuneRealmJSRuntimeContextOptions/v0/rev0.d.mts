@@ -1,4 +1,4 @@
-import type {RealmJSRuntimeLogLevel, RealmJSRuntimePackageInformation} from "@fourtune/primitives"
+import type {RealmJSRuntimeLogLevel, RealmJSRuntimePackageInformation} from "@enkore/primitives"
 import type {FourtuneRealmJSRuntimeContext} from "#~src/export/__star_export.mts"
 
 type ContextOptionsGetCurrentLogLevel = (

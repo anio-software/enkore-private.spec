@@ -1,4 +1,4 @@
-import type {RealmJSRuntimeLogLevel, RealmJSRuntimePackageInformation} from "@fourtune/primitives"
+import type {RealmJSRuntimeLogLevel, RealmJSRuntimePackageInformation} from "@enkore/primitives"
 import type {
 	FourtuneRealmJSRuntimeProject,
 	FourtuneRealmJSRuntimeContextOptions

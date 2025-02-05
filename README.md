@@ -1,6 +1,6 @@
-# @fourtune/spec
+# @enkore/spec
 
-Entities are the object structures fourtune uses in its public API.
+Entities are the object structures enkore uses in its public API.
 
 All entities are versioned.
 

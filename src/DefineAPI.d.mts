@@ -5,7 +5,7 @@ import type {IDs} from "#~src/apis/IDs.d.mts"
 //
 
 // NB: this data type SHOULD NEVER change in the lifecycle
-// of the "fourtune" project
+// of the "enkore" project
 export type DefineAPI<
 	ID extends IDs,
 	MajorVersion extends number,
