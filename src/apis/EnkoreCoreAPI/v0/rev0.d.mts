@@ -1,5 +1,6 @@
 import type {RealmName} from "@enkore/primitives"
 import type {NodePackageJSON} from "@enkore/primitives"
+import type {EnkoreRealmIntegrationAPI} from "#~src/export/__star_export.mts"
 
 type LoadedDependency = {
 	path: string
@@ -8,41 +9,28 @@ type LoadedDependency = {
 	dependencyPackageJSON: NodePackageJSON
 }
 
-type Dependency = {
-	version: string
-	isolated?: boolean
-} & ({
-	importKind?: "default"
-} | {
-	importKind: "star"
-} | {
-	importKind: "named"
-	imports: {
-		[name: string]: string|undefined
-	}
-})
-
 export type Definition = {
 	setDebugMode: (mode: boolean) => boolean
+
+	//
+	// - loads the realm integration api
+	// - installs the realm dependencies
+	// - manages the lockfile
+	//
+	initializeProject: (
+		projectRoot: string | ["inferFromCLIArgs"],
+		isCIEnvironment: boolean,
+		options?: {
+			npmBinaryPath?: string,
+			force?: boolean
+		}
+	) => Promise<EnkoreRealmIntegrationAPI>
 
 	loadRealmDependency: (
 		projectRoot: string | ["inferFromCLIArgs"],
 		realm: RealmName,
 		dependencyName: string
 	) => Promise<LoadedDependency>
-
-	installRealmDependencies: (
-		projectRoot: string | ["inferFromCLIArgs"],
-		realm: RealmName,
-		dependencies: {
-			[dependencyName: string]: Dependency
-		},
-		options?: {
-			npmBinaryPath?: string,
-			force?: boolean,
-			updateLockFile?: boolean
-		}
-	) => Promise<undefined>
 
 	findProjectRootFromDirectory: (
 		startDirectory: string
