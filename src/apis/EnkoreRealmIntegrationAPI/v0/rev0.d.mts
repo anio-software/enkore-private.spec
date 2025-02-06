@@ -7,7 +7,25 @@ type ObjectFile = {
 	contents: string
 }
 
+type Dependency = {
+	version: string
+	isolated?: boolean
+} & ({
+	importKind?: "default"
+} | {
+	importKind: "star"
+} | {
+	importKind: "named"
+	imports: {
+		[name: string]: string|undefined
+	}
+})
+
 export type Definition = {
+	getRealmDependenciesToInstall: () => Promise<{
+		[dependencyName: string]: Dependency
+	}>
+
 	preInitialize: (
 		f: EnkoreSessionAPI
 	) => Promise<undefined>
