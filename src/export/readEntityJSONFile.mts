@@ -3,6 +3,7 @@ import type {Kinds} from "#~src/entities/Kinds.d.mts"
 import type {AllDefinedMajorVersions} from "#~src/entities/AllDefinedMajorVersions.d.mts"
 import type {AllDefinedRevisions} from "#~src/entities/AllDefinedRevisions.d.mts"
 import type {UnknownEntity} from "./UnknownEntity.d.mts"
+import type {JSONCompatibleType} from "./JSONCompatibleType.d.mts"
 import {readFileJSON} from "@aniojs/node-fs-file"
 
 export async function readEntityJSONFile<
@@ -14,7 +15,7 @@ export async function readEntityJSONFile<
 	entityKind: Kind,
 	majorVersion?: MajorVersion,
 	revision?: Revision
-) : Promise<Entity<Kind, MajorVersion, Revision>> {
+) : Promise<JSONCompatibleType<Entity<Kind, MajorVersion, Revision>>> {
 	const obj : UnknownEntity = (await readFileJSON(path)) as UnknownEntity
 
 	if (obj.entityKind !== entityKind) {
@@ -39,5 +40,5 @@ export async function readEntityJSONFile<
 		}
 	}
 
-	return obj as Entity<Kind, MajorVersion, Revision>
+	return obj as JSONCompatibleType<Entity<Kind, MajorVersion, Revision>>
 }
