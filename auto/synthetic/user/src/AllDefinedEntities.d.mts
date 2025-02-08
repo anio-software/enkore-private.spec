@@ -2,6 +2,7 @@ import type {DefineEntity} from "#~src/DefineEntity.d.mts"
 
 import type {Definition as EnkoreConfig_V0_Rev0Definition} from "#~src/entities/EnkoreConfig/v0/rev0.d.mts"
 import type {Definition as EnkoreCoreData_V0_Rev0Definition} from "#~src/entities/EnkoreCoreData/v0/rev0.d.mts"
+import type {Definition as EnkoreCoreRealmDependency_V0_Rev0Definition} from "#~src/entities/EnkoreCoreRealmDependency/v0/rev0.d.mts"
 import type {Definition as EnkoreCoreRealmDependencyInstallSpecification_V0_Rev0Definition} from "#~src/entities/EnkoreCoreRealmDependencyInstallSpecification/v0/rev0.d.mts"
 import type {Definition as EnkoreLockfile_V0_Rev0Definition} from "#~src/entities/EnkoreLockfile/v0/rev0.d.mts"
 import type {Definition as EnkoreNodeAPIOptions_V0_Rev0Definition} from "#~src/entities/EnkoreNodeAPIOptions/v0/rev0.d.mts"
@@ -14,6 +15,7 @@ import type {Definition as EnkoreRealmWebConfig_V0_Rev0Definition} from "#~src/e
 
 export type EnkoreConfig_V0_Rev0 = DefineEntity<"EnkoreConfig", 0, 0, EnkoreConfig_V0_Rev0Definition>
 export type EnkoreCoreData_V0_Rev0 = DefineEntity<"EnkoreCoreData", 0, 0, EnkoreCoreData_V0_Rev0Definition>
+export type EnkoreCoreRealmDependency_V0_Rev0 = DefineEntity<"EnkoreCoreRealmDependency", 0, 0, EnkoreCoreRealmDependency_V0_Rev0Definition>
 export type EnkoreCoreRealmDependencyInstallSpecification_V0_Rev0 = DefineEntity<"EnkoreCoreRealmDependencyInstallSpecification", 0, 0, EnkoreCoreRealmDependencyInstallSpecification_V0_Rev0Definition>
 export type EnkoreLockfile_V0_Rev0 = DefineEntity<"EnkoreLockfile", 0, 0, EnkoreLockfile_V0_Rev0Definition>
 export type EnkoreNodeAPIOptions_V0_Rev0 = DefineEntity<"EnkoreNodeAPIOptions", 0, 0, EnkoreNodeAPIOptions_V0_Rev0Definition>
@@ -26,6 +28,7 @@ export type EnkoreRealmWebConfig_V0_Rev0 = DefineEntity<"EnkoreRealmWebConfig", 
 
 export type EnkoreConfig_V0 = EnkoreConfig_V0_Rev0
 export type EnkoreCoreData_V0 = EnkoreCoreData_V0_Rev0
+export type EnkoreCoreRealmDependency_V0 = EnkoreCoreRealmDependency_V0_Rev0
 export type EnkoreCoreRealmDependencyInstallSpecification_V0 = EnkoreCoreRealmDependencyInstallSpecification_V0_Rev0
 export type EnkoreLockfile_V0 = EnkoreLockfile_V0_Rev0
 export type EnkoreNodeAPIOptions_V0 = EnkoreNodeAPIOptions_V0_Rev0
@@ -38,6 +41,7 @@ export type EnkoreRealmWebConfig_V0 = EnkoreRealmWebConfig_V0_Rev0
 
 export type EnkoreConfig = EnkoreConfig_V0
 export type EnkoreCoreData = EnkoreCoreData_V0
+export type EnkoreCoreRealmDependency = EnkoreCoreRealmDependency_V0
 export type EnkoreCoreRealmDependencyInstallSpecification = EnkoreCoreRealmDependencyInstallSpecification_V0
 export type EnkoreLockfile = EnkoreLockfile_V0
 export type EnkoreNodeAPIOptions = EnkoreNodeAPIOptions_V0
@@ -48,4 +52,4 @@ export type EnkoreRealmJSRuntimeContextOptions = EnkoreRealmJSRuntimeContextOpti
 export type EnkoreRealmJSRuntimeProject = EnkoreRealmJSRuntimeProject_V0
 export type EnkoreRealmWebConfig = EnkoreRealmWebConfig_V0
 
-export type AllDefinedEntities = EnkoreConfig | EnkoreCoreData | EnkoreCoreRealmDependencyInstallSpecification | EnkoreLockfile | EnkoreNodeAPIOptions | EnkoreRealmCConfig | EnkoreRealmJSConfig | EnkoreRealmJSRuntimeContext | EnkoreRealmJSRuntimeContextOptions | EnkoreRealmJSRuntimeProject | EnkoreRealmWebConfig
+export type AllDefinedEntities = EnkoreConfig | EnkoreCoreData | EnkoreCoreRealmDependency | EnkoreCoreRealmDependencyInstallSpecification | EnkoreLockfile | EnkoreNodeAPIOptions | EnkoreRealmCConfig | EnkoreRealmJSConfig | EnkoreRealmJSRuntimeContext | EnkoreRealmJSRuntimeContextOptions | EnkoreRealmJSRuntimeProject | EnkoreRealmWebConfig

@@ -3,6 +3,7 @@
 export type Kinds = 
                     "EnkoreCoreData"                                |
                     "EnkoreCoreRealmDependencyInstallSpecification" |
+                    "EnkoreCoreRealmDependency"                     |
                     "EnkoreLockfile"                                |
                     "EnkoreConfig"                                  |
                     "EnkoreNodeAPIOptions"                          |

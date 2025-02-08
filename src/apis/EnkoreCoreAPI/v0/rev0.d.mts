@@ -1,13 +1,8 @@
 import type {RealmName} from "@enkore/primitives"
-import type {NodePackageJSON} from "@enkore/primitives"
-import type {EnkoreRealmIntegrationAPI} from "#~src/export/__star_export.mts"
-
-type LoadedDependency = {
-	path: string
-	version: string
-	importedDependencyObject: unknown
-	dependencyPackageJSON: NodePackageJSON
-}
+import type {
+	EnkoreRealmIntegrationAPI,
+	EnkoreCoreRealmDependency
+} from "#~src/export/__star_export.mts"
 
 export type Definition = {
 	setDebugMode: (mode: boolean) => boolean
@@ -30,7 +25,7 @@ export type Definition = {
 		projectRoot: string | ["inferFromCLIArgs"],
 		realm: RealmName,
 		dependencyName: string
-	) => Promise<LoadedDependency>
+	) => Promise<EnkoreCoreRealmDependency>
 
 	findProjectRootFromDirectory: (
 		startDirectory: string
