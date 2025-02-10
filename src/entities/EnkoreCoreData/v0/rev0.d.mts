@@ -6,12 +6,4 @@ export type Definition = {
 
 	realmDependenciesStamp: string
 	realmDependenciesIntegrityHash: string
-
-	realmDependencies: {
-		name: string
-		importPath: string
-		useDefaultImport: boolean
-		version: string
-		isolated: boolean
-	}[]
 }
