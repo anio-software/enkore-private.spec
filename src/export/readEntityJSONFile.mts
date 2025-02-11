@@ -30,6 +30,12 @@ export async function readEntityJSONFile<
 			obj = createEntity(
 				entityKind, majorVersion!, revision!, defaults
 			)
+
+			//
+			// make sure defaults are restricted to JSON compatible
+			// types only.
+			//
+			obj = JSON.parse(JSON.stringify(obj))
 		}
 	}
 
