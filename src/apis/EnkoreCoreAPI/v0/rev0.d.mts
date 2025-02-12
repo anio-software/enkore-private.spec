@@ -21,6 +21,11 @@ export type Definition = {
 		}
 	) => Promise<EnkoreRealmIntegrationAPI>
 
+	getInstalledRealmDependencyNames: (
+		projectRoot: string | ["inferFromCLIArgs"],
+		realm: RealmName,
+	) => Promise<string[]>
+
 	loadRealmDependency: (
 		projectRoot: string | ["inferFromCLIArgs"],
 		realm: RealmName,
