@@ -42,7 +42,7 @@ type Compile = () => Promise<{
 export type Definition = {
 	enkore: (
 		projectRoot: string,
-		options?: EnkoreNodeAPIOptions
+		options: EnkoreNodeAPIOptions
 	) => Promise<EventEmitter<Events> & {
 		readonly root: string
 		readonly config: EnkoreConfig
