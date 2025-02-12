@@ -7,6 +7,7 @@ export type Definition = {
 	realmDependencies: {
 		[dependencyName: string]: {
 			version: string
+			requestedVersion: string
 		}
 	}
 
