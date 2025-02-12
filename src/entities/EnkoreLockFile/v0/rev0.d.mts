@@ -1,4 +1,7 @@
+import type {RealmName} from "@enkore/primitives"
+
 export type Definition = {
+	realm: RealmName
 	realmDependenciesStamp: string
 
 	realmDependencies: {
