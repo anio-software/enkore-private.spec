@@ -3,4 +3,5 @@ export type Definition = {
 	isCIEnvironment?: boolean
 	npmBinaryPath?: string
 	force?: boolean
+	onlyInitializeProject?: boolean
 }
