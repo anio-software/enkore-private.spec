@@ -8,6 +8,10 @@
     ".": {
       "types": "./dist/default/index.d.mts",
       "import": "./dist/default/index.mjs"
+    },
+    "./uuid": {
+      "types": "./dist/uuid/index.d.mts",
+      "import": "./dist/uuid/index.mjs"
     }
   },
   "repository": {
