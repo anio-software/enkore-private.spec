@@ -29,12 +29,13 @@ export type Definition = {
 	getInternalData: (key: string) => unknown
 
 	preprocessSourceFile?: (
+		f: EnkoreSessionAPI,
 		sourceFilePath: string,
-		f: EnkoreSessionAPI
+		sourceCode: string
 	) => Promise<string>
 
 	generateObjectFile: (
-		sourceFilePath: string,
-		f: EnkoreSessionAPI
+		f: EnkoreSessionAPI,
+		sourceFilePath: string
 	) => Promise<ObjectFile | ObjectFile[]>
 }
