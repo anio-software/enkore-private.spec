@@ -28,10 +28,6 @@ export type Definition = {
 		}[]
 	}>
 
-//	runHook: (
-//		id: string
-//	) => Promise<undefined>
-
 	setInternalData: (key: string, data: any) => unknown
 	getInternalData: (key: string) => unknown
 
