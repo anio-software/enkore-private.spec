@@ -15,7 +15,7 @@ export type Definition = {
 		config: EnkoreConfig
 	}
 
-	emit: {
+	_emit: {
 		warning: (id: string|undefined, message: string) => undefined
 		error: (id: string|undefined, message: string) => undefined
 	}
