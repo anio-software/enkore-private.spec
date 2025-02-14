@@ -22,7 +22,11 @@ export type Definition = {
 
 	initialize: (
 		f: EnkoreSessionAPI
-	) => Promise<undefined>
+	) => Promise<{
+		products: {
+			name: string
+		}[]
+	}>
 
 //	runHook: (
 //		id: string
