@@ -46,4 +46,9 @@ export type Definition = {
 		sourceFilePath: string,
 		sourceCode: string
 	) => Promise<ObjectFile | ObjectFile[] | "ignore" | "copy">
+
+	generateProduct: (
+		f: EnkoreSessionAPI,
+		productName: string
+	) => Promise<undefined>
 }
