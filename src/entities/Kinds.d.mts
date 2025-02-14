@@ -13,4 +13,5 @@ export type Kinds =
                     "EnkoreRealmJSRuntimeContext"                   |
                     "EnkoreRealmJSRuntimeContextOptions"            |
                     "EnkoreRealmWebConfig"                          |
-                    "EnkoreRealmCConfig"
+                    "EnkoreRealmCConfig"                            |
+                    "EnkoreMessage"
