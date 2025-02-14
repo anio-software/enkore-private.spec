@@ -1,5 +1,4 @@
 import type {
-	EnkoreConfig,
 	EnkoreSessionAPI,
 	EnkoreNodeAPIOptions
 } from "#~src/export/__star_export.mts"
@@ -44,11 +43,8 @@ export type Definition = {
 		projectRoot: string,
 		options: EnkoreNodeAPIOptions
 	) => Promise<EventEmitter<Events> & {
-		readonly root: string
-		readonly config: EnkoreConfig
-
+		readonly session: Readonly<EnkoreSessionAPI>
 		readonly init: () => Promise<{
-			session: Readonly<EnkoreSessionAPI>,
 			compile: Compile
 		}>
 	}>
