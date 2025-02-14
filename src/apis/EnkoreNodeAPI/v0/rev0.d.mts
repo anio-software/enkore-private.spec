@@ -2,7 +2,6 @@ import type {
 	EnkoreSessionAPI,
 	EnkoreNodeAPIOptions
 } from "#~src/export/__star_export.mts"
-import type {RemoveUnderscoreProperties} from "#~src/RemoveUnderscoreProperties.d.mts"
 import type {DefineEvent, EventEmitter} from "@aniojs/event-emitter"
 
 type MessageEvent = DefineEvent<"message", {
@@ -44,7 +43,7 @@ export type Definition = {
 		projectRoot: string,
 		options: EnkoreNodeAPIOptions
 	) => Promise<EventEmitter<Events> & {
-		readonly session: RemoveUnderscoreProperties<EnkoreSessionAPI>
+		readonly session: EnkoreSessionAPI,
 		readonly init: () => Promise<{
 			compile: Compile
 		}>
