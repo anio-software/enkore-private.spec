@@ -3,8 +3,11 @@ import type {
 	EnkoreCoreRealmDependencyInstallSpecification
 } from "#~src/export/__star_export.mts"
 
-type ObjectFile = {
+type ObjectFile = ({
 	path: string
+} | {
+	name: string
+}) & {
 	contents: string
 }
 
