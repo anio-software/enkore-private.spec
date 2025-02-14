@@ -41,5 +41,5 @@ export type Definition = {
 		f: EnkoreSessionAPI,
 		sourceFilePath: string,
 		sourceCode: string
-	) => Promise<ObjectFile | ObjectFile[] | null>
+	) => Promise<ObjectFile | ObjectFile[] | null | "copy">
 }
