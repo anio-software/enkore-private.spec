@@ -1,6 +1,7 @@
 import type {
 	EnkoreSessionAPI,
-	EnkoreCoreRealmDependencyInstallSpecification
+	EnkoreCoreRealmDependencyInstallSpecification,
+	EnkoreNodeAPIMessage
 } from "#~src/export/__star_export.mts"
 
 type ObjectFile = ({
@@ -31,23 +32,28 @@ export type Definition = {
 	setInternalData: (key: string, data: any) => unknown
 	getInternalData: (key: string) => unknown
 
-	// todo: add return "messages: []"
 	preprocessSourceFile?: (
 		f: EnkoreSessionAPI,
 		sourceFilePath: string,
 		sourceCode: string
-	) => Promise<string>
+	) => Promise<{
+		source: string
+		messages: EnkoreNodeAPIMessage[]
+	}>
 
-	// todo: add return "messages: []"
 	generateObjectFile: (
 		f: EnkoreSessionAPI,
 		sourceFilePath: string,
 		sourceCode: string
-	) => Promise<ObjectFile | ObjectFile[] | "ignore" | "copy">
+	) => Promise<{
+		object: ObjectFile | ObjectFile[] | "ignore" | "copy"
+		messages: EnkoreNodeAPIMessage[]
+	}>
 
-	// todo: add return "messages: []"
 	generateProduct: (
 		f: EnkoreSessionAPI,
 		productName: string
-	) => Promise<undefined>
+	) => Promise<{
+		messages: EnkoreNodeAPIMessage[]
+	}>
 }
