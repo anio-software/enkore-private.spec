@@ -37,5 +37,5 @@ export type Definition = {
 	generateObjectFile: (
 		f: EnkoreSessionAPI,
 		sourceFilePath: string
-	) => Promise<ObjectFile | ObjectFile[]>
+	) => Promise<ObjectFile | ObjectFile[] | null>
 }
