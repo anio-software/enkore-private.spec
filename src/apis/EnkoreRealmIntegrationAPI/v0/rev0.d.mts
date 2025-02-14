@@ -31,18 +31,21 @@ export type Definition = {
 	setInternalData: (key: string, data: any) => unknown
 	getInternalData: (key: string) => unknown
 
+	// todo: add return "messages: []"
 	preprocessSourceFile?: (
 		f: EnkoreSessionAPI,
 		sourceFilePath: string,
 		sourceCode: string
 	) => Promise<string>
 
+	// todo: add return "messages: []"
 	generateObjectFile: (
 		f: EnkoreSessionAPI,
 		sourceFilePath: string,
 		sourceCode: string
 	) => Promise<ObjectFile | ObjectFile[] | "ignore" | "copy">
 
+	// todo: add return "messages: []"
 	generateProduct: (
 		f: EnkoreSessionAPI,
 		productName: string
