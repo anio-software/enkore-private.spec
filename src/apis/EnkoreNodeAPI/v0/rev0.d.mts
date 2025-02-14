@@ -1,7 +1,7 @@
 import type {
 	EnkoreSessionAPI,
 	EnkoreNodeAPIOptions,
-	EnkoreMessage
+	EnkoreNodeAPIMessage
 } from "#~src/export/__star_export.mts"
 import type {DefineEvent, EventEmitter} from "@aniojs/event-emitter"
 
@@ -24,12 +24,12 @@ type Events = [MessageEvent, WarningEvent, ErrorEvent]
 type Product = {
 	name: string
 	build: () => Promise<{
-		messages: EnkoreMessage[]
+		messages: EnkoreNodeAPIMessage[]
 	}>
 }
 
 type Compile = () => Promise<{
-	messages: EnkoreMessage[]
+	messages: EnkoreNodeAPIMessage[]
 	products: Product[]
 }>
 
