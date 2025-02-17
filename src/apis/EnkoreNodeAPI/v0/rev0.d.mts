@@ -1,12 +1,12 @@
 import type {
 	EnkoreSessionAPI,
-	EnkoreNodeAPIOptions,
-	EnkoreNodeAPIMessage
+	EnkoreNodeAPIOptions
 } from "#~src/export/__star_export.mts"
 import type {DefineEvent, EventEmitter} from "@aniojs/event-emitter"
+import type {NodeAPIMessage} from "@enkore/primitives"
 
 type MessageEvent = DefineEvent<"message", {
-	message: EnkoreNodeAPIMessage
+	message: NodeAPIMessage
 }>
 
 type Events = [MessageEvent]
@@ -14,31 +14,31 @@ type Events = [MessageEvent]
 type BuildProducts = (
 	names: string[] | null
 ) => Promise<{
-	messages: EnkoreNodeAPIMessage[]
+	messages: NodeAPIMessage[]
 }>
 
 type Compile = () => Promise<{
-	messages: EnkoreNodeAPIMessage[],
+	messages: NodeAPIMessage[],
 	buildProducts: BuildProducts
 }>
 
 type Lint = () => Promise<{
-	messages: EnkoreNodeAPIMessage[],
+	messages: NodeAPIMessage[],
 	compile: Compile
 }>
 
 type Preprocess = () => Promise<{
-	messages: EnkoreNodeAPIMessage[],
+	messages: NodeAPIMessage[],
 	lint: Lint
 }>
 
 type Autogenerate = () => Promise<{
-	messages: EnkoreNodeAPIMessage[],
+	messages: NodeAPIMessage[],
 	preprocess: Preprocess
 }>
 
 type Clean = () => Promise<{
-	messages: EnkoreNodeAPIMessage[],
+	messages: NodeAPIMessage[],
 	autogenerate: Autogenerate
 }>
 
@@ -48,7 +48,7 @@ type Init = () => Promise<{
 }>
 
 type Build = () => Promise<{
-	messages: EnkoreNodeAPIMessage[]
+	messages: NodeAPIMessage[]
 }>
 
 export type Definition = {
