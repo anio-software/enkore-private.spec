@@ -1,5 +1,5 @@
 import type {
-	EnkoreSessionAPI,
+	EnkoreExtendedSessionAPI,
 	EnkoreCoreRealmDependencyInstallSpecification
 } from "#~src/export/__star_export.mts"
 
@@ -17,11 +17,11 @@ export type Definition = {
 	}>
 
 	preInitialize: (
-		f: EnkoreSessionAPI
+		f: EnkoreExtendedSessionAPI
 	) => Promise<undefined>
 
 	initialize: (
-		f: EnkoreSessionAPI
+		f: EnkoreExtendedSessionAPI
 	) => Promise<{
 		products: {
 			name: string
@@ -32,19 +32,19 @@ export type Definition = {
 	getInternalData: (key: string) => unknown
 
 	preprocessSourceFile?: (
-		f: EnkoreSessionAPI,
+		f: EnkoreExtendedSessionAPI,
 		sourceFilePath: string,
 		sourceCode: string
 	) => Promise<string>
 
 	generateObjectFile: (
-		f: EnkoreSessionAPI,
+		f: EnkoreExtendedSessionAPI,
 		sourceFilePath: string,
 		sourceCode: string
 	) => Promise<ObjectFile | ObjectFile[] | "ignore" | "copy">
 
 	generateProduct: (
-		f: EnkoreSessionAPI,
+		f: EnkoreExtendedSessionAPI,
 		productName: string
 	) => Promise<undefined>
 }
