@@ -6,6 +6,7 @@ import type {
 
 export type Definition = {
 	setDebugMode: (mode: boolean) => boolean
+	getDebugMode: () => boolean
 
 	//
 	// - loads the realm integration api
