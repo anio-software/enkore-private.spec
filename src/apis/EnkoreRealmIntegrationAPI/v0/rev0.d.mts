@@ -1,7 +1,6 @@
 import type {
 	EnkoreSessionAPI,
-	EnkoreCoreRealmDependencyInstallSpecification,
-	EnkoreNodeAPIMessage
+	EnkoreCoreRealmDependencyInstallSpecification
 } from "#~src/export/__star_export.mts"
 
 type ObjectFile = ({
@@ -31,12 +30,6 @@ export type Definition = {
 
 	setInternalData: (key: string, data: any) => unknown
 	getInternalData: (key: string) => unknown
-
-	emitMessage: (
-		severity: EnkoreNodeAPIMessage["severity"],
-		id: EnkoreNodeAPIMessage["id"],
-		message: EnkoreNodeAPIMessage["message"]
-	) => undefined
 
 	preprocessSourceFile?: (
 		f: EnkoreSessionAPI,
