@@ -5,9 +5,7 @@ import type {
 import type {DefineEvent, EventEmitter} from "@aniojs/event-emitter"
 import type {NodeAPIMessage} from "@enkore/primitives"
 
-type MessageEvent = DefineEvent<"message", {
-	message: NodeAPIMessage
-}>
+type MessageEvent = DefineEvent<"message", NodeAPIMessage>
 
 type Events = [MessageEvent]
 
