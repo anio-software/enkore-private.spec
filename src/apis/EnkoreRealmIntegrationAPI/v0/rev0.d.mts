@@ -32,28 +32,26 @@ export type Definition = {
 	setInternalData: (key: string, data: any) => unknown
 	getInternalData: (key: string) => unknown
 
+	emitMessage: (
+		severity: EnkoreNodeAPIMessage["severity"],
+		id: EnkoreNodeAPIMessage["id"],
+		message: EnkoreNodeAPIMessage["message"]
+	) => undefined
+
 	preprocessSourceFile?: (
 		f: EnkoreSessionAPI,
 		sourceFilePath: string,
 		sourceCode: string
-	) => Promise<{
-		source: string
-		messages: EnkoreNodeAPIMessage[]
-	}>
+	) => Promise<string>
 
 	generateObjectFile: (
 		f: EnkoreSessionAPI,
 		sourceFilePath: string,
 		sourceCode: string
-	) => Promise<{
-		object: ObjectFile | ObjectFile[] | "ignore" | "copy"
-		messages: EnkoreNodeAPIMessage[]
-	}>
+	) => Promise<ObjectFile | ObjectFile[] | "ignore" | "copy">
 
 	generateProduct: (
 		f: EnkoreSessionAPI,
 		productName: string
-	) => Promise<{
-		messages: EnkoreNodeAPIMessage[]
-	}>
+	) => Promise<undefined>
 }
