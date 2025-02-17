@@ -14,7 +14,7 @@
       "import": "./dist/uuid/index.mjs"
     },
     "./primitives": {
-      "types": "./dist/uuid/primitives.d.mts"
+      "types": "./dist/primitives/index.d.mts"
     }
   },
   "repository": {
