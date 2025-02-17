@@ -1,5 +1,5 @@
 export type Definition = {
-	severity: "warn" | "error"
+	severity: "debug" | "info" | "warn" | "error"
 	id: string|undefined
 	message: string
 }
