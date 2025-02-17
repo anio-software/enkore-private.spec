@@ -14,33 +14,57 @@ type WarningEvent = DefineEvent<"warning", {
 	message: string
 }>
 
-type ErrorEvent = DefineEvent<"error", {
-	id: string|undefined
-	message: string
+type Events = [MessageEvent, WarningEvent]
+
+type BuildProducts = (
+	names: string[] | null
+) => Promise<{
+	messages: EnkoreNodeAPIMessage[]
 }>
 
-type Events = [MessageEvent, WarningEvent, ErrorEvent]
-
-type Product = {
-	name: string
-	build: () => Promise<{
-		messages: EnkoreNodeAPIMessage[]
-	}>
-}
-
 type Compile = () => Promise<{
+	messages: EnkoreNodeAPIMessage[],
+	buildProducts: BuildProducts
+}>
+
+type Lint = () => Promise<{
+	messages: EnkoreNodeAPIMessage[],
+	compile: Compile
+}>
+
+type Preprocess = () => Promise<{
+	messages: EnkoreNodeAPIMessage[],
+	lint: Lint
+}>
+
+type Autogenerate = () => Promise<{
+	messages: EnkoreNodeAPIMessage[],
+	preprocess: Preprocess
+}>
+
+type Clean = () => Promise<{
+	messages: EnkoreNodeAPIMessage[],
+	autogenerate: Autogenerate
+}>
+
+type Init = () => Promise<{
+	clean: Clean,
+	productNames: string[]
+}>
+
+type Build = () => Promise<{
 	messages: EnkoreNodeAPIMessage[]
-	products: Product[]
 }>
 
 export type Definition = {
 	enkore: (
 		projectRoot: string,
 		options: EnkoreNodeAPIOptions
-	) => Promise<EventEmitter<Events> & {
-		readonly session: EnkoreSessionAPI,
-		readonly init: () => Promise<{
-			compile: Compile
-		}>
+	) => Promise<{
+		session: EnkoreSessionAPI,
+		project: EventEmitter<Events> & {
+			init: Init
+			build: Build
+		}
 	}>
 }
