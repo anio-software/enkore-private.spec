@@ -6,15 +6,10 @@ import type {
 import type {DefineEvent, EventEmitter} from "@aniojs/event-emitter"
 
 type MessageEvent = DefineEvent<"message", {
-	message: string
+	message: EnkoreNodeAPIMessage
 }>
 
-type WarningEvent = DefineEvent<"warning", {
-	id: string|undefined
-	message: string
-}>
-
-type Events = [MessageEvent, WarningEvent]
+type Events = [MessageEvent]
 
 type BuildProducts = (
 	names: string[] | null
