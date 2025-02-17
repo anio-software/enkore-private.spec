@@ -42,6 +42,7 @@ type Clean = () => Promise<{
 
 type Init = () => Promise<{
 	clean: Clean,
+	messages: NodeAPIMessage[]
 	productNames: string[]
 }>
 
