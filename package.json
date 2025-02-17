@@ -12,6 +12,9 @@
     "./uuid": {
       "types": "./dist/uuid/index.d.mts",
       "import": "./dist/uuid/index.mjs"
+    },
+    "./primitives": {
+      "types": "./dist/uuid/primitives.d.mts"
     }
   },
   "repository": {
@@ -23,7 +26,7 @@
     "@aniojs/event-emitter": "^0.0.8",
     "@aniojs/node-fs-file": "^0.2.0",
     "@aniojs/node-fs-scandir": "^0.2.2",
-    "@enkore/primitives": "^0.0.2",
+    "@enkore/primitives": "^0.0.3",
     "@fourtune/core": "^0.1101.0",
     "@fourtune/realm-js": "^0.31010.0",
     "fourtune": "^0.30000.1"
