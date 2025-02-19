@@ -26,9 +26,14 @@ type Lint = () => Promise<{
 	compile: Compile
 }>
 
-type Preprocess = () => Promise<{
+type Init = () => Promise<{
 	messages: NodeAPIMessage[],
 	lint: Lint
+}>
+
+type Preprocess = () => Promise<{
+	messages: NodeAPIMessage[],
+	init: Init
 }>
 
 type Autogenerate = () => Promise<{
