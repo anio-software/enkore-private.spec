@@ -27,7 +27,7 @@ export type Definition = {
 	}
 
 	enkore: {
-		getCurrentStep: () => string
+		getCurrentStep: () => string|undefined
 
 		emitMessage: {
 			(
