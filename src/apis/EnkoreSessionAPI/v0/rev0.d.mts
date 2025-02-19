@@ -27,6 +27,8 @@ export type Definition = {
 	}
 
 	enkore: {
+		getCurrentStep: () => string
+
 		emitMessage: {
 			(
 				severity: NodeAPIMessage["severity"],
