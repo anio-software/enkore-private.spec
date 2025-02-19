@@ -9,6 +9,7 @@ type MessageEvent = DefineEvent<"message", NodeAPIMessage>
 
 type Events = [MessageEvent]
 
+// -- build steps ---
 type BuildProducts = (
 	names: string[] | null
 ) => Promise<{
@@ -45,6 +46,7 @@ type Init = () => Promise<{
 	messages: NodeAPIMessage[]
 	productNames: string[]
 }>
+// -- build steps ---
 
 type Build = () => Promise<{
 	messages: NodeAPIMessage[]
