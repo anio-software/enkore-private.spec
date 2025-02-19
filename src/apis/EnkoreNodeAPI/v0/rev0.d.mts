@@ -41,7 +41,7 @@ type Clean = () => Promise<{
 	autogenerate: Autogenerate
 }>
 
-type Init = () => Promise<{
+type PreInit = () => Promise<{
 	clean: Clean,
 	messages: NodeAPIMessage[]
 	productNames: string[]
@@ -59,7 +59,7 @@ export type Definition = {
 	) => Promise<{
 		session: EnkoreSessionAPI,
 		project: EventEmitter<Events> & {
-			init: Init
+			preInit: PreInit
 			build: Build
 		}
 	}>
