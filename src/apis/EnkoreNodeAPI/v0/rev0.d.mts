@@ -29,6 +29,7 @@ type Lint = () => Promise<{
 type Init = () => Promise<{
 	messages: NodeAPIMessage[],
 	lint: Lint
+	productNames: string[]
 }>
 
 type Preprocess = () => Promise<{
@@ -49,7 +50,6 @@ type Clean = () => Promise<{
 type PreInit = () => Promise<{
 	clean: Clean,
 	messages: NodeAPIMessage[]
-	productNames: string[]
 }>
 // -- build steps ---
 
