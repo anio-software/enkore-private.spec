@@ -53,8 +53,12 @@ type PreInit = () => Promise<{
 }>
 // -- build steps ---
 
+type ExtendedNodeAPIMessage = NodeAPIMessage & {
+	step: string
+}
+
 type Build = () => Promise<{
-	messages: NodeAPIMessage[]
+	messages: ExtendedNodeAPIMessage[]
 }>
 
 export type Definition = {
