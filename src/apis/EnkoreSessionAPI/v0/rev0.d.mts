@@ -25,6 +25,10 @@ export type Definition = {
 		getDependencyVersion: (dependencyName: string) => string
 		getDependencyPackageJSON: (dependencyName: string) => NodePackageJSON
 		getDependencyPath: (dependencyName: string) => string
+
+		setInternalData: (key: string, value: any) => undefined
+		hasInternalData: (key: string) => boolean
+		getInternalData: (key: string) => unknown
 	}
 
 	enkore: {

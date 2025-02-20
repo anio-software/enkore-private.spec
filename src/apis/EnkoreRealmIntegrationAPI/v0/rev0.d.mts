@@ -34,9 +34,6 @@ export type Definition = {
 		}[]
 	}>
 
-	setInternalData: (key: string, data: any) => unknown
-	getInternalData: (key: string) => unknown
-
 	preprocess?: (
 		f: EnkoreSessionAPI,
 		sourceFilePath: string,
