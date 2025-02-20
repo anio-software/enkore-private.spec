@@ -37,7 +37,7 @@ export type Definition = {
 		sourceCode: string
 	) => Promise<string>
 
-	generateObjectFile: (
+	compile: (
 		f: EnkoreSessionAPI,
 		sourceFilePath: string,
 		sourceCode: string
