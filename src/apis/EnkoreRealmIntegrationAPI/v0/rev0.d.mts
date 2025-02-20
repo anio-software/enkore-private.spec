@@ -37,6 +37,8 @@ export type Definition = {
 		sourceCode: string
 	) => Promise<string>
 
+	preCompile?: () => Promise<undefined>
+
 	compile: (
 		f: EnkoreSessionAPI,
 		sourceFilePath: string,
