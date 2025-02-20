@@ -1,6 +1,7 @@
 import type {
 	EnkoreSessionAPI,
-	EnkoreCoreRealmDependencyInstallSpecification
+	EnkoreCoreRealmDependencyInstallSpecification,
+	EnkoreBoilerplateFile
 } from "#~src/export/__star_export.mts"
 
 type ObjectFile = ({
@@ -18,11 +19,7 @@ export type Definition = {
 
 	getBoilerplateFiles: (
 		f: EnkoreSessionAPI
-	) => Promise<{
-		path: string
-		content: string
-		overwrite: boolean
-	}[]>
+	) => Promise<EnkoreBoilerplateFile[]>
 
 	hook: {
 		preInitialize?: (
