@@ -16,6 +16,14 @@ export type Definition = {
 		[dependencyName: string]: EnkoreCoreRealmDependencyInstallSpecification
 	}>
 
+	getBoilerplateFiles: (
+		f: EnkoreSessionAPI
+	) => Promise<{
+		path: string
+		content: string
+		overwrite: boolean
+	}[]>
+
 	hook: {
 		preInitialize?: (
 			f: EnkoreSessionAPI
