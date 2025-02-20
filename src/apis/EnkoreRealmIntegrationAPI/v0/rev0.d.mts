@@ -16,9 +16,15 @@ export type Definition = {
 		[dependencyName: string]: EnkoreCoreRealmDependencyInstallSpecification
 	}>
 
-	preInitialize: (
-		f: EnkoreSessionAPI
-	) => Promise<undefined>
+	hook: {
+		preInitialize?: (
+			f: EnkoreSessionAPI
+		) => Promise<undefined>
+
+		preCompile?: (
+			f: EnkoreSessionAPI
+		) => Promise<undefined>
+	}
 
 	initialize: (
 		f: EnkoreSessionAPI
@@ -36,8 +42,6 @@ export type Definition = {
 		sourceFilePath: string,
 		sourceCode: string
 	) => Promise<string>
-
-	preCompile?: () => Promise<undefined>
 
 	compile: (
 		f: EnkoreSessionAPI,
