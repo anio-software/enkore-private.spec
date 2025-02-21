@@ -3,4 +3,5 @@ export type Definition = {
 	path: string
 	content: string
 	overwrite?: boolean
+	fileIsExecutable?: boolean
 }
