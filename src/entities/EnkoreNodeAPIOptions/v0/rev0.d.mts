@@ -4,4 +4,5 @@ export type Definition = {
 	npmBinaryPath?: string
 	force?: boolean
 	onlyInitializeProject?: boolean
+	partialBuild?: boolean
 }
