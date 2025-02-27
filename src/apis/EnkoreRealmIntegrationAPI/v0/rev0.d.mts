@@ -4,6 +4,8 @@ import type {
 	EnkoreBoilerplateFile
 } from "#~src/export/__star_export.mts"
 
+import type {NodeAPIMessage} from "@enkore/primitives"
+
 type ObjectFile = ({
 	path: string
 } | {
@@ -30,6 +32,10 @@ export type Definition = {
 			f: EnkoreSessionAPI
 		) => Promise<undefined>
 
+		preLint?: (
+			f: EnkoreSessionAPI
+		) => Promise<undefined>
+
 		preCompile?: (
 			f: EnkoreSessionAPI
 		) => Promise<undefined>
@@ -48,6 +54,12 @@ export type Definition = {
 		sourceFilePath: string,
 		sourceCode: string
 	) => Promise<string>
+
+	lint?: (
+		f: EnkoreSessionAPI,
+		sourceFilePath: string,
+		sourceCode: string
+	) => NodeAPIMessage[]
 
 	compile: (
 		f: EnkoreSessionAPI,
