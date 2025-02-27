@@ -59,7 +59,7 @@ export type Definition = {
 		f: EnkoreSessionAPI,
 		sourceFilePath: string,
 		sourceCode: string
-	) => NodeAPIMessage[]
+	) => Promise<NodeAPIMessage[]>
 
 	compile: (
 		f: EnkoreSessionAPI,
