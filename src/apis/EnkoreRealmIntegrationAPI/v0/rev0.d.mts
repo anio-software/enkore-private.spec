@@ -57,19 +57,19 @@ export type Definition = {
 
 	preprocess?: (
 		f: EnkoreSessionAPI,
-		sourceFilePath: string,
+		file: EnkoreProjectFile,
 		sourceCode: string
 	) => Promise<string>
 
 	lint?: (
 		f: EnkoreSessionAPI,
-		sourceFilePath: string,
+		file: EnkoreProjectFile,
 		sourceCode: string
 	) => Promise<NodeAPIMessage[]>
 
 	compile: (
 		f: EnkoreSessionAPI,
-		sourceFilePath: string,
+		file: EnkoreProjectFile,
 		sourceCode: string
 	) => Promise<ObjectFile | ObjectFile[] | "ignore" | "copy">
 
