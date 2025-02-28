@@ -51,11 +51,11 @@ export type Definition = {
 		}
 
 		getProjectFiles: (
-			relativeBaseDir?: string|undefined
+			relativeBaseDir?: string|string[]|undefined
 		) => EnkoreProjectFile[]
 
 		getAllProjectFiles: (
-			relativeBaseDir?: string|undefined
+			relativeBaseDir?: string|string[]|undefined
 		) => EnkoreProjectFile[]
 	}
 
