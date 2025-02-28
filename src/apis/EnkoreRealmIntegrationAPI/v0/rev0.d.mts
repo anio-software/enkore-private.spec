@@ -1,7 +1,8 @@
 import type {
 	EnkoreSessionAPI,
 	EnkoreCoreRealmDependencyInstallSpecification,
-	EnkoreBoilerplateFile
+	EnkoreBoilerplateFile,
+	EnkoreProjectFile
 } from "#~src/export/__star_export.mts"
 
 import type {NodeAPIMessage} from "@enkore/primitives"
@@ -40,6 +41,11 @@ export type Definition = {
 			f: EnkoreSessionAPI
 		) => Promise<undefined>
 	}
+
+	projectSourceFileFilter?: (
+		f: EnkoreSessionAPI,
+		file: EnkoreProjectFile
+	) => Promise<boolean>
 
 	initialize: (
 		f: EnkoreSessionAPI
