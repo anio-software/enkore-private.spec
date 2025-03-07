@@ -47,6 +47,10 @@ export type Definition = {
 		file: EnkoreProjectFile
 	) => Promise<boolean>
 
+	getInitialInternalData?: (
+		f: EnkoreSessionAPI
+	) => Promise<object>
+
 	initialize: (
 		f: EnkoreSessionAPI
 	) => Promise<{
