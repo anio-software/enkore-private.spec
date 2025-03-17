@@ -1,4 +1,6 @@
 export type Definition = {
+	_realm: "js"
+
 	externalPackages?: string[]
 
 	runtime?: "node" | "browser" | "agnostic"

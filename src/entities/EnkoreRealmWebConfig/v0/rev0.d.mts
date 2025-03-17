@@ -1,1 +1,3 @@
-export type Definition = {}
+export type Definition = {
+	_realm: "web"
+}
