@@ -32,7 +32,7 @@ export type Definition = {
 
 	realm: {
 		getConfig: <T extends EnkoreRealm>(
-			realm: EnkoreRealm
+			realm: T
 		) => EnkoreRealmConfigMap[T]
 
 		getDependency: (dependencyName: string) => unknown
