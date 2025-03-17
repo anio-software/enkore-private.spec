@@ -14,6 +14,16 @@ type EnkoreRealmConfig = EnkoreRealmJSConfig  |
                          EnkoreRealmCConfig   |
                          EnkoreRealmWebConfig
 
+type EnkoreRealm = Extract<EnkoreRealmConfig, {
+	_realm: string
+}>["_realm"]
+
+type EnkoreRealmConfigMap = {
+	[K in EnkoreRealm]: Extract<EnkoreRealmConfig, {
+		_realm: K
+	}>
+}
+
 export type Definition = {
 	project: {
 		root: string
@@ -21,7 +31,9 @@ export type Definition = {
 	}
 
 	realm: {
-		getConfig: () => EnkoreRealmConfig
+		getConfig: <T extends EnkoreRealm>(
+			realm: EnkoreRealm
+		) => EnkoreRealmConfigMap[T]
 
 		getDependency: (dependencyName: string) => unknown
 		getDependencyVersion: (dependencyName: string) => string
