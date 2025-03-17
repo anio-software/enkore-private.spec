@@ -10,6 +10,10 @@ import type {
 
 import type {NodeAPIMessage, NodePackageJSON} from "@enkore/primitives"
 
+type EnkoreRealmConfig = EnkoreRealmJSConfig  |
+                         EnkoreRealmCConfig   |
+                         EnkoreRealmWebConfig
+
 export type Definition = {
 	project: {
 		root: string
@@ -17,10 +21,7 @@ export type Definition = {
 	}
 
 	realm: {
-		getConfig: () => 
-			EnkoreRealmJSConfig  |
-			EnkoreRealmCConfig   |
-			EnkoreRealmWebConfig
+		getConfig: () => EnkoreRealmConfig
 
 		getDependency: (dependencyName: string) => unknown
 		getDependencyVersion: (dependencyName: string) => string
