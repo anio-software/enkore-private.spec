@@ -5,6 +5,10 @@ export type Definition = {
 
 	runtime?: "node" | "browser" | "agnostic"
 
+	createTypesPackage?: {
+		orgName: string
+	}
+
 	exports?: {
 		[name: string]: {
 			externalPackages?: string[]
