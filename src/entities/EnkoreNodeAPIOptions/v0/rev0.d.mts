@@ -5,4 +5,5 @@ export type Definition = {
 	force?: boolean
 	onlyInitializeProject?: boolean
 	_partialBuild?: boolean
+	_forceBuild?: boolean
 }
