@@ -28,6 +28,7 @@ export type Definition = {
 	project: {
 		root: string
 		config: EnkoreConfig
+		packageJSON: NodePackageJSON
 	}
 
 	realm: {
