@@ -79,4 +79,14 @@ export type Definition = {
 		f: EnkoreSessionAPI,
 		productName: string
 	) => Promise<undefined>
+
+	testProduct: (
+		f: EnkoreSessionAPI,
+		productName: string
+	) => Promise<undefined>
+
+	publishProduct: (
+		f: EnkoreSessionAPI,
+		productName: string
+	) => Promise<undefined>
 }
