@@ -8,8 +8,13 @@ export type Definition = {
 	setDebugMode: (mode: boolean) => boolean
 	getDebugMode: () => boolean
 
-	createTemporaryFile: (fileExtension?: string) => Promise<string>
-	createTemporaryDirectory: () => Promise<string>
+	createTemporaryFile: (
+		projectRoot: string, fileExtension?: string
+	) => Promise<string>
+
+	createTemporaryDirectory: (
+		projectRoot: string
+	) => Promise<string>
 
 	//
 	// - loads the realm integration api
