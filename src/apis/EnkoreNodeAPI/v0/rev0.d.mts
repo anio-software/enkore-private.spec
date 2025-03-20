@@ -9,11 +9,25 @@ type MessageEvent = DefineEvent<"message", NodeAPIMessage>
 
 type Events = [MessageEvent]
 
+type PublishProducts = (
+	productNames: string[] | null
+) => Promise<{
+	messages: NodeAPIMessage[]
+}>
+
+type TestProducts = (
+	productNames: string[] | null
+) => Promise<{
+	messages: NodeAPIMessage[]
+	publishProducts: PublishProducts
+}>
+
 // -- build steps ---
 type BuildProducts = (
 	names: string[] | null
 ) => Promise<{
 	messages: NodeAPIMessage[]
+	testProducts: TestProducts
 }>
 
 type Compile = () => Promise<{
@@ -61,6 +75,14 @@ type Build = () => Promise<{
 	messages: ExtendedNodeAPIMessage[]
 }>
 
+type BuildAndTest = () => Promise<{
+	messages: ExtendedNodeAPIMessage[]
+}>
+
+type BuildAndPublish = (skipTests?: boolean) => Promise<{
+	messages: ExtendedNodeAPIMessage[]
+}>
+
 export type Definition = {
 	enkore: (
 		projectRoot: string,
@@ -70,6 +92,8 @@ export type Definition = {
 		project: EventEmitter<Events> & {
 			preInit: PreInit
 			build: Build
+			buildAndTest: BuildAndTest
+			buildAndPublish: BuildAndPublish
 		}
 	}>
 }
