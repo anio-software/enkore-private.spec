@@ -10,13 +10,15 @@ type MessageEvent = DefineEvent<"message", NodeAPIMessage>
 type Events = [MessageEvent]
 
 type PublishProducts = (
-	productNames: string[] | null
+	// false indicates "skip" publishing
+	productNames: string[] | null | false
 ) => Promise<{
 	messages: NodeAPIMessage[]
 }>
 
 type TestProducts = (
-	productNames: string[] | null
+	// false indicates "skip" testing
+	productNames: string[] | null | false
 ) => Promise<{
 	messages: NodeAPIMessage[]
 	publishProducts: PublishProducts
