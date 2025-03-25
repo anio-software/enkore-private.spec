@@ -2,6 +2,7 @@ export type Definition = {
 	_realm: "js"
 
 	externalPackages?: string[]
+	publishWithExactDependencyVersions?: boolean
 
 	runtime?: "node" | "browser" | "agnostic"
 
