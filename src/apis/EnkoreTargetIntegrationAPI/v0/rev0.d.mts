@@ -1,6 +1,6 @@
 import type {
 	EnkoreSessionAPI,
-	EnkoreCoreRealmDependencyInstallSpecification,
+	EnkoreCoreTargetDependencyInstallSpecification,
 	EnkoreBoilerplateFile,
 	EnkoreProjectFile
 } from "#~src/export/__star_export.mts"
@@ -17,7 +17,7 @@ type ObjectFile = ({
 
 export type Definition = {
 	getRealmDependenciesToInstall: () => Promise<{
-		[dependencyName: string]: EnkoreCoreRealmDependencyInstallSpecification
+		[dependencyName: string]: EnkoreCoreTargetDependencyInstallSpecification
 	}>
 
 	getBoilerplateFiles?: (
