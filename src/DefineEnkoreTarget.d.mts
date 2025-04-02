@@ -1,7 +1,3 @@
-import type {
-	EnkoreTargetIntegrationAPI
-} from "#~src/export/__star_export.mts"
-
 import type {TargetIdentifier} from "@enkore/primitives"
 
 export type DefineEnkoreTarget<
@@ -10,5 +6,4 @@ export type DefineEnkoreTarget<
 > = {
 	readonly _targetIdentifier: Identifier
 	readonly config: Config
-	readonly integrationAPI: EnkoreTargetIntegrationAPI
 }
