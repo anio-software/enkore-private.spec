@@ -1,7 +1,7 @@
-import type {RealmName} from "@enkore/primitives"
+import type {TargetIdentifier} from "@enkore/primitives"
 
 export type Definition = {
-	realm: RealmName
+	targetIdentifier: TargetIdentifier
 	platform: string
 
 	realmDependenciesStamp: string

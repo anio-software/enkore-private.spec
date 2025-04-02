@@ -1,4 +1,4 @@
-import type {RealmName} from "@enkore/primitives"
+import type {TargetIdentifier} from "@enkore/primitives"
 import type {
 	EnkoreTargetIntegrationAPI,
 	EnkoreCoreRealmDependency
@@ -32,12 +32,12 @@ export type Definition = {
 
 	getInstalledRealmDependencyNames: (
 		projectRoot: string | ["inferFromCLIArgs"],
-		realm: RealmName,
+		realm: TargetIdentifier,
 	) => Promise<string[]>
 
 	loadRealmDependency: (
 		projectRoot: string | ["inferFromCLIArgs"],
-		realm: RealmName,
+		realm: TargetIdentifier,
 		dependencyName: string
 	) => Promise<EnkoreCoreRealmDependency>
 
