@@ -31,7 +31,7 @@ export type Definition = {
 		packageJSON: NodePackageJSON
 	}
 
-	realm: {
+	target: {
 		getConfig: <T extends EnkoreTargetIdentifier>(
 			realm: T
 		) => EnkoreTargetMap[T]
