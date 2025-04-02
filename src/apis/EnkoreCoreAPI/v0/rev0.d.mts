@@ -17,8 +17,8 @@ export type Definition = {
 	) => Promise<string>
 
 	//
-	// - loads the realm integration api
-	// - installs the realm dependencies
+	// - loads the target integration api
+	// - installs the target dependencies
 	// - manages the lockfile
 	//
 	initializeProject: (
