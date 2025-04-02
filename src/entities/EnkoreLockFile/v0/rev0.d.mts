@@ -2,9 +2,9 @@ import type {TargetIdentifier} from "@enkore/primitives"
 
 export type Definition = {
 	targetIdentifier: TargetIdentifier
-	realmDependenciesStamp: string
+	targetDependenciesStamp: string
 
-	realmDependencies: {
+	targetDependencies: {
 		[dependencyName: string]: {
 			version: string
 			requestedVersion: string
