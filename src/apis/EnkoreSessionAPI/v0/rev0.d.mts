@@ -18,7 +18,7 @@ type EnkoreTargetIdentifier = Extract<EnkoreTarget, {
 	_targetIdentifier: string
 }>["_targetIdentifier"]
 
-type EnkoreRealmConfigMap = {
+type EnkoreTargetMap = {
 	[K in EnkoreTargetIdentifier]: Extract<EnkoreTarget, {
 		_targetIdentifier: K
 	}>
@@ -34,7 +34,7 @@ export type Definition = {
 	realm: {
 		getConfig: <T extends EnkoreTargetIdentifier>(
 			realm: T
-		) => EnkoreRealmConfigMap[T]
+		) => EnkoreTargetMap[T]
 
 		getDependency: (dependencyName: string) => unknown
 		getDependencyVersion: (dependencyName: string) => string
