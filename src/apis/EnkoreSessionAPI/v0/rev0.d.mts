@@ -15,12 +15,12 @@ type EnkoreRealmConfig = EnkoreRealmJSConfig  |
                          EnkoreRealmWebConfig
 
 type EnkoreRealm = Extract<EnkoreRealmConfig, {
-	_realm: string
-}>["_realm"]
+	_targetIdentifier: string
+}>["_targetIdentifier"]
 
 type EnkoreRealmConfigMap = {
 	[K in EnkoreRealm]: Extract<EnkoreRealmConfig, {
-		_realm: K
+		_targetIdentifier: K
 	}>
 }
 

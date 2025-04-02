@@ -1,5 +1,5 @@
 export type Definition = {
-	_realm: "js"
+	_targetIdentifier: "js"
 
 	externalPackages?: string[]
 	publishWithExactDependencyVersions?: boolean

@@ -1,3 +1,3 @@
 export type Definition = {
-	_realm: "web"
+	_targetIdentifier: "web"
 }

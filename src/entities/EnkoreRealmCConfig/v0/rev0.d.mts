@@ -1,5 +1,5 @@
 export type Definition = {
-	_realm: "c"
+	_targetIdentifier: "c"
 
 	platform: string[]
 }
