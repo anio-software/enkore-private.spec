@@ -1,7 +1,7 @@
 import type {TargetIdentifier} from "@enkore/primitives"
 import type {
 	EnkoreTargetIntegrationAPI,
-	EnkoreCoreRealmDependency
+	EnkoreCoreTargetDependency
 } from "#~src/export/__star_export.mts"
 
 export type Definition = {
@@ -39,7 +39,7 @@ export type Definition = {
 		projectRoot: string | ["inferFromCLIArgs"],
 		realm: TargetIdentifier,
 		dependencyName: string
-	) => Promise<EnkoreCoreRealmDependency>
+	) => Promise<EnkoreCoreTargetDependency>
 
 	findProjectRootFromDirectory: (
 		startDirectory: string
