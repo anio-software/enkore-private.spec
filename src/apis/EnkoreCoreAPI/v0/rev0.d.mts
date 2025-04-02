@@ -30,14 +30,14 @@ export type Definition = {
 		}
 	) => Promise<EnkoreTargetIntegrationAPI>
 
-	getInstalledRealmDependencyNames: (
+	getInstalledTargetDependencyNames: (
 		projectRoot: string | ["inferFromCLIArgs"],
-		realm: TargetIdentifier,
+		targetIdentifier: TargetIdentifier,
 	) => Promise<string[]>
 
-	loadRealmDependency: (
+	loadTargetDependency: (
 		projectRoot: string | ["inferFromCLIArgs"],
-		realm: TargetIdentifier,
+		targetIdentifier: TargetIdentifier,
 		dependencyName: string
 	) => Promise<EnkoreCoreTargetDependency>
 
