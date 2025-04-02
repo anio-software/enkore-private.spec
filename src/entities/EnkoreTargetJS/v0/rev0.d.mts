@@ -5,8 +5,6 @@ export type Definition = DefineEnkoreTarget<
 		externalPackages?: string[]
 		publishWithExactDependencyVersions?: boolean
 
-		runtime?: "node" | "browser" | "agnostic"
-
 		createTypesPackage?: {
 			orgName: string
 		}
