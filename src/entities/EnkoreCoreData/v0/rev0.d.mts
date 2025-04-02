@@ -4,6 +4,6 @@ export type Definition = {
 	targetIdentifier: TargetIdentifier
 	platform: string
 
-	realmDependenciesStamp: string
-	realmDependenciesIntegrityHash: string
+	targetDependenciesStamp: string
+	targetDependenciesIntegrityHash: string
 }
