@@ -4,7 +4,7 @@ export type IDs =
                   "EnkoreCoreAPI"                     |
                   "EnkoreNodeAPI"                     |
                   "EnkoreSessionAPI"                  |
-                  "EnkoreRealmIntegrationAPI"         |
+                  "EnkoreTargetIntegrationAPI"        |
                   "EnkoreRealmJSRuntimeProjectAPI"    |
                   "EnkoreRealmJSRuntimeRuntimeAPI"    |
                   "EnkoreRealmJSRuntimeAssetsAPI"     |

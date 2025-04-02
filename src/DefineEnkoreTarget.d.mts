@@ -1,5 +1,5 @@
 import type {
-	EnkoreRealmIntegrationAPI
+	EnkoreTargetIntegrationAPI
 } from "#~src/export/__star_export.mts"
 
 export type DefineEnkoreTarget<
@@ -8,5 +8,5 @@ export type DefineEnkoreTarget<
 > = {
 	readonly _targetIdentifier: Identifier
 	readonly config: Config
-	readonly integrationAPI: EnkoreRealmIntegrationAPI
+	readonly integrationAPI: EnkoreTargetIntegrationAPI
 }

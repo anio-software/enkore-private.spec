@@ -1,6 +1,6 @@
 import type {RealmName} from "@enkore/primitives"
 import type {
-	EnkoreRealmIntegrationAPI,
+	EnkoreTargetIntegrationAPI,
 	EnkoreCoreRealmDependency
 } from "#~src/export/__star_export.mts"
 
@@ -28,7 +28,7 @@ export type Definition = {
 			npmBinaryPath?: string,
 			force?: boolean
 		}
-	) => Promise<EnkoreRealmIntegrationAPI>
+	) => Promise<EnkoreTargetIntegrationAPI>
 
 	getInstalledRealmDependencyNames: (
 		projectRoot: string | ["inferFromCLIArgs"],
