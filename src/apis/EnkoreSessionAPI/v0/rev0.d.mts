@@ -28,7 +28,7 @@ export type Definition = {
 	}
 
 	target: {
-		readonly config: <T extends EnkoreTargetIdentifier>(
+		getConfig: <T extends EnkoreTargetIdentifier>(
 			realm: T
 		) => EnkoreTargetMap[T]["config"]
 
