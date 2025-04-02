@@ -16,7 +16,7 @@ type ObjectFile = ({
 }
 
 export type Definition = {
-	getRealmDependenciesToInstall: () => Promise<{
+	getDependenciesToInstall: () => Promise<{
 		[dependencyName: string]: EnkoreCoreTargetDependencyInstallSpecification
 	}>
 
