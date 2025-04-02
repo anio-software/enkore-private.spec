@@ -1,19 +1,21 @@
-export type Definition = {
-	_targetIdentifier: "js"
+import type {DefineEnkoreTarget} from "#~src/DefineEnkoreTarget.d.mts"
 
-	externalPackages?: string[]
-	publishWithExactDependencyVersions?: boolean
+export type Definition = DefineEnkoreTarget<
+	"js", {
+		externalPackages?: string[]
+		publishWithExactDependencyVersions?: boolean
 
-	runtime?: "node" | "browser" | "agnostic"
+		runtime?: "node" | "browser" | "agnostic"
 
-	createTypesPackage?: {
-		orgName: string
-	}
+		createTypesPackage?: {
+			orgName: string
+		}
 
-	exports?: {
-		[name: string]: {
-			externalPackages?: string[]
-			checkAgainstInterface?: [string, string]
+		exports?: {
+			[name: string]: {
+				externalPackages?: string[]
+				checkAgainstInterface?: [string, string]
+			}
 		}
 	}
-}
+>

@@ -1,5 +1,7 @@
-export type Definition = {
-	_targetIdentifier: "c"
+import type {DefineEnkoreTarget} from "#~src/DefineEnkoreTarget.d.mts"
 
-	platform: string[]
-}
+export type Definition = DefineEnkoreTarget<
+	"c", {
+		platform: string[]
+	}
+>

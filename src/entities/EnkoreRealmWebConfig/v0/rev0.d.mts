@@ -1,3 +1,5 @@
-export type Definition = {
-	_targetIdentifier: "web"
-}
+import type {DefineEnkoreTarget} from "#~src/DefineEnkoreTarget.d.mts"
+
+export type Definition = DefineEnkoreTarget<"web", {
+
+}>
