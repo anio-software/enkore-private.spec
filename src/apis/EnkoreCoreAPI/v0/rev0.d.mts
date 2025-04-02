@@ -28,7 +28,9 @@ export type Definition = {
 			npmBinaryPath?: string,
 			force?: boolean
 		}
-	) => Promise<EnkoreTargetIntegrationAPI>
+	) => Promise<{
+		targetIntegrationAPI: EnkoreTargetIntegrationAPI
+	}>
 
 	getInstalledTargetDependencyNames: (
 		projectRoot: string | ["inferFromCLIArgs"],
