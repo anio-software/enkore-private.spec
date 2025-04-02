@@ -10,16 +10,16 @@ import type {
 
 import type {NodeAPIMessage, NodePackageJSON} from "@enkore/primitives"
 
-type EnkoreRealmConfig = EnkoreRealmJSConfig  |
-                         EnkoreRealmCConfig   |
-                         EnkoreRealmWebConfig
+type EnkoreTarget = EnkoreRealmJSConfig  |
+                    EnkoreRealmCConfig   |
+                    EnkoreRealmWebConfig
 
-type EnkoreTargetIdentifier = Extract<EnkoreRealmConfig, {
+type EnkoreTargetIdentifier = Extract<EnkoreTarget, {
 	_targetIdentifier: string
 }>["_targetIdentifier"]
 
 type EnkoreRealmConfigMap = {
-	[K in EnkoreTargetIdentifier]: Extract<EnkoreRealmConfig, {
+	[K in EnkoreTargetIdentifier]: Extract<EnkoreTarget, {
 		_targetIdentifier: K
 	}>
 }
