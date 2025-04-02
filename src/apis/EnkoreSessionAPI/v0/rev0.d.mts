@@ -14,12 +14,12 @@ type EnkoreRealmConfig = EnkoreRealmJSConfig  |
                          EnkoreRealmCConfig   |
                          EnkoreRealmWebConfig
 
-type EnkoreRealm = Extract<EnkoreRealmConfig, {
+type EnkoreTargetIdentifier = Extract<EnkoreRealmConfig, {
 	_targetIdentifier: string
 }>["_targetIdentifier"]
 
 type EnkoreRealmConfigMap = {
-	[K in EnkoreRealm]: Extract<EnkoreRealmConfig, {
+	[K in EnkoreTargetIdentifier]: Extract<EnkoreRealmConfig, {
 		_targetIdentifier: K
 	}>
 }
@@ -32,7 +32,7 @@ export type Definition = {
 	}
 
 	realm: {
-		getConfig: <T extends EnkoreRealm>(
+		getConfig: <T extends EnkoreTargetIdentifier>(
 			realm: T
 		) => EnkoreRealmConfigMap[T]
 
