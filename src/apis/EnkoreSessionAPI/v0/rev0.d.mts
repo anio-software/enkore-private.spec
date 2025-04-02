@@ -29,8 +29,8 @@ export type Definition = {
 
 	target: {
 		getConfig: <T extends EnkoreTargetIdentifier>(
-			realm: T
-		) => EnkoreTargetMap[T]["config"]
+			targetIdentifier: T
+		) => EnkoreTargetMap[T]
 
 		getDependency: (dependencyName: string) => unknown
 		getDependencyVersion: (dependencyName: string) => string
