@@ -13,10 +13,7 @@ export type Definition = {
 	exports?: {
 		[name: string]: {
 			externalPackages?: string[]
-			checkAgainstInterface?: {
-				named?: [string, string]
-				default?: [string, string]
-			}
+			checkAgainstInterface?: [string, string]
 		}
 	}
 }
