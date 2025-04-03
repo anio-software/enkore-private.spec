@@ -15,7 +15,7 @@ type LogMethod = {
 
 export type Definition = {
 	readonly __internalDoNotUse: {
-		// RealmJSRuntimePackageInformation is intentionally
+		// JSRuntimePackageInformation is intentionally
 		// less informative than the NodePackageJSON type
 		originPackage: JSRuntimePackageInformation
 	}

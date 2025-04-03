@@ -1,5 +1,5 @@
 export type Definition = {
-	scope: "enkore" | "realm"
+	scope: "enkore" | "target"
 	path: string
 	content: string
 	overwrite?: boolean
