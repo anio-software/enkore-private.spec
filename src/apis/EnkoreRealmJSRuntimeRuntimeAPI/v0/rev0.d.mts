@@ -1,4 +1,4 @@
-import type {RealmJSRuntimeLogLevel} from "@enkore/primitives"
+import type {JSRuntimeLogLevel} from "@enkore/primitives"
 
 import type {
 	EnkoreJSRuntimeContext,
@@ -17,8 +17,8 @@ export type Definition = {
 	) => EnkoreJSRuntimeContext
 
 	compareLogLevel: (
-		left: RealmJSRuntimeLogLevel,
+		left: JSRuntimeLogLevel,
 		operator: Operator,
-		right: RealmJSRuntimeLogLevel
+		right: JSRuntimeLogLevel
 	) => boolean
 }

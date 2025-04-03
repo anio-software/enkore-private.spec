@@ -1,9 +1,9 @@
-import type {RealmJSRuntimeLogLevel, RealmJSRuntimePackageInformation} from "@enkore/primitives"
+import type {JSRuntimeLogLevel, JSRuntimePackageInformation} from "@enkore/primitives"
 import type {EnkoreJSRuntimeContext} from "#~src/export/__star_export.mts"
 
 type ContextOptionsGetCurrentLogLevel = (
 	context: EnkoreJSRuntimeContext
-) => RealmJSRuntimeLogLevel|null
+) => JSRuntimeLogLevel|null
 
 type ContextOptionsPrintLine = (
 	context: EnkoreJSRuntimeContext,
@@ -12,14 +12,14 @@ type ContextOptionsPrintLine = (
 
 type ContextOptionsLogWithLevel = (
 	context: EnkoreJSRuntimeContext,
-	level: RealmJSRuntimeLogLevel,
+	level: JSRuntimeLogLevel,
 	lines: string[]
 ) => undefined
 
 type ContextOptionsShouldLog = (
 	context: EnkoreJSRuntimeContext,
-	level: RealmJSRuntimeLogLevel,
-	pkg: RealmJSRuntimePackageInformation,
+	level: JSRuntimeLogLevel,
+	pkg: JSRuntimePackageInformation,
 	tag: string
 ) => boolean|null
 
