@@ -1,8 +1,6 @@
 import type {UnknownEntity} from "./UnknownEntity.d.mts"
 import type {UnknownAPI} from "./UnknownAPI.d.mts"
-
-// credit to jcalz https://stackoverflow.com/a/67794430
-type DistributiveOmit<T, K extends PropertyKey> = T extends any ? Omit<T, K> : never;
+import type {DistributiveOmit} from "#~src/DistributiveOmit.d.mts"
 
 export type StripEntityProperties<T extends UnknownEntity> = DistributiveOmit<
 	T, keyof UnknownEntity
