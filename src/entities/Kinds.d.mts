@@ -13,7 +13,7 @@ export type Kinds =
                     "EnkoreTargetJSNone"                             |
                     "EnkoreTargetJSNode"                             |
                     "EnkoreTargetJSWeb"                              |
-                    "EnkoreRealmJSRuntimeProject"                    |
+                    "EnkoreJSRuntimeProject"                         |
                     "EnkoreJSRuntimeContext"                         |
                     "EnkoreJSRuntimeContextOptions"                  |
                     "EnkoreTargetC"
