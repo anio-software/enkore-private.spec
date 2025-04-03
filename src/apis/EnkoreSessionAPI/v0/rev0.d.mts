@@ -5,8 +5,8 @@ import type {
 	EnkoreNodeAPIOptions
 } from "#~src/export/__star_export.mts"
 import type {AllEnkoreTargets} from "#~src/AllEnkoreTargets.d.mts"
-
 import type {NodeAPIMessage, NodePackageJSON} from "@enkore/primitives"
+import type {DistributiveOmit} from "#~src/DistributiveOmit.d.mts"
 
 type EnkoreTarget = AllEnkoreTargets
 
@@ -30,7 +30,7 @@ export type Definition = {
 	target: {
 		getConfig: <T extends EnkoreTargetIdentifier>(
 			targetIdentifier: T
-		) => EnkoreTargetMap[T]
+		) => DistributiveOmit<EnkoreTargetMap[T], "_targetIdentifier">
 
 		getDependency: (dependencyName: string) => unknown
 		getDependencyVersion: (dependencyName: string) => string
