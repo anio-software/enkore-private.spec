@@ -7,10 +7,10 @@ import type {Definition as EnkoreCoreData_V0_Rev0Definition} from "#~src/entitie
 import type {Definition as EnkoreCoreTargetDependency_V0_Rev0Definition} from "#~src/entities/EnkoreCoreTargetDependency/v0/rev0.d.mts"
 import type {Definition as EnkoreCoreTargetDependencyInstallSpecification_V0_Rev0Definition} from "#~src/entities/EnkoreCoreTargetDependencyInstallSpecification/v0/rev0.d.mts"
 import type {Definition as EnkoreJSRuntimeContext_V0_Rev0Definition} from "#~src/entities/EnkoreJSRuntimeContext/v0/rev0.d.mts"
+import type {Definition as EnkoreJSRuntimeContextOptions_V0_Rev0Definition} from "#~src/entities/EnkoreJSRuntimeContextOptions/v0/rev0.d.mts"
 import type {Definition as EnkoreLockFile_V0_Rev0Definition} from "#~src/entities/EnkoreLockFile/v0/rev0.d.mts"
 import type {Definition as EnkoreNodeAPIOptions_V0_Rev0Definition} from "#~src/entities/EnkoreNodeAPIOptions/v0/rev0.d.mts"
 import type {Definition as EnkoreProjectFile_V0_Rev0Definition} from "#~src/entities/EnkoreProjectFile/v0/rev0.d.mts"
-import type {Definition as EnkoreRealmJSRuntimeContextOptions_V0_Rev0Definition} from "#~src/entities/EnkoreRealmJSRuntimeContextOptions/v0/rev0.d.mts"
 import type {Definition as EnkoreRealmJSRuntimeProject_V0_Rev0Definition} from "#~src/entities/EnkoreRealmJSRuntimeProject/v0/rev0.d.mts"
 import type {Definition as EnkoreTargetC_V0_Rev0Definition} from "#~src/entities/EnkoreTargetC/v0/rev0.d.mts"
 import type {Definition as EnkoreTargetJSNode_V0_Rev0Definition} from "#~src/entities/EnkoreTargetJSNode/v0/rev0.d.mts"
@@ -24,10 +24,10 @@ export type EnkoreCoreData_V0_Rev0 = DefineEntity<"EnkoreCoreData", 0, 0, Enkore
 export type EnkoreCoreTargetDependency_V0_Rev0 = DefineEntity<"EnkoreCoreTargetDependency", 0, 0, EnkoreCoreTargetDependency_V0_Rev0Definition>
 export type EnkoreCoreTargetDependencyInstallSpecification_V0_Rev0 = DefineEntity<"EnkoreCoreTargetDependencyInstallSpecification", 0, 0, EnkoreCoreTargetDependencyInstallSpecification_V0_Rev0Definition>
 export type EnkoreJSRuntimeContext_V0_Rev0 = DefineEntity<"EnkoreJSRuntimeContext", 0, 0, EnkoreJSRuntimeContext_V0_Rev0Definition>
+export type EnkoreJSRuntimeContextOptions_V0_Rev0 = DefineEntity<"EnkoreJSRuntimeContextOptions", 0, 0, EnkoreJSRuntimeContextOptions_V0_Rev0Definition>
 export type EnkoreLockFile_V0_Rev0 = DefineEntity<"EnkoreLockFile", 0, 0, EnkoreLockFile_V0_Rev0Definition>
 export type EnkoreNodeAPIOptions_V0_Rev0 = DefineEntity<"EnkoreNodeAPIOptions", 0, 0, EnkoreNodeAPIOptions_V0_Rev0Definition>
 export type EnkoreProjectFile_V0_Rev0 = DefineEntity<"EnkoreProjectFile", 0, 0, EnkoreProjectFile_V0_Rev0Definition>
-export type EnkoreRealmJSRuntimeContextOptions_V0_Rev0 = DefineEntity<"EnkoreRealmJSRuntimeContextOptions", 0, 0, EnkoreRealmJSRuntimeContextOptions_V0_Rev0Definition>
 export type EnkoreRealmJSRuntimeProject_V0_Rev0 = DefineEntity<"EnkoreRealmJSRuntimeProject", 0, 0, EnkoreRealmJSRuntimeProject_V0_Rev0Definition>
 export type EnkoreTargetC_V0_Rev0 = DefineEntity<"EnkoreTargetC", 0, 0, EnkoreTargetC_V0_Rev0Definition>
 export type EnkoreTargetJSNode_V0_Rev0 = DefineEntity<"EnkoreTargetJSNode", 0, 0, EnkoreTargetJSNode_V0_Rev0Definition>
@@ -41,10 +41,10 @@ export type EnkoreCoreData_V0 = EnkoreCoreData_V0_Rev0
 export type EnkoreCoreTargetDependency_V0 = EnkoreCoreTargetDependency_V0_Rev0
 export type EnkoreCoreTargetDependencyInstallSpecification_V0 = EnkoreCoreTargetDependencyInstallSpecification_V0_Rev0
 export type EnkoreJSRuntimeContext_V0 = EnkoreJSRuntimeContext_V0_Rev0
+export type EnkoreJSRuntimeContextOptions_V0 = EnkoreJSRuntimeContextOptions_V0_Rev0
 export type EnkoreLockFile_V0 = EnkoreLockFile_V0_Rev0
 export type EnkoreNodeAPIOptions_V0 = EnkoreNodeAPIOptions_V0_Rev0
 export type EnkoreProjectFile_V0 = EnkoreProjectFile_V0_Rev0
-export type EnkoreRealmJSRuntimeContextOptions_V0 = EnkoreRealmJSRuntimeContextOptions_V0_Rev0
 export type EnkoreRealmJSRuntimeProject_V0 = EnkoreRealmJSRuntimeProject_V0_Rev0
 export type EnkoreTargetC_V0 = EnkoreTargetC_V0_Rev0
 export type EnkoreTargetJSNode_V0 = EnkoreTargetJSNode_V0_Rev0
@@ -58,14 +58,14 @@ export type EnkoreCoreData = EnkoreCoreData_V0
 export type EnkoreCoreTargetDependency = EnkoreCoreTargetDependency_V0
 export type EnkoreCoreTargetDependencyInstallSpecification = EnkoreCoreTargetDependencyInstallSpecification_V0
 export type EnkoreJSRuntimeContext = EnkoreJSRuntimeContext_V0
+export type EnkoreJSRuntimeContextOptions = EnkoreJSRuntimeContextOptions_V0
 export type EnkoreLockFile = EnkoreLockFile_V0
 export type EnkoreNodeAPIOptions = EnkoreNodeAPIOptions_V0
 export type EnkoreProjectFile = EnkoreProjectFile_V0
-export type EnkoreRealmJSRuntimeContextOptions = EnkoreRealmJSRuntimeContextOptions_V0
 export type EnkoreRealmJSRuntimeProject = EnkoreRealmJSRuntimeProject_V0
 export type EnkoreTargetC = EnkoreTargetC_V0
 export type EnkoreTargetJSNode = EnkoreTargetJSNode_V0
 export type EnkoreTargetJSNone = EnkoreTargetJSNone_V0
 export type EnkoreTargetJSWeb = EnkoreTargetJSWeb_V0
 
-export type AllDefinedEntities = EnkoreAutogeneratedFile | EnkoreBoilerplateFile | EnkoreConfig | EnkoreCoreData | EnkoreCoreTargetDependency | EnkoreCoreTargetDependencyInstallSpecification | EnkoreJSRuntimeContext | EnkoreLockFile | EnkoreNodeAPIOptions | EnkoreProjectFile | EnkoreRealmJSRuntimeContextOptions | EnkoreRealmJSRuntimeProject | EnkoreTargetC | EnkoreTargetJSNode | EnkoreTargetJSNone | EnkoreTargetJSWeb
+export type AllDefinedEntities = EnkoreAutogeneratedFile | EnkoreBoilerplateFile | EnkoreConfig | EnkoreCoreData | EnkoreCoreTargetDependency | EnkoreCoreTargetDependencyInstallSpecification | EnkoreJSRuntimeContext | EnkoreJSRuntimeContextOptions | EnkoreLockFile | EnkoreNodeAPIOptions | EnkoreProjectFile | EnkoreRealmJSRuntimeProject | EnkoreTargetC | EnkoreTargetJSNode | EnkoreTargetJSNone | EnkoreTargetJSWeb

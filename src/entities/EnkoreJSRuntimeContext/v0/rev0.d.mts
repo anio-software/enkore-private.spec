@@ -1,7 +1,7 @@
 import type {RealmJSRuntimeLogLevel, RealmJSRuntimePackageInformation} from "@enkore/primitives"
 import type {
 	EnkoreRealmJSRuntimeProject,
-	EnkoreRealmJSRuntimeContextOptions
+	EnkoreJSRuntimeContextOptions
 } from "#~src/export/__star_export.mts"
 
 type LogMethod = {
@@ -23,5 +23,5 @@ export type Definition = {
 	log: LogMethod
 
 	project: EnkoreRealmJSRuntimeProject
-	options: EnkoreRealmJSRuntimeContextOptions
+	options: EnkoreJSRuntimeContextOptions
 }

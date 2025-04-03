@@ -15,5 +15,5 @@ export type Kinds =
                     "EnkoreTargetJSWeb"                              |
                     "EnkoreRealmJSRuntimeProject"                    |
                     "EnkoreJSRuntimeContext"                         |
-                    "EnkoreRealmJSRuntimeContextOptions"             |
+                    "EnkoreJSRuntimeContextOptions"                  |
                     "EnkoreTargetC"
