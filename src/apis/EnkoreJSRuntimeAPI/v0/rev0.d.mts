@@ -13,7 +13,7 @@ type Operator =
 
 export type Definition = {
 	createContext: (
-		ctxOrOptions: EnkoreJSRuntimeContext | EnkoreJSRuntimeContextOptions
+		ctxOrOptions: EnkoreJSRuntimeContext | EnkoreJSRuntimeContextOptions | undefined
 	) => EnkoreJSRuntimeContext
 
 	compareLogLevel: (
