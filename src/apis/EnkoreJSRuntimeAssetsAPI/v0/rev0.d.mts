@@ -1,4 +1,5 @@
 export type Definition = {
-	getAsset: (asset: string) => string | Uint8Array
+	getAssetAsString: (asset: string) => string
+	getAssetAsUint8Array: (asset: string) => Uint8Array
 	getAssetAsURL: (asset: string) => string
 }
