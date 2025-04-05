@@ -33,4 +33,8 @@ export type Definition = {
 		packageJSON: NodePackageJSON
 		enkoreConfiguration: JSONCompatibleType<EnkoreConfig>
 	}
+
+	getEmbedAsString: (asset: string) => string
+	getEmbedAsUint8Array: (asset: string) => Uint8Array
+	getEmbedAsURL: (asset: string) => string
 }
