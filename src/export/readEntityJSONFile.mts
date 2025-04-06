@@ -4,9 +4,7 @@ import type {AllDefinedMajorVersions} from "#~src/entities/AllDefinedMajorVersio
 import type {AllDefinedRevisions} from "#~src/entities/AllDefinedRevisions.d.mts"
 import type {UnknownEntity} from "./UnknownEntity.d.mts"
 import type {JSONCompatibleType} from "./JSONCompatibleType.d.mts"
-import type {RawType} from "./RawType.d.mts"
 import {readFileJSON} from "@aniojs/node-fs-file"
-import {createEntity} from "./createEntity.mts"
 
 export async function readEntityJSONFile<
 	Kind extends Kinds,
@@ -16,28 +14,9 @@ export async function readEntityJSONFile<
 	path: string,
 	entityKind: Kind,
 	majorVersion?: MajorVersion,
-	revision?: Revision,
-	defaults?: RawType<Entity<Kind, MajorVersion, Revision>>
+	revision?: Revision
 ) : Promise<JSONCompatibleType<Entity<Kind, MajorVersion, Revision>>> {
-	let obj : UnknownEntity = {} as UnknownEntity
-
-	if (defaults === undefined) {
-		obj = await readFileJSON(path) as UnknownEntity
-	} else {
-		try {
-			obj = await readFileJSON(path) as UnknownEntity
-		} catch {
-			obj = createEntity(
-				entityKind, majorVersion!, revision!, defaults
-			)
-
-			//
-			// make sure defaults are restricted to JSON compatible
-			// types only.
-			//
-			obj = JSON.parse(JSON.stringify(obj))
-		}
-	}
+	const obj : UnknownEntity = (await readFileJSON(path)) as UnknownEntity
 
 	if (obj.entityKind !== entityKind) {
 		throw new Error(
