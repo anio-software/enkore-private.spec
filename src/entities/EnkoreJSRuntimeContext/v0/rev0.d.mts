@@ -1,4 +1,8 @@
-import type {JSRuntimeLogLevel, JSRuntimePackageInformation} from "@enkore/primitives"
+import type {
+	JSRuntimeLogLevel,
+	NodePackageJSON,
+	JSRuntimePackageInformation
+} from "@enkore/primitives"
 import type {
 	EnkoreConfig,
 	EnkoreJSRuntimeContextOptions
@@ -23,7 +27,7 @@ export type Definition = {
 	log: LogMethod
 
 	project: {
-		packageJSON: {}
+		packageJSON: NodePackageJSON
 		enkoreConfiguration: EnkoreConfig
 	}
 
