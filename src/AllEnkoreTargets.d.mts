@@ -2,10 +2,10 @@ import type {
 	EnkoreTargetJSNone,
 	EnkoreTargetJSNode,
 	EnkoreTargetJSWeb,
-	EnkoreTargetC
+	EnkoreTargetCOptions
 } from "#~src/export/__star_export.mts"
 
-export type AllEnkoreTargets = EnkoreTargetJSNone |
-                               EnkoreTargetJSNode |
-                               EnkoreTargetJSWeb  |
-                               EnkoreTargetC
+export type AllEnkoreTargets = EnkoreTargetJSNone   |
+                               EnkoreTargetJSNode   |
+                               EnkoreTargetJSWeb    |
+                               EnkoreTargetCOptions
