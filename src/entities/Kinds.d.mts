@@ -12,7 +12,7 @@ export type Kinds =
                     "EnkoreNodeAPIOptions"                           |
                     "EnkoreTargetJSNoneOptions"                      |
                     "EnkoreTargetJSNodeOptions"                      |
-                    "EnkoreTargetJSWeb"                              |
+                    "EnkoreTargetJSWebOptions"                       |
                     "EnkoreJSRuntimeContext"                         |
                     "EnkoreJSRuntimeContextOptions"                  |
                     "EnkoreTargetCOptions"
