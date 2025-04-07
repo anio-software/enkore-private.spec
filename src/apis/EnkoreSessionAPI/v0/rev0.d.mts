@@ -5,8 +5,15 @@ import type {
 	EnkoreNodeAPIOptions
 } from "#~src/export/__star_export.mts"
 import type {NodeAPIMessage, NodePackageJSON} from "@enkore/primitives"
+import type {AllEnkoreTargets} from "#~src/AllEnkoreTargets.d.mts"
 import type {TargetIdentifier} from "@enkore/primitives"
 import type {TargetIdentifierToEntityName} from "#~src/TargetIdentifierToEntityName.d.mts"
+
+type TargetOptionsMap = {
+	[K in TargetIdentifier]: Extract<AllEnkoreTargets, {
+		entityKind: TargetIdentifierToEntityName<K>
+	}>
+}
 
 export type Definition = {
 	project: {
@@ -18,7 +25,7 @@ export type Definition = {
 	target: {
 		getOptions: <T extends TargetIdentifier>(
 			targetIdentifier: T
-		) => TargetIdentifierToEntityName<T>
+		) => TargetOptionsMap[T]
 
 		getDependency: (dependencyName: string) => unknown
 		getDependencyVersion: (dependencyName: string) => string
