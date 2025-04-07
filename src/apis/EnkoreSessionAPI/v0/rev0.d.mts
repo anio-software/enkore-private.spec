@@ -16,7 +16,7 @@ export type Definition = {
 	}
 
 	target: {
-		getConfig: <T extends TargetIdentifier>(
+		getOptions: <T extends TargetIdentifier>(
 			targetIdentifier: T
 		) => TargetIdentifierToEntityName<T>
 
