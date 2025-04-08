@@ -6,4 +6,5 @@ export type IDs =
                   "EnkoreSessionAPI"                     |
                   "EnkoreTargetIntegrationAPI"           |
                   "EnkoreTargetJSRuntimeAPI"             |
+                  "EnkoreTargetJSProjectAPI"             |
                   "EnkoreTargetJSAutogenerateAPI"
