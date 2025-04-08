@@ -13,6 +13,7 @@ export type Kinds =
                     "EnkoreTargetJSNoneOptions"                      |
                     "EnkoreTargetJSNodeOptions"                      |
                     "EnkoreTargetJSWebOptions"                       |
+                    "EnkoreJSRuntimeProject"                         |
                     "EnkoreJSRuntimeContext"                         |
                     "EnkoreJSRuntimeContextOptions"                  |
                     "EnkoreTargetCOptions"
