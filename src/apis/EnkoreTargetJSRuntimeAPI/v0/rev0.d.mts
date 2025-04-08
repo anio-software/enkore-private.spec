@@ -20,4 +20,9 @@ export type Definition = {
 		operator: Operator,
 		right: JSRuntimeLogLevel
 	) => boolean
+
+	logMessage: (
+		level: JSRuntimeLogLevel,
+		message: string
+	) => undefined
 }
