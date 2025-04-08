@@ -5,11 +5,10 @@ import type {
 	EnkoreJSRuntimeContextOptions
 } from "#~src/export/__star_export.mts"
 
-type Operator = 
-	">"  |
-	">=" |
-	"<"  |
-	"<="
+type Operator = ">"  |
+                ">=" |
+                "<"  |
+                "<="
 
 export type Definition = {
 	createContext: (
