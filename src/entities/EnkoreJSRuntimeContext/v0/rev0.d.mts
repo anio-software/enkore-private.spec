@@ -18,17 +18,15 @@ type LogMethod = {
 }
 
 export type Definition = {
-	readonly __internalDoNotUse: {
-		// JSRuntimePackageInformation is intentionally
-		// less informative than the NodePackageJSON type
-		originPackage: JSRuntimePackageInformation
-	}
-
 	log: LogMethod
 
-	project: {
+	currentProject: {
 		packageJSON: NodePackageJSON
 		enkoreConfiguration: EnkoreConfig
+	}
+
+	project: {
+		packageJSON: JSRuntimePackageInformation
 	}
 
 	options: EnkoreJSRuntimeContextOptions
