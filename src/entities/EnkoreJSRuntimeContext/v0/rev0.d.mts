@@ -5,7 +5,8 @@ import type {
 } from "@enkore/primitives"
 import type {
 	EnkoreConfig,
-	EnkoreJSRuntimeContextOptions
+	EnkoreJSRuntimeContextOptions,
+	EnkoreJSRuntimeProject
 } from "#~src/export/__star_export.mts"
 
 type LogMethod = {
@@ -20,10 +21,7 @@ type LogMethod = {
 export type Definition = {
 	log: LogMethod
 
-	currentProject: {
-		packageJSON: NodePackageJSON
-		enkoreConfiguration: EnkoreConfig
-	}
+	currentProject: EnkoreJSRuntimeProject
 
 	project: {
 		packageJSON: JSRuntimePackageInformation
