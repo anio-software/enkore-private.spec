@@ -23,9 +23,9 @@ export type Definition = {
 
 	currentProject: EnkoreJSRuntimeProject
 
-	project: {
-		packageJSON: JSRuntimePackageInformation
-	}
+	// i'd love to use "package" here but
+	// it is a reserved identifier in strict mode
+	_package: JSRuntimePackageInformation
 
 	options: EnkoreJSRuntimeContextOptions
 }
