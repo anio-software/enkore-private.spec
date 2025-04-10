@@ -25,7 +25,5 @@ export type Definition = {
 
 	options: EnkoreJSRuntimeContextOptions
 
-	// i'd love to use "package" here but
-	// it is a reserved identifier in strict mode
-	_package: JSRuntimePackageInformation
+	originatingPackage: JSRuntimePackageInformation
 }
