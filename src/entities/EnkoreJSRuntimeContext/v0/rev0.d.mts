@@ -1,10 +1,8 @@
 import type {
 	JSRuntimeLogLevel,
-	NodePackageJSON,
 	JSRuntimePackageInformation
 } from "@enkore/primitives"
 import type {
-	EnkoreConfig,
 	EnkoreJSRuntimeContextOptions,
 	EnkoreJSRuntimeProject
 } from "#~src/export/__star_export.mts"
