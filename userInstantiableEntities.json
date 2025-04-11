@@ -1,5 +1,6 @@
 [
 	"EnkoreConfig",
+	"EnkoreNodeAPIOptions",
 	"EnkoreTargetCOptions",
 	"EnkoreTargetJSNoneOptions",
 	"EnkoreTargetJSNodeOptions",
