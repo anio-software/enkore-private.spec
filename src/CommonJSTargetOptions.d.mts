@@ -1,5 +1,7 @@
 export type CommonJSTargetOptions = {
 	externalPackages?: string[]
+	externalTypePackages?: string[]
+
 	publishWithExactDependencyVersions?: boolean
 
 	createTypesPackage?: {
@@ -9,6 +11,8 @@ export type CommonJSTargetOptions = {
 	exports?: {
 		[name: string]: {
 			externalPackages?: string[]
+			externalTypePackages?: string[]
+
 			checkAgainstInterface?: [string, string]
 		}
 	}
