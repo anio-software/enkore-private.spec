@@ -73,7 +73,7 @@ export type Definition = {
 		f: EnkoreSessionAPI,
 		file: EnkoreProjectFile,
 		sourceCode: string
-	) => Promise<ObjectFile | ObjectFile[] | "ignore" | "copy">
+	) => Promise<ObjectFile | ObjectFile[] | "unsupported" | "skip" | "copy">
 
 	generateProduct: (
 		f: EnkoreSessionAPI,
