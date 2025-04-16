@@ -8,6 +8,7 @@ export type Definition = {
 	getProjectPackageJSON: () => NodePackageJSON
 	getEnkoreConfiguration: () => JSONCompatibleType<EnkoreConfig>
 	getProject: () => EnkoreJSRuntimeProject
+	getProjectId: () => string
 
 	getEmbedAsString: (asset: string) => string
 	getEmbedAsUint8Array: (asset: string) => Uint8Array
