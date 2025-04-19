@@ -4,4 +4,8 @@ export type Definition = {
 	immutable: {
 		embeds: Record<string, EnkoreJSRuntimeGlobalEmbed>
 	}
+
+	mutable: {
+		embedResourceURLs: Record<string, string>
+	}
 }
