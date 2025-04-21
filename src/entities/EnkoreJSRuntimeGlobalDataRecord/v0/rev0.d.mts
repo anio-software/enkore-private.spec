@@ -6,6 +6,7 @@ export type Definition = {
 	// runtime behaviour:
 	// this property will be recursively frozen with Object.freeze()
 	immutable: {
+		projectId: string
 		embeds: Record<string, EnkoreJSRuntimeEmbeddedFile>
 	}
 
