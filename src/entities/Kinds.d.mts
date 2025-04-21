@@ -13,7 +13,7 @@ export type Kinds = "EnkoreCoreData"                                 |
                     "EnkoreTargetJSNodeOptions"                      |
                     "EnkoreTargetJSWebOptions"                       |
                     "EnkoreJSRuntimeProject"                         |
-                    "EnkoreJSRuntimeGlobalData"                      |
+                    "EnkoreJSRuntimeGlobalDataRecord"                |
                     "EnkoreJSRuntimeGlobalEmbed"                     |
                     "EnkoreJSRuntimeContext"                         |
                     "EnkoreJSRuntimeContextOptions"                  |
