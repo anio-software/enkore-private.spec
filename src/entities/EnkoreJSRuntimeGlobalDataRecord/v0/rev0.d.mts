@@ -9,8 +9,6 @@ export type Definition = {
 		embeds: Record<string, EnkoreJSRuntimeEmbeddedFile>
 	}
 
-	// NB: do not rename this property ("mutable"), it is hardcoded in the
-	// runtime code generation
 	mutable: {
 		embedResourceURLs: Record<string, string>
 	}
