@@ -1,5 +1,5 @@
 export type Definition = {
-	scope: "enkore" | "target"
+	requestedBy: "enkore" | "target"
 	path: string
 	content: string
 	fullyManagedByEnkore?: boolean
