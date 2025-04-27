@@ -1,6 +1,9 @@
 export type CommonJSTargetOptions = {
 	externalPackages?: string[]
 	externalTypePackages?: string[]
+	preprocess?: {
+		expandStarExports?: boolean
+	}
 
 	publishWithExactDependencyVersions?: boolean
 
@@ -10,6 +13,8 @@ export type CommonJSTargetOptions = {
 
 	exports?: {
 		[name: string]: {
+			// todo: maybe have preprocess.expandStarExports here too?
+
 			externalPackages?: string[]
 			externalTypePackages?: string[]
 
