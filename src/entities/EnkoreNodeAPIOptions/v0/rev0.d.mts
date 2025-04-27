@@ -4,7 +4,7 @@ export type Definition = {
 	npmBinaryPath?: string
 	force?: boolean
 	onlyInitializeProject?: boolean
-	allowErrorsInEnkoreConfigFile?: boolean
+	allowTypeErrorsInEnkoreConfigFile?: boolean
 	_partialBuild?: boolean
 	_forceBuild?: boolean
 }
