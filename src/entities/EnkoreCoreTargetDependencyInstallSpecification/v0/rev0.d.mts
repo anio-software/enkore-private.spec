@@ -1,13 +1,9 @@
 export type Definition = {
 	version: string
+
+	entryPoints: Record<string, {
+		importKind: "default" | "star"
+	}>
+
 	isolated?: boolean
-} & ({
-	importKind?: "default"
-} | {
-	importKind: "star"
-} | {
-	importKind: "named"
-	imports: {
-		[name: string]: string|undefined
-	}
-})
+}
