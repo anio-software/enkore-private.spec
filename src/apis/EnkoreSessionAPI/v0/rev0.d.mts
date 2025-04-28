@@ -27,6 +27,15 @@ export type Definition = {
 			targetIdentifier: T
 		) => TargetOptionsMap[T]
 
+		// Instead of getDependency we do:
+		//
+		// getToolchain: () => {
+		// 	toolchainId: string
+		// 	toolchainVersion: string
+		// 	toolchain: object
+		// }
+		//
+
 		getDependency: (dependencyName: string) => unknown
 		getDependencyVersion: (dependencyName: string) => string
 		getDependencyPackageJSON: (dependencyName: string) => NodePackageJSON
