@@ -7,6 +7,7 @@ export type CommonJSTargetOptions = {
 
 	publish?: {
 		withExactDependencyVersions?: boolean
+		withPackageNames?: string[]
 	}
 
 	createTypesPackage?: {
