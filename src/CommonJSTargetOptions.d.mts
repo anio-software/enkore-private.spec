@@ -5,7 +5,9 @@ export type CommonJSTargetOptions = {
 		expandStarExports?: boolean
 	}
 
-	publishWithExactDependencyVersions?: boolean
+	publish?: {
+		withExactDependencyVersions?: boolean
+	}
 
 	createTypesPackage?: {
 		orgName: string
