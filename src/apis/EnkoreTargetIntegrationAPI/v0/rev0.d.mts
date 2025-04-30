@@ -1,6 +1,5 @@
 import type {
 	EnkoreSessionAPI,
-	EnkoreCoreTargetDependencyInstallSpecification,
 	EnkoreBoilerplateFile,
 	EnkoreProjectFile
 } from "#~src/export/__star_export.mts"
@@ -20,10 +19,6 @@ export type Definition = {
 	getToolchainPackageDescriptor: () => Promise<{
 		toolchainID: ToolchainIDs
 		version: string
-	}>
-
-	getDependenciesToInstall: () => Promise<{
-		[dependencyName: string]: EnkoreCoreTargetDependencyInstallSpecification
 	}>
 
 	getBoilerplateFiles?: (
