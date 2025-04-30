@@ -5,7 +5,7 @@ import type {
 } from "#~src/export/__star_export.mts"
 
 import type {NodeAPIMessage} from "@enkore/primitives"
-import type {ToolchainIDs} from "@enkore-types/toolchains"
+import type {ValidToolchainCombinations} from "@enkore-types/toolchains"
 
 type ObjectFile = ({
 	path: string
@@ -16,10 +16,7 @@ type ObjectFile = ({
 }
 
 export type Definition = {
-	getToolchainToInstall: () => Promise<{
-		toolchainID: ToolchainIDs
-		toolchainRev: number
-	}>
+	getToolchainToInstall: () => Promise<ValidToolchainCombinations>
 
 	getBoilerplateFiles?: (
 		f: EnkoreSessionAPI
