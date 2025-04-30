@@ -18,7 +18,7 @@ type ObjectFile = ({
 export type Definition = {
 	getToolchainPackageDescriptor: () => Promise<{
 		toolchainID: ToolchainIDs
-		version: string
+		toolchainRev: number
 	}>
 
 	getBoilerplateFiles?: (
