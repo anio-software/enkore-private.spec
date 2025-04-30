@@ -3,8 +3,7 @@ import type {
 	EnkoreLockFile
 } from "#~src/export/__star_export.mts"
 import type {
-	ToolchainIDs,
-	ToolchainByID,
+	Toolchains,
 	ValidToolchainCombinations
 } from "@enkore-types/toolchains"
 
@@ -47,10 +46,9 @@ export type Definition = {
 		) => Promise<undefined>
 	}>
 
-	loadToolchain: <ID extends ToolchainIDs>(
-		projectRoot: string | ["inferFromCLIArgs"],
-		expectedToolchainID: ID
-	) => Promise<ToolchainByID<ID>>
+	loadToolchain: (
+		projectRoot: string | ["inferFromCLIArgs"]
+	) => Promise<Toolchains>
 
 	findProjectRootFromDirectory: (
 		startDirectory: string
