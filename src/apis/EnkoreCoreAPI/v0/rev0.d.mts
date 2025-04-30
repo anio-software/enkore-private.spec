@@ -28,7 +28,7 @@ export type Definition = {
 		projectRoot: string | ["inferFromCLIArgs"],
 		isCIEnvironment: boolean,
 		options?: {
-			npmBinaryPath?: string,
+			npmBinaryPath?: string
 			force?: boolean
 		}
 	) => Promise<{
