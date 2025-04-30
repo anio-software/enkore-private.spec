@@ -1,9 +1,11 @@
-import type {TargetIdentifier} from "@enkore/primitives"
-import type {ValidToolchainCombinations} from "@enkore-types/toolchains"
+import type {ToolchainIDs} from "@enkore-types/toolchains"
+
+type CurrentToolchain = {
+	installedOnPlatform: string
+	installedID: ToolchainIDs
+	installedRev: number
+}
 
 export type Definition = {
-	targetIdentifier: TargetIdentifier
-	platform: string
-
-	toolchain: ValidToolchainCombinations
+	currentToolchain: CurrentToolchain|false
 }
