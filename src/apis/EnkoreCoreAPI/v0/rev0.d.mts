@@ -31,7 +31,7 @@ export type Definition = {
 		options?: {
 			npmBinaryPath?: string
 			force?: boolean
-			forceToolchain?: ValidToolchainCombinations
+			forceToolchain?: ValidToolchainCombinations|false
 		}
 	) => Promise<{
 		readonly initialLockFile: EnkoreLockFile
