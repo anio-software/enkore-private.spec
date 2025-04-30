@@ -2,6 +2,10 @@ import type {
 	EnkoreTargetIntegrationAPI,
 	EnkoreLockFile
 } from "#~src/export/__star_export.mts"
+import type {
+	ToolchainIDs,
+	ToolchainByID
+} from "@enkore-types/toolchains"
 
 export type Definition = {
 	setDebugMode: (mode: boolean) => boolean
@@ -40,6 +44,11 @@ export type Definition = {
 			}
 		) => Promise<undefined>
 	}>
+
+	loadToolchain: <ID extends ToolchainIDs>(
+		projectRoot: string | ["inferFromCLIArgs"],
+		toolchainID: ID
+	) => Promise<ToolchainByID<ID>>
 
 	findProjectRootFromDirectory: (
 		startDirectory: string
