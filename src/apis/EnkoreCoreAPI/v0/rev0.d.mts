@@ -43,11 +43,6 @@ export type Definition = {
 		) => Promise<undefined>
 	}>
 
-	getInstalledTargetDependencyNames: (
-		projectRoot: string | ["inferFromCLIArgs"],
-		targetIdentifier: TargetIdentifier,
-	) => Promise<string[]>
-
 	loadTargetDependency: (
 		projectRoot: string | ["inferFromCLIArgs"],
 		targetIdentifier: TargetIdentifier,
