@@ -8,6 +8,10 @@ import type {NodeAPIMessage, NodePackageJSON} from "@enkore/primitives"
 import type {AllEnkoreTargets} from "#~src/AllEnkoreTargets.d.mts"
 import type {TargetIdentifier} from "@enkore/primitives"
 import type {TargetIdentifierToEntityName} from "#~src/TargetIdentifierToEntityName.d.mts"
+import type {
+	ToolchainIDs,
+	ToolchainByID
+} from "@enkore-types/toolchains"
 
 type TargetOptionsMap = {
 	[K in TargetIdentifier]: Extract<AllEnkoreTargets, {
@@ -27,14 +31,9 @@ export type Definition = {
 			targetIdentifier: T
 		) => TargetOptionsMap[T]
 
-		// Instead of getDependency we do:
-		//
-		// getToolchain: () => {
-		// 	toolchainId: string
-		// 	toolchainVersion: string
-		// 	toolchain: object
-		// }
-		//
+		getToolchain: <ID extends ToolchainIDs>(
+			expectedToolchainID: ID
+		) => ToolchainByID<ID>
 
 		getDependency: (dependencyName: string) => unknown
 		getDependencyVersion: (dependencyName: string) => string
