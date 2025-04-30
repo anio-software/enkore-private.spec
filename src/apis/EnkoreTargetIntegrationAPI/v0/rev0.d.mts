@@ -16,7 +16,7 @@ type ObjectFile = ({
 }
 
 export type Definition = {
-	getToolchainPackageDescriptor: () => Promise<{
+	getToolchainToInstall: () => Promise<{
 		toolchainID: ToolchainIDs
 		toolchainRev: number
 	}>
