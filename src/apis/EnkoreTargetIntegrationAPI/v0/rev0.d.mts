@@ -6,6 +6,7 @@ import type {
 } from "#~src/export/__star_export.mts"
 
 import type {NodeAPIMessage} from "@enkore/primitives"
+import type {ToolchainIDs} from "@enkore-types/toolchains"
 
 type ObjectFile = ({
 	path: string
@@ -16,6 +17,11 @@ type ObjectFile = ({
 }
 
 export type Definition = {
+	getToolchainPackageDescriptor: () => Promise<{
+		toolchainID: ToolchainIDs
+		version: string
+	}>
+
 	getDependenciesToInstall: () => Promise<{
 		[dependencyName: string]: EnkoreCoreTargetDependencyInstallSpecification
 	}>
