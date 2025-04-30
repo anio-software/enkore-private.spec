@@ -1,7 +1,5 @@
-import type {TargetIdentifier} from "@enkore/primitives"
 import type {
 	EnkoreTargetIntegrationAPI,
-	EnkoreCoreTargetDependency,
 	EnkoreLockFile
 } from "#~src/export/__star_export.mts"
 
