@@ -35,11 +35,6 @@ export type Definition = {
 			expectedToolchainID: ID
 		) => ToolchainByID<ID>
 
-		getDependency: (dependencyName: string) => unknown
-		getDependencyVersion: (dependencyName: string) => string
-		getDependencyPackageJSON: (dependencyName: string) => NodePackageJSON
-		getDependencyPath: (dependencyName: string) => string
-
 		getInternalData: () => object
 	}
 
