@@ -9,5 +9,5 @@ export type Definition = {
 	allowTypeErrorsInEnkoreConfigFile?: boolean
 	_partialBuild?: boolean
 	_forceBuild?: boolean
-	_forceToolchain?: ValidToolchainCombinations
+	_forceToolchain?: ValidToolchainCombinations|false
 }
