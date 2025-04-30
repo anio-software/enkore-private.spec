@@ -49,7 +49,7 @@ export type Definition = {
 
 	loadToolchain: <ID extends ToolchainIDs>(
 		projectRoot: string | ["inferFromCLIArgs"],
-		toolchainID: ID
+		expectedToolchainID: ID
 	) => Promise<ToolchainByID<ID>>
 
 	findProjectRootFromDirectory: (
