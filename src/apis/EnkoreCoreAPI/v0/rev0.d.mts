@@ -43,12 +43,6 @@ export type Definition = {
 		) => Promise<undefined>
 	}>
 
-	loadTargetDependency: (
-		projectRoot: string | ["inferFromCLIArgs"],
-		targetIdentifier: TargetIdentifier,
-		dependencyName: string
-	) => Promise<EnkoreCoreTargetDependency>
-
 	findProjectRootFromDirectory: (
 		startDirectory: string
 	) => Promise<string|false>
