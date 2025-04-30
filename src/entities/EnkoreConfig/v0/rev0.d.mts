@@ -4,6 +4,8 @@ import type {AllEnkoreTargets} from "#~src/AllEnkoreTargets.d.mts"
 import type {TargetIdentifier} from "@enkore/primitives"
 import type {TargetIdentifierToEntityName} from "#~src/TargetIdentifierToEntityName.d.mts"
 
+import type {ValidToolchainCombinations} from "@enkore-types/toolchains"
+
 type Map = {
 	[K in TargetIdentifier]: Extract<AllEnkoreTargets, {
 		entityKind: TargetIdentifierToEntityName<K>
@@ -14,6 +16,7 @@ type Targets = {
 	[K in TargetIdentifier]: {
 		name: K
 		options: Map[K]
+		_toolchain?: ValidToolchainCombinations
 	}
 }
 
