@@ -1,3 +1,5 @@
+import type {ValidToolchainCombinations} from "@enkore-types/toolchains"
+
 export type Definition = {
 	stdIOLogs?: boolean
 	isCIEnvironment?: boolean
@@ -7,4 +9,5 @@ export type Definition = {
 	allowTypeErrorsInEnkoreConfigFile?: boolean
 	_partialBuild?: boolean
 	_forceBuild?: boolean
+	_forceToolchain?: ValidToolchainCombinations
 }
