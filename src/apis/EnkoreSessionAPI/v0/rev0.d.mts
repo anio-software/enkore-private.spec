@@ -31,7 +31,7 @@ export type Definition = {
 			targetIdentifier: T
 		) => TargetOptionsMap[T]
 
-		getToolchain: <ID extends ToolchainIDs>(
+		_getToolchain: <ID extends ToolchainIDs>(
 			expectedToolchainID: ID
 		) => ToolchainByID<ID>
 
