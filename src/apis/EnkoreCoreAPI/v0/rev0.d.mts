@@ -4,7 +4,8 @@ import type {
 } from "#~src/export/__star_export.mts"
 import type {
 	ToolchainIDs,
-	ToolchainByID
+	ToolchainByID,
+	ValidToolchainCombinations
 } from "@enkore-types/toolchains"
 
 export type Definition = {
@@ -30,6 +31,7 @@ export type Definition = {
 		options?: {
 			npmBinaryPath?: string
 			force?: boolean
+			forceToolchain?: ValidToolchainCombinations
 		}
 	) => Promise<{
 		readonly initialLockFile: EnkoreLockFile
