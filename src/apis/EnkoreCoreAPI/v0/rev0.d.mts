@@ -8,9 +8,6 @@ import type {
 } from "@enkore-types/toolchains"
 
 export type Definition = {
-	setDebugMode: (mode: boolean) => boolean
-	getDebugMode: () => boolean
-
 	createTemporaryFile: (
 		projectRoot: string, fileExtension?: string
 	) => Promise<string>
