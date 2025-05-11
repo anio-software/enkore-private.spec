@@ -93,6 +93,7 @@ jobs:
           printf "%s\n" "registry=https://npm-registry.anio.software" >> ./.npmrc
           printf "%s\n" "//npm-registry.anio.software/:keyfile=./.cicd/client.pkey" >> ./.npmrc
           printf "%s\n" "//npm-registry.anio.software/:certfile=./.cicd/client.cert" >> ./.npmrc
+          printf "%s\n" "//npm-registry.anio.software/:_authToken=${{ secrets.ANIO_NPM_REGISTRY_GITHUB_CICD_TOKEN }}" >> ./.npmrc
 
       #
       # Make sure package.json's version field and
@@ -105,9 +106,6 @@ jobs:
         run: ./.cicd/deploy.sh
         env:
           RELEASE_VERSION: ${{ github.ref_name }}
-
-          NODE_AUTH_TOKEN: ${{ secrets.ANIO_NPM_REGISTRY_GITHUB_CICD_TOKEN }}
-          NPM_TOKEN: ${{ secrets.ANIO_NPM_REGISTRY_GITHUB_CICD_TOKEN }}
 
           ANIO_SH_DEPLOY_URL: ${{ secrets.ANIO_SH_DEPLOY_URL }}
           ANIO_SH_DEPLOY_KEY: ${{ secrets.ANIO_SH_DEPLOY_KEY }}
