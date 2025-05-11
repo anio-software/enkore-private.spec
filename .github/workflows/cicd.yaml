@@ -106,8 +106,8 @@ jobs:
         env:
           RELEASE_VERSION: ${{ github.ref_name }}
 
-          NODE_AUTH_TOKEN: ${{ secrets.ANIO_NPM_TOKEN }}
-          NPM_TOKEN: ${{ secrets.ANIO_NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.ANIO_NPM_REGISTRY_GITHUB_CICD_TOKEN }}
+          NPM_TOKEN: ${{ secrets.ANIO_NPM_REGISTRY_GITHUB_CICD_TOKEN }}
 
           ANIO_SH_DEPLOY_URL: ${{ secrets.ANIO_SH_DEPLOY_URL }}
           ANIO_SH_DEPLOY_KEY: ${{ secrets.ANIO_SH_DEPLOY_KEY }}
