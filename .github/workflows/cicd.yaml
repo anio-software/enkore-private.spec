@@ -75,7 +75,7 @@ jobs:
 
       # Place private key and certificate in order to have
       # access to npm-registry.anio.software
-      - name 'Setup runner private key and certificate'
+      - name: "Setup runner private key and certificate"
         env:
           ANIO_NPM_REGISTRY_GITHUB_CICD_CERT: ${{ secrets.ANIO_NPM_REGISTRY_GITHUB_CICD_CERT }}
           ANIO_NPM_REGISTRY_GITHUB_CICD_PKEY: ${{ secrets.ANIO_NPM_REGISTRY_GITHUB_CICD_PKEY }}
