@@ -87,6 +87,13 @@ jobs:
           printf "%s" "$ANIO_NPM_REGISTRY_GITHUB_CICD_PKEY" > ./.cicd/client.pkey
           openssl x509 -in ./.cicd/client.cert -noout -text
 
+      - name: "Setup npmrc file"
+        run: |
+          touch ./.npmrc
+          printf "%s\n" "registry=https://npm-registry.anio.software" >> ./.npmrc
+          printf "%s\n" "//npm-registry.anio.software/:keyfile=./.cicd/client.pkey" >> ./.npmrc
+          printf "%s\n" "//npm-registry.anio.software/:certfile=./.cicd/client.cert" >> ./.npmrc
+
       #
       # Make sure package.json's version field and
       # tag name are consistent.
