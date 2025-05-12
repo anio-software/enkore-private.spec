@@ -120,7 +120,7 @@ jobs:
             exit 0
           fi
 
-          if [ ! grep -q "\"$CLEAN_VERSION\"" package.json ]; then
+          if ! grep -q "\"$CLEAN_VERSION\"" package.json; then
             printf "Version number does not match what's inside package.json!\n" 1>&2
             exit 1
           fi
