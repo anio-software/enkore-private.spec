@@ -92,8 +92,8 @@ jobs:
           printf "" > ./.npmrc
 
           if [[ "${{ github.ref_name }}" == vp* ]]; then
-            printf "%s\n" "registry=https://registry.npmjs.com" >> ./.npmrc
-            printf "%s\n" "//registry.npmjs.com/:_authToken=${{ secrets.ANIO_NPM_TOKEN }}" >> ./.npmrc
+            printf "%s\n" "registry=https://registry.npmjs.org" >> ./.npmrc
+            printf "%s\n" "//registry.npmjs.org/:_authToken=${{ secrets.ANIO_NPM_TOKEN }}" >> ./.npmrc
           else
             printf "%s\n" "registry=https://npm-registry.anio.software" >> ./.npmrc
             printf "%s\n" "//npm-registry.anio.software/:keyfile=./.cicd/client.pkey" >> ./.npmrc
