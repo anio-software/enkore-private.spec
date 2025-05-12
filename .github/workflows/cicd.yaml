@@ -95,14 +95,14 @@ jobs:
             printf "%s\n" "registry=https://registry.npmjs.com" >> ./.npmrc
             printf "%s\n" "//npm-registry.anio.software/:_authToken=${{ secrets.ANIO_NPM_TOKEN }}" >> ./.npmrc
 
-            export CLEAN_VERSION = "$(printf "%s" "${{ github.ref_name }}" | cut -c3-)"
+            export CLEAN_VERSION="$(printf "%s" "${{ github.ref_name }}" | cut -c3-)"
           else
             printf "%s\n" "registry=https://npm-registry.anio.software" >> ./.npmrc
             printf "%s\n" "//npm-registry.anio.software/:keyfile=./.cicd/client.pkey" >> ./.npmrc
             printf "%s\n" "//npm-registry.anio.software/:certfile=./.cicd/client.cert" >> ./.npmrc
             printf "%s\n" "//npm-registry.anio.software/:_authToken=${{ secrets.ANIO_NPM_REGISTRY_GITHUB_CICD_TOKEN }}" >> ./.npmrc
 
-            export CLEAN_VERSION = "$(printf "%s" "${{ github.ref_name }}" | cut -c3-)"
+            export CLEAN_VERSION="$(printf "%s" "${{ github.ref_name }}" | cut -c3-)"
           fi
 
           printf "Clean Version is \"%s\"\n" "$CLEAN_VERSION"
