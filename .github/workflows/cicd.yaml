@@ -94,25 +94,37 @@ jobs:
           if [[ "${{ github.ref }}" == vp* ]]; then
             printf "%s\n" "registry=https://registry.npmjs.com" >> ./.npmrc
             printf "%s\n" "//npm-registry.anio.software/:_authToken=${{ secrets.ANIO_NPM_TOKEN }}" >> ./.npmrc
-
-            export CLEAN_VERSION="$(printf "%s" "${{ github.ref_name }}" | cut -c3-)"
           else
             printf "%s\n" "registry=https://npm-registry.anio.software" >> ./.npmrc
             printf "%s\n" "//npm-registry.anio.software/:keyfile=./.cicd/client.pkey" >> ./.npmrc
             printf "%s\n" "//npm-registry.anio.software/:certfile=./.cicd/client.cert" >> ./.npmrc
             printf "%s\n" "//npm-registry.anio.software/:_authToken=${{ secrets.ANIO_NPM_REGISTRY_GITHUB_CICD_TOKEN }}" >> ./.npmrc
-
-            export CLEAN_VERSION="$(printf "%s" "${{ github.ref_name }}" | cut -c2-)"
           fi
-
-          printf "Clean Version is \"%s\"\n" "$CLEAN_VERSION"
 
       #
       # Make sure package.json's version field and
       # tag name are consistent.
       #
       - name: "Validate package.json version (if present)"
-        run: bash -c 'if [ -f package.json ]; then grep -q "\"$CLEAN_VERSION\"" package.json ; fi'
+        run: |
+          if [[ "${{ github.ref }}" == vp* ]]; then
+            CLEAN_VERSION="$(printf "%s" "${{ github.ref_name }}" | cut -c3-)"
+          else
+            CLEAN_VERSION="$(printf "%s" "${{ github.ref_name }}" | cut -c2-)"
+          fi
+
+          printf "Clean Version is \"%s\"\n" "$CLEAN_VERSION"
+
+          if [ ! -f package.json ]; then
+            printf "Skipping version check\n"
+            exit 0
+          fi
+
+          if [ ! grep -q "\"$CLEAN_VERSION\"" package.json ]; then
+            printf "Version number does not match what's inside package.json!\n" 1>&2
+
+            exit 1
+          fi
 
       - name: "Run .cicd/deploy.sh script"
         run: ./.cicd/deploy.sh
