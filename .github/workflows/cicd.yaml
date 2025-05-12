@@ -91,7 +91,7 @@ jobs:
         run: |
           printf "" > ./.npmrc
 
-          if [[ "${{ github.ref }}" == vp* ]]; then
+          if [[ "${{ github.ref_name }}" == vp* ]]; then
             printf "%s\n" "registry=https://registry.npmjs.com" >> ./.npmrc
             printf "%s\n" "//npm-registry.anio.software/:_authToken=${{ secrets.ANIO_NPM_TOKEN }}" >> ./.npmrc
           else
@@ -107,7 +107,7 @@ jobs:
       #
       - name: "Validate package.json version (if present)"
         run: |
-          if [[ "${{ github.ref }}" == vp* ]]; then
+          if [[ "${{ github.ref_name }}" == vp* ]]; then
             CLEAN_VERSION="$(printf "%s" "${{ github.ref_name }}" | cut -c3-)"
           else
             CLEAN_VERSION="$(printf "%s" "${{ github.ref_name }}" | cut -c2-)"
