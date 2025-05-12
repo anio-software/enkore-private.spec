@@ -89,11 +89,17 @@ jobs:
 
       - name: "Setup npmrc file"
         run: |
-          touch ./.npmrc
-          printf "%s\n" "registry=https://npm-registry.anio.software" >> ./.npmrc
-          printf "%s\n" "//npm-registry.anio.software/:keyfile=./.cicd/client.pkey" >> ./.npmrc
-          printf "%s\n" "//npm-registry.anio.software/:certfile=./.cicd/client.cert" >> ./.npmrc
-          printf "%s\n" "//npm-registry.anio.software/:_authToken=${{ secrets.ANIO_NPM_REGISTRY_GITHUB_CICD_TOKEN }}" >> ./.npmrc
+          printf "" > ./.npmrc
+
+          if [[ "${{ github.ref }}" == vp* ]]; then
+            printf "%s\n" "registry=https://registry.npmjs.com" >> ./.npmrc
+            printf "%s\n" "//npm-registry.anio.software/:_authToken=${{ secrets.ANIO_NPM_TOKEN }}" >> ./.npmrc
+          else
+            printf "%s\n" "registry=https://npm-registry.anio.software" >> ./.npmrc
+            printf "%s\n" "//npm-registry.anio.software/:keyfile=./.cicd/client.pkey" >> ./.npmrc
+            printf "%s\n" "//npm-registry.anio.software/:certfile=./.cicd/client.cert" >> ./.npmrc
+            printf "%s\n" "//npm-registry.anio.software/:_authToken=${{ secrets.ANIO_NPM_REGISTRY_GITHUB_CICD_TOKEN }}" >> ./.npmrc
+          fi
 
       #
       # Make sure package.json's version field and
