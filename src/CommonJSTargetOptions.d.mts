@@ -11,8 +11,7 @@ export type CommonJSTargetOptions = {
 	}
 
 	createTypesPackage?: {
-		orgName: string
-		// todo: add "packageName?: string"
+		withPackageNames: string[]
 	}
 
 	exports?: {
