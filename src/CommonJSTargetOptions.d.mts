@@ -8,10 +8,10 @@ export type CommonJSTargetOptions = {
 	publish?: {
 		withExactDependencyVersions?: boolean
 		withPackageNames?: string[]
-	}
 
-	createTypesPackage?: {
-		withPackageNames: string[]
+		typesPackage?: {
+			withPackageNames: string[]
+		}
 	}
 
 	exports?: {
