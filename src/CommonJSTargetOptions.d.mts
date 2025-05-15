@@ -1,5 +1,10 @@
 type NonEmptyArray<T> = [T, ...T[]]
 
+type PackageName = string | {
+	name: string
+	publishWithProvenance?: boolean
+}
+
 export type CommonJSTargetOptions = {
 	externalPackages?: string[]
 	externalTypePackages?: string[]
@@ -9,10 +14,10 @@ export type CommonJSTargetOptions = {
 
 	publish?: {
 		withExactDependencyVersions?: boolean
-		withPackageNames?: NonEmptyArray<string>
+		withPackageNames?: NonEmptyArray<PackageName>
 
 		typesPackage?: {
-			withPackageNames: NonEmptyArray<string>
+			withPackageNames: NonEmptyArray<PackageName>
 		}
 	}
 
