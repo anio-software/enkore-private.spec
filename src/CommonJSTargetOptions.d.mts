@@ -6,6 +6,11 @@ type PackageName = string | {
 }
 
 export type CommonJSTargetOptions = {
+	npm?: {
+		binaryPath?: string
+		configFilePath?: string
+	}
+
 	externalPackages?: string[]
 	externalTypePackages?: string[]
 	preprocess?: {
