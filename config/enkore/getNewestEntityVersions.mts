@@ -1,4 +1,6 @@
-export function getNewestEntityVersions(allEntities) {
+import type {DefinedEntities} from "./getDefinedEntities.mts"
+
+export function getNewestEntityVersions(allEntities: DefinedEntities) {
 	let ret = new Map()
 
 	for (const [entityName, versionMap] of allEntities.entries()) {
@@ -12,7 +14,7 @@ export function getNewestEntityVersions(allEntities) {
 
 		let definedRevisions = []
 
-		for (const revision of versionMap.get(highestMajorVersion)) {
+		for (const revision of versionMap.get(highestMajorVersion)!) {
 			definedRevisions.push(revision.revision)
 		}
 
@@ -20,7 +22,7 @@ export function getNewestEntityVersions(allEntities) {
 
 		ret.set(entityName, {
 			majorVersion: highestMajorVersion,
-			revision: versionMap.get(highestMajorVersion).filter(x => {
+			revision: versionMap.get(highestMajorVersion)!.filter(x => {
 				return x.revision === highestRevision
 			})[0]
 		})
