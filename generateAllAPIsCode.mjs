@@ -64,7 +64,7 @@ function generateAPIByKindTypeCode(definedAPIs) {
 export function generateAllAPIsCode(definedAPIs) {
 	let code = ``
 
-	code += `import type {DefineAPI} from "#~src/DefineAPI.d.mts"\n`
+	code += `import type {DefineAPI} from "#~src/DefineAPI.mts"\n`
 	code += `\n`
 	code += generateImportCode(definedAPIs)
 	code += `\n`

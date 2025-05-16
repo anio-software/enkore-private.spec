@@ -64,7 +64,7 @@ function generateEntityByKindTypeCode(definedEntities) {
 export function generateAllEntitiesCode(definedEntities) {
 	let code = ``
 
-	code += `import type {DefineEntity} from "#~src/DefineEntity.d.mts"\n`
+	code += `import type {DefineEntity} from "#~src/DefineEntity.mts"\n`
 	code += `\n`
 	code += generateImportCode(definedEntities)
 	code += `\n`
