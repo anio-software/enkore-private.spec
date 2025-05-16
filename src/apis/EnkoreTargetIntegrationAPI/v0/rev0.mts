@@ -2,7 +2,7 @@ import type {
 	EnkoreSessionAPI,
 	EnkoreBoilerplateFile,
 	EnkoreProjectFile
-} from "#~src/export/__star_export.mts"
+} from "#~src/export/__aggregatedExports.mts"
 
 import type {NodeAPIMessage} from "@enkore/primitives"
 import type {ValidToolchainCombinations} from "@enkore-types/toolchains"

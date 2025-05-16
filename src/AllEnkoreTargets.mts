@@ -3,7 +3,7 @@ import type {
 	EnkoreTargetJSNodeOptions,
 	EnkoreTargetJSWebOptions,
 	EnkoreTargetCOptions
-} from "#~src/export/__star_export.mts"
+} from "#~src/export/__aggregatedExports.mts"
 
 export type AllEnkoreTargets = EnkoreTargetJSNoneOptions |
                                EnkoreTargetJSNodeOptions |

@@ -5,7 +5,7 @@ import type {
 import type {
 	EnkoreJSRuntimeContextOptions,
 	EnkoreJSRuntimeProject
-} from "#~src/export/__star_export.mts"
+} from "#~src/export/__aggregatedExports.mts"
 
 type LogMethod = {
 	[K in JSRuntimeLogLevel]: (...messages: string[]) => undefined

@@ -1,7 +1,7 @@
 import type {
 	EnkoreTargetIntegrationAPI,
 	EnkoreLockFile
-} from "#~src/export/__star_export.mts"
+} from "#~src/export/__aggregatedExports.mts"
 import type {
 	Toolchains,
 	ValidToolchainCombinations
