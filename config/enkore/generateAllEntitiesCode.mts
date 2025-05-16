@@ -1,4 +1,6 @@
-function generateImportCode(definedEntities) {
+import type {DefinedEntities} from "./getDefinedEntities.mts"
+
+function generateImportCode(definedEntities: DefinedEntities) {
 	let code = ``
 
 	for (const [entityName, entityMap] of definedEntities.entries()) {
@@ -12,7 +14,7 @@ function generateImportCode(definedEntities) {
 	return code
 }
 
-function generateEntityTypeCode(definedEntities) {
+function generateEntityTypeCode(definedEntities: DefinedEntities) {
 	let code = ``
 
 	for (const [entityName, entityMap] of definedEntities.entries()) {
@@ -28,7 +30,7 @@ function generateEntityTypeCode(definedEntities) {
 	return code
 }
 
-function generateEntityByMajorTypeCode(definedEntities) {
+function generateEntityByMajorTypeCode(definedEntities: DefinedEntities) {
 	let code = ``
 
 	for (const [entityName, entityMap] of definedEntities.entries()) {
@@ -42,7 +44,7 @@ function generateEntityByMajorTypeCode(definedEntities) {
 	return code
 }
 
-function generateEntityByKindTypeCode(definedEntities) {
+function generateEntityByKindTypeCode(definedEntities: DefinedEntities) {
 	let code = ``
 
 	for (const [entityName, entityMap] of definedEntities.entries()) {
@@ -61,7 +63,7 @@ function generateEntityByKindTypeCode(definedEntities) {
 	return code
 }
 
-export function generateAllEntitiesCode(definedEntities) {
+export function generateAllEntitiesCode(definedEntities: DefinedEntities) {
 	let code = ``
 
 	code += `import type {DefineEntity} from "#~src/DefineEntity.mts"\n`
