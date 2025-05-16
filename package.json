@@ -4,23 +4,6 @@
   "author": "Anio Software <info@anio.software>",
   "description": "This package contains all APIs and Entities used by the enkore project.",
   "license": "MIT",
-  "exports": {
-    ".": {
-      "types": "./dist/default/index.d.mts",
-      "import": "./dist/default/index.mjs"
-    },
-    "./uuid": {
-      "types": "./dist/uuid/index.d.mts",
-      "import": "./dist/uuid/index.mjs"
-    },
-    "./primitives": {
-      "types": "./dist/primitives/index.d.mts"
-    },
-    "./factory": {
-      "types": "./dist/factory/index.d.mts",
-      "import": "./dist/factory/index.mjs"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/enkore-org/spec.git"
@@ -35,11 +18,5 @@
     "@enkore/core": "^0.7.4",
     "@enkore/primitives": "^0.0.10",
     "enkore": "^0.0.37"
-  },
-  "scripts": {
-    "prepare": "./node_modules/.bin/fourtune ."
-  },
-  "files": [
-    "./dist/"
-  ]
+  }
 }
