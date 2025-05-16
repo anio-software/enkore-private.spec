@@ -4,8 +4,17 @@ import path from "node:path"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-export async function getDefinedEntities() {
-	const map = new Map()
+type DefinedEntity = Map<number, {
+	importPath: string
+	importAliasName: string
+	revision: number
+	entityType: (definitionType: string) => string
+}[]>
+
+export type DefinedEntities = Map<string, DefinedEntity>
+
+export async function getDefinedEntities(): Promise<DefinedEntities> {
+	const map: DefinedEntities = new Map()
 	const entries = await scandir(
 		path.join(__dirname, "..", "..", "project", "src", "entities"), {
 			sorted: true
@@ -25,13 +34,13 @@ export async function getDefinedEntities() {
 			map.set(entityName, new Map())
 		}
 
-		const entityMap = map.get(entityName)
+		const entityMap = map.get(entityName)!
 
 		if (!entityMap.has(entityMajorVersion)) {
 			entityMap.set(entityMajorVersion, [])
 		}
 
-		entityMap.get(entityMajorVersion).push({
+		entityMap.get(entityMajorVersion)!.push({
 			importPath: `#~src/entities/${entry.relative_path}`,
 			importAliasName: `${entityName}_V${entityMajorVersion}_Rev${entityRevision}`,
 			revision: entityRevision,
