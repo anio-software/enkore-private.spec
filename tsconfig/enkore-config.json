@@ -6,7 +6,8 @@
         "composite": true,
         "paths": {}
     },
-    "files": [
-        "../enkore.config.mts"
+    "include": [
+        "../enkore.config.mts",
+        "../*.mts"
     ]
 }
