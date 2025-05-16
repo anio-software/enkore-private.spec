@@ -1,4 +1,4 @@
-import type {CommonJSTargetOptions} from "#~src/CommonJSTargetOptions.d.mts"
+import type {CommonJSTargetOptions} from "#~src/CommonJSTargetOptions.mts"
 
 export type Definition = CommonJSTargetOptions & {
 

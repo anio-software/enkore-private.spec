@@ -1,6 +1,6 @@
 import type {NodePackageJSON} from "@enkore/primitives"
 import type {EnkoreConfig} from "#~src/export/__star_export.mts"
-import type {JSONCompatibleType} from "#~src/export/JSONCompatibleType.d.mts"
+import type {JSONCompatibleType} from "#~src/export/JSONCompatibleType.mts"
 
 export type Definition = {
 	projectId: string
