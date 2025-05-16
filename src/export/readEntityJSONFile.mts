@@ -1,9 +1,9 @@
-import type {Entity} from "#~src/export/Entity.d.mts"
-import type {Kinds} from "#~src/entities/Kinds.d.mts"
-import type {AllDefinedMajorVersions} from "#~src/entities/AllDefinedMajorVersions.d.mts"
-import type {AllDefinedRevisions} from "#~src/entities/AllDefinedRevisions.d.mts"
-import type {UnknownEntity} from "./UnknownEntity.d.mts"
-import type {JSONCompatibleType} from "./JSONCompatibleType.d.mts"
+import type {Entity} from "#~src/export/Entity.mts"
+import type {Kinds} from "#~src/entities/Kinds.mts"
+import type {AllDefinedMajorVersions} from "#~src/entities/AllDefinedMajorVersions.mts"
+import type {AllDefinedRevisions} from "#~src/entities/AllDefinedRevisions.mts"
+import type {UnknownEntity} from "./UnknownEntity.mts"
+import type {JSONCompatibleType} from "./JSONCompatibleType.mts"
 import {readFileJSON} from "@aniojs/node-fs-file"
 
 export async function readEntityJSONFile<

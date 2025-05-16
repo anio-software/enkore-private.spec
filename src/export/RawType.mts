@@ -1,6 +1,6 @@
-import type {UnknownEntity} from "./UnknownEntity.d.mts"
-import type {UnknownAPI} from "./UnknownAPI.d.mts"
-import type {DistributiveOmit} from "#~src/DistributiveOmit.d.mts"
+import type {UnknownEntity} from "./UnknownEntity.mts"
+import type {UnknownAPI} from "./UnknownAPI.mts"
+import type {DistributiveOmit} from "#~src/DistributiveOmit.mts"
 
 export type StripEntityProperties<T extends UnknownEntity> = DistributiveOmit<
 	T, keyof UnknownEntity
