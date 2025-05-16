@@ -1,7 +1,17 @@
 import type {DefinedEntities} from "./getDefinedEntities.mts"
 
-export function getNewestEntityVersions(allEntities: DefinedEntities) {
-	let ret = new Map()
+export type NewestEntityVersions = Map<string, {
+	majorVersion: number
+	revision: {
+		importPath: string
+		importAliasName: string
+		revision: number
+		entityType: (definitionType: string) => string
+	}
+}>
+
+export function getNewestEntityVersions(allEntities: DefinedEntities): NewestEntityVersions {
+	let ret: NewestEntityVersions = new Map()
 
 	for (const [entityName, versionMap] of allEntities.entries()) {
 		let definedMajorVersions = []
