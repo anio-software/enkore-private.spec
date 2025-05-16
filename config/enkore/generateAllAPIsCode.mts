@@ -1,4 +1,6 @@
-function generateImportCode(definedAPIs) {
+import type {DefinedAPIs} from "./getDefinedAPIs.mts"
+
+function generateImportCode(definedAPIs: DefinedAPIs) {
 	let code = ``
 
 	for (const [apiID, apiMap] of definedAPIs.entries()) {
@@ -12,7 +14,7 @@ function generateImportCode(definedAPIs) {
 	return code
 }
 
-function generateAPITypeCode(definedAPIs) {
+function generateAPITypeCode(definedAPIs: DefinedAPIs) {
 	let code = ``
 
 	for (const [apiID, apiMap] of definedAPIs.entries()) {
@@ -28,7 +30,7 @@ function generateAPITypeCode(definedAPIs) {
 	return code
 }
 
-function generateAPIByMajorTypeCode(definedAPIs) {
+function generateAPIByMajorTypeCode(definedAPIs: DefinedAPIs) {
 	let code = ``
 
 	for (const [apiID, apiMap] of definedAPIs.entries()) {
@@ -42,7 +44,7 @@ function generateAPIByMajorTypeCode(definedAPIs) {
 	return code
 }
 
-function generateAPIByKindTypeCode(definedAPIs) {
+function generateAPIByKindTypeCode(definedAPIs: DefinedAPIs) {
 	let code = ``
 
 	for (const [apiID, apiMap] of definedAPIs.entries()) {
@@ -61,7 +63,7 @@ function generateAPIByKindTypeCode(definedAPIs) {
 	return code
 }
 
-export function generateAllAPIsCode(definedAPIs) {
+export function generateAllAPIsCode(definedAPIs: DefinedAPIs) {
 	let code = ``
 
 	code += `import type {DefineAPI} from "#~src/DefineAPI.mts"\n`
