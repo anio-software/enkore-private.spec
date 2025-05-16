@@ -37,7 +37,7 @@ export async function getDefinedAPIs() {
 			importPath: `#~src/apis/${entry.relative_path}`,
 			importAliasName: `${apiID}_V${apiMajorVersion}_Rev${apiRevision}`,
 			revision: apiRevision,
-			apiType(definitionType) {
+			apiType(definitionType: string) {
 				let code = ``
 
 				code += `DefineAPI<`

@@ -35,7 +35,7 @@ export async function getDefinedEntities() {
 			importPath: `#~src/entities/${entry.relative_path}`,
 			importAliasName: `${entityName}_V${entityMajorVersion}_Rev${entityRevision}`,
 			revision: entityRevision,
-			entityType(definitionType) {
+			entityType(definitionType: string) {
 				let code = ``
 
 				code += `DefineEntity<`
