@@ -1,9 +1,9 @@
 export function generateEntityFactoryCode(
-	factoryName,
-	entityName,
-	importPath,
-	majorVersion,
-	revision
+	factoryName: string,
+	entityName: string,
+	importPath: string,
+	majorVersion: number,
+	revision: number
 ) {
 	return `
 import type {Definition} from "${importPath}"
