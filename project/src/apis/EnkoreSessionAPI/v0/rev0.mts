@@ -10,6 +10,7 @@ import type {TargetIdentifier} from "@enkore/primitives"
 import type {TargetIdentifierToEntityName} from "#~src/TargetIdentifierToEntityName.mts"
 import type {
 	ToolchainIDs,
+	Toolchains,
 	ToolchainByID
 } from "@enkore-types/toolchains"
 
@@ -34,6 +35,8 @@ export type Definition = {
 		_getToolchain: <ID extends ToolchainIDs>(
 			expectedToolchainID: ID
 		) => ToolchainByID<ID>
+
+		__getInstalledToolchain: () => Toolchains
 
 		getInternalData: () => object
 	}
