@@ -1,5 +1,5 @@
 import type {IDs} from "#~src/apis/IDs.mts"
-import type {AllDefinedAPIs} from "#~synthetic/user/AllDefinedAPIs.mts"
+import type {AllDefinedAPIs} from "#~src/AllDefinedAPIs.mts"
 import type {AllDefinedMajorVersions} from "#~src/apis/AllDefinedMajorVersions.mts"
 
 export type APIsByIDAndMajorVersion = {

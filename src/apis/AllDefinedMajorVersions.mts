@@ -1,4 +1,4 @@
-import type {AllDefinedAPIs} from "#~synthetic/user/AllDefinedAPIs.mts"
+import type {AllDefinedAPIs} from "#~src/AllDefinedAPIs.mts"
 import type {UnknownAPI} from "#~export/UnknownAPI.mts"
 
 type MajorVersionOf<T> = T extends UnknownAPI ? T["apiMajorVersion"] : never
