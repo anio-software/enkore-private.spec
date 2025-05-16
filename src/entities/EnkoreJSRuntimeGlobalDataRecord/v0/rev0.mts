@@ -1,4 +1,4 @@
-import type {EnkoreJSRuntimeEmbeddedFile} from "#~src/export/__aggregatedExports.mts"
+import type {EnkoreJSRuntimeEmbeddedFile} from "#~export/__aggregatedExports.mts"
 
 export type Definition = {
 	// NB: do not rename this property ("immutable"), it is hardcoded in the

@@ -1,4 +1,4 @@
-import type {API} from "#~src/export/API.mts"
+import type {API} from "#~export/API.mts"
 import type {IDs} from "#~src/apis/IDs.mts"
 import type {AllDefinedMajorVersions} from "#~src/apis/AllDefinedMajorVersions.mts"
 import type {AllDefinedRevisions} from "#~src/apis/AllDefinedRevisions.mts"

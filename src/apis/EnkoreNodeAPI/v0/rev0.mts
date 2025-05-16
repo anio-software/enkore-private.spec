@@ -1,7 +1,7 @@
 import type {
 	EnkoreSessionAPI,
 	EnkoreNodeAPIOptions
-} from "#~src/export/__aggregatedExports.mts"
+} from "#~export/__aggregatedExports.mts"
 import type {DefineEvent, EventEmitter} from "@aniojs/event-emitter"
 import type {NodeAPIMessage} from "@enkore/primitives"
 

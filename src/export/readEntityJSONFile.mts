@@ -1,4 +1,4 @@
-import type {Entity} from "#~src/export/Entity.mts"
+import type {Entity} from "#~export/Entity.mts"
 import type {Kinds} from "#~src/entities/Kinds.mts"
 import type {AllDefinedMajorVersions} from "#~src/entities/AllDefinedMajorVersions.mts"
 import type {AllDefinedRevisions} from "#~src/entities/AllDefinedRevisions.mts"
