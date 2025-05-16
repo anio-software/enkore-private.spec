@@ -5,10 +5,18 @@ type PackageName = string | {
 	publishWithProvenance?: boolean
 }
 
+type NPMRegistry = {
+	url: string
+	scope?: string|string[]
+	clientPrivateKeyFilePath?: string
+	clientCertificateFilePath?: string
+	authTokenFilePath?: string
+}
+
 export type CommonJSTargetOptions = {
 	npm?: {
 		binaryPath?: string
-		configFilePath?: string
+		registry?: NPMRegistry|NPMRegistry[]
 	}
 
 	externalPackages?: string[]
