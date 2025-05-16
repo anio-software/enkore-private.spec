@@ -13,7 +13,7 @@
     "@aniojs/event-emitter": "^0.1.0",
     "@aniojs/node-fs-file": "^0.2.0",
     "@aniojs/node-fs-scandir": "^0.2.2",
-    "@enkore-target/js-none": "^0.0.61",
+    "@enkore-target/js-none": "^0.0.62",
     "@enkore-types/toolchains": "^0.0.6",
     "@enkore/core": "^0.7.4",
     "@enkore/primitives": "^0.0.10",
