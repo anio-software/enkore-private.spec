@@ -30,6 +30,13 @@ export type Definition = {
 			forceToolchain?: ValidToolchainCombinations|false
 		}
 	) => Promise<{
+		// tells us whether the target integration was loaded from an
+		// internal package namespace (@asint) or public one (@enkore)
+
+		// this is used to restrict what toolchains can be installed
+		// (i.e. public packages cannot install internal toolchains)
+		readonly _targetIntegrationPackageNamespace: string
+
 		readonly initialLockFile: EnkoreLockFile
 
 		targetIntegrationAPI: EnkoreTargetIntegrationAPI
