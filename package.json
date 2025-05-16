@@ -30,10 +30,13 @@
     "@aniojs/event-emitter": "^0.1.0",
     "@aniojs/node-fs-file": "^0.2.0",
     "@aniojs/node-fs-scandir": "^0.2.2",
+    "@enkore-target/js-none": "^0.0.61",
     "@enkore-types/toolchains": "^0.0.6",
+    "@enkore/core": "^0.7.4",
     "@enkore/primitives": "^0.0.10",
     "@fourtune/core": "^0.1101.0",
     "@fourtune/realm-js": "^1.0.5",
+    "enkore": "^0.0.37",
     "fourtune": "^0.30000.1"
   },
   "scripts": {
