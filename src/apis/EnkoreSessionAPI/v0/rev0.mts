@@ -5,9 +5,9 @@ import type {
 	EnkoreNodeAPIOptions
 } from "#~src/export/__star_export.mts"
 import type {NodeAPIMessage, NodePackageJSON} from "@enkore/primitives"
-import type {AllEnkoreTargets} from "#~src/AllEnkoreTargets.d.mts"
+import type {AllEnkoreTargets} from "#~src/AllEnkoreTargets.mts"
 import type {TargetIdentifier} from "@enkore/primitives"
-import type {TargetIdentifierToEntityName} from "#~src/TargetIdentifierToEntityName.d.mts"
+import type {TargetIdentifierToEntityName} from "#~src/TargetIdentifierToEntityName.mts"
 import type {
 	ToolchainIDs,
 	ToolchainByID
