@@ -1,7 +1,7 @@
-import type {IDs} from "#~src/apis/IDs.d.mts"
-import type {AllDefinedMajorVersions} from "#~src/apis/AllDefinedMajorVersions.d.mts"
-import type {AllDefinedRevisions} from "#~src/apis/AllDefinedRevisions.d.mts"
-import type {AllDefinedAPIs} from "#~synthetic/user/AllDefinedAPIs.d.mts"
+import type {IDs} from "#~src/apis/IDs.mts"
+import type {AllDefinedMajorVersions} from "#~src/apis/AllDefinedMajorVersions.mts"
+import type {AllDefinedRevisions} from "#~src/apis/AllDefinedRevisions.mts"
+import type {AllDefinedAPIs} from "#~synthetic/user/AllDefinedAPIs.mts"
 
 export type AllAPIs = {
 	[ID in IDs]: {
