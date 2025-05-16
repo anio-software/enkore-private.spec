@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 export async function getDefinedAPIs() {
 	const map = new Map()
 	const entries = await scandir(
-		path.join(__dirname, "src", "apis"), {
+		path.join(__dirname, "project", "src", "apis"), {
 			sorted: true
 		}
 	)
