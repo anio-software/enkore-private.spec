@@ -4,8 +4,17 @@ import path from "node:path"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-export async function getDefinedAPIs() {
-	const map = new Map()
+type DefinedAPI = Map<number, {
+	importPath: string
+	importAliasName: string
+	revision: number
+	apiType: (definitionType: string) => string
+}[]>
+
+export type DefinedAPIs = Map<string, DefinedAPI>
+
+export async function getDefinedAPIs(): Promise<DefinedAPIs> {
+	const map: DefinedAPIs = new Map()
 	const entries = await scandir(
 		path.join(__dirname, "..", "..", "project", "src", "apis"), {
 			sorted: true
@@ -27,13 +36,13 @@ export async function getDefinedAPIs() {
 			map.set(apiID, new Map())
 		}
 
-		const apiMap = map.get(apiID)
+		const apiMap = map.get(apiID)!
 
 		if (!apiMap.has(apiMajorVersion)) {
 			apiMap.set(apiMajorVersion, [])
 		}
 
-		apiMap.get(apiMajorVersion).push({
+		apiMap.get(apiMajorVersion)!.push({
 			importPath: `#~src/apis/${entry.relative_path}`,
 			importAliasName: `${apiID}_V${apiMajorVersion}_Rev${apiRevision}`,
 			revision: apiRevision,
