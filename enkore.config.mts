@@ -1,6 +1,6 @@
 import {
 	createConfig,
-	createTargetJSNoneOptions
+	createTargetJSNodeOptions
 } from "enkore/spec/factory"
 
 import {getFilesToAutogenerate} from "./config/enkore/getFilesToAutogenerate.mts"
@@ -11,8 +11,8 @@ const isPublicRelease = (
 
 export const config: unknown = createConfig({
 	target: {
-		name: "js-none",
-		options: createTargetJSNoneOptions({
+		name: "js-node",
+		options: createTargetJSNodeOptions({
 			npm: {
 				registry: [{
 					url: "https://registry.npmjs.org/",
