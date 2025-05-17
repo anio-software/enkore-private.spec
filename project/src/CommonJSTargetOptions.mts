@@ -19,6 +19,12 @@ export type CommonJSTargetOptions = {
 		expandStarExports?: boolean
 	}
 
+	// if not specified, defaults to:
+	// registry: {
+	//     default: {url: "https://registry.npmjs.org/"}
+	// }
+	registry?: Record<string, NPMRegistry>
+
 	publish?: {
 		withExactDependencyVersions?: boolean
 		withPackageNames?: NonEmptyArray<PackageName>
