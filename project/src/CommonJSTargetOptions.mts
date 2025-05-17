@@ -7,7 +7,6 @@ type PackageName = string | {
 
 type NPMRegistry = {
 	url: string
-	scope?: string|string[]
 	clientPrivateKeyFilePath?: string
 	clientCertificateFilePath?: string
 	authTokenFilePath?: string
