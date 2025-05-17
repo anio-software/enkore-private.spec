@@ -33,6 +33,10 @@ export type CommonJSTargetOptions = {
 	// }
 	registry?: Record<string, NPMRegistry>
 
+	packageSourceRegistryByScope?: Record<string, {
+		registry: string
+	}>
+
 	publishWithExactDependencyVersions?: boolean
 
 	publish?: PublishConfig[]
