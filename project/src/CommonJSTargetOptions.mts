@@ -25,8 +25,9 @@ export type CommonJSTargetOptions = {
 	// }
 	registry?: Record<string, NPMRegistry>
 
+	publishWithExactDependencyVersions?: boolean
+
 	publish?: {
-		withExactDependencyVersions?: boolean
 		withPackageNames?: NonEmptyArray<PackageName>
 
 		typesPackage?: {
