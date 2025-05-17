@@ -13,11 +13,6 @@ type NPMRegistry = {
 }
 
 export type CommonJSTargetOptions = {
-	npm?: {
-		binaryPath?: string
-		registry?: NPMRegistry|NPMRegistry[]
-	}
-
 	externalPackages?: string[]
 	externalTypePackages?: string[]
 	preprocess?: {
