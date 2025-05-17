@@ -12,6 +12,14 @@ type NPMRegistry = {
 	authTokenFilePath?: string
 }
 
+type PublishConfig = {
+	packageName: string
+	registry?: string // defaults to "default"
+	publishWithProvenance?: boolean // defaults to false
+	tag?: string // defaults to "latest"
+	packageContents?: "project" | "projectTypes" // defaults to "project"
+}
+
 export type CommonJSTargetOptions = {
 	externalPackages?: string[]
 	externalTypePackages?: string[]
@@ -27,13 +35,7 @@ export type CommonJSTargetOptions = {
 
 	publishWithExactDependencyVersions?: boolean
 
-	publish?: {
-		withPackageNames?: NonEmptyArray<PackageName>
-
-		typesPackage?: {
-			withPackageNames: NonEmptyArray<PackageName>
-		}
-	}
+	publish?: PublishConfig[]
 
 	exports?: {
 		[name: string]: {
