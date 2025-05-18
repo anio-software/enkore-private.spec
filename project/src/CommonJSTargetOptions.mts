@@ -32,7 +32,7 @@ export type CommonJSTargetOptions = {
 
 	publishWithExactDependencyVersions?: boolean
 
-	publish?: PublishConfig[]
+	publish?: PublishConfig | PublishConfig[]
 
 	exports?: {
 		[name: string]: {
