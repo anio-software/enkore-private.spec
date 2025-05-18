@@ -1,7 +1,7 @@
 import {
 	createConfig,
 	createTargetJSNodeOptions
-} from "@asint/enkore/spec/factory"
+} from "@anio-software/enkore/spec/factory"
 
 import {getFilesToAutogenerate} from "./config/enkore/getFilesToAutogenerate.mts"
 
