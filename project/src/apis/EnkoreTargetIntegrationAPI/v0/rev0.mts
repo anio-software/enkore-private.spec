@@ -1,7 +1,8 @@
 import type {
 	EnkoreSessionAPI,
 	EnkoreBoilerplateFile,
-	EnkoreProjectFile
+	EnkoreProjectFile,
+	EnkoreConfig
 } from "#~export/__aggregatedExports.mts"
 
 import type {NodeAPIMessage} from "@enkore/primitives"
@@ -16,7 +17,10 @@ type ObjectFile = ({
 }
 
 export type Definition = {
-	getToolchainToInstall: () => Promise<ValidToolchainCombinations>
+	getToolchainToInstall: (
+		projectRoot: string,
+		projectConfig: EnkoreConfig
+	) => Promise<ValidToolchainCombinations>
 
 	getBoilerplateFiles?: (
 		f: EnkoreSessionAPI
@@ -45,7 +49,10 @@ export type Definition = {
 		file: EnkoreProjectFile
 	) => Promise<boolean>
 
-	getInitialInternalData?: () => Promise<object>
+	getInitialInternalData?: (
+		projectRoot: string,
+		projectConfig: EnkoreConfig
+	) => Promise<object>
 
 	initialize: (
 		f: EnkoreSessionAPI
