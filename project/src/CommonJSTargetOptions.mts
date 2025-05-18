@@ -11,6 +11,7 @@ type PublishConfig = {
 	publishWithProvenance?: boolean // defaults to false
 	tag?: string // defaults to "latest"
 	packageContents?: "project" | "projectTypes" // defaults to "project"
+	skip?: boolean
 }
 
 export type CommonJSTargetOptions = {
