@@ -4,9 +4,9 @@ import type {
 	EnkoreProjectFile,
 	EnkoreNodeAPIOptions
 } from "#~export/__aggregatedExports.mts"
-import type {NodeAPIMessage, NodePackageJSON} from "@enkore/primitives"
+import type {NodeAPIMessage, NodePackageJSON} from "@anio-software/enkore.primitives"
 import type {AllEnkoreTargets} from "#~src/AllEnkoreTargets.mts"
-import type {TargetIdentifier} from "@enkore/primitives"
+import type {TargetIdentifier} from "@anio-software/enkore.primitives"
 import type {TargetIdentifierToEntityName} from "#~src/TargetIdentifierToEntityName.mts"
 import type {
 	ToolchainIDs,

@@ -1,4 +1,4 @@
-import type {TargetIdentifier} from "@enkore/primitives"
+import type {TargetIdentifier} from "@anio-software/enkore.primitives"
 
 export type TargetIdentifierToEntityName<
 	T extends TargetIdentifier

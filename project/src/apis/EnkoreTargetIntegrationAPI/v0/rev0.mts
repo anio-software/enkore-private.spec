@@ -5,7 +5,7 @@ import type {
 	EnkoreConfig
 } from "#~export/__aggregatedExports.mts"
 
-import type {NodeAPIMessage} from "@enkore/primitives"
+import type {NodeAPIMessage} from "@anio-software/enkore.primitives"
 import type {ValidToolchainCombinations} from "@enkore-types/toolchains"
 
 type ObjectFile = ({

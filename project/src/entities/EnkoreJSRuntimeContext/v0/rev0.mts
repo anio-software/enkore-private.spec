@@ -1,7 +1,7 @@
 import type {
 	JSRuntimeLogLevel,
 	JSRuntimePackageInformation
-} from "@enkore/primitives"
+} from "@anio-software/enkore.primitives"
 import type {
 	EnkoreJSRuntimeContextOptions,
 	EnkoreJSRuntimeProject

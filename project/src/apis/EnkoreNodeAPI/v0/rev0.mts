@@ -3,7 +3,7 @@ import type {
 	EnkoreNodeAPIOptions
 } from "#~export/__aggregatedExports.mts"
 import type {DefineEvent, EventEmitter} from "@aniojs/event-emitter"
-import type {NodeAPIMessage} from "@enkore/primitives"
+import type {NodeAPIMessage} from "@anio-software/enkore.primitives"
 
 type MessageEvent = DefineEvent<"message", NodeAPIMessage>
 

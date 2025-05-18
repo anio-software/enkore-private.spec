@@ -1,4 +1,4 @@
-import type {JSRuntimeLogLevel} from "@enkore/primitives"
+import type {JSRuntimeLogLevel} from "@anio-software/enkore.primitives"
 
 import type {
 	EnkoreJSRuntimeContext,
