@@ -1,10 +1,3 @@
-type NonEmptyArray<T> = [T, ...T[]]
-
-type PackageName = string | {
-	name: string
-	publishWithProvenance?: boolean
-}
-
 type NPMRegistry = {
 	url: string
 	clientPrivateKeyFilePath?: string
