@@ -6,7 +6,7 @@ import type {
 } from "#~export/__aggregatedExports.mts"
 
 import type {NodeAPIMessage} from "@anio-software/enkore.primitives"
-import type {ValidToolchainCombinations} from "@enkore-types/toolchains"
+import type {ToolchainSpecifiers} from "@anio-software/enkore.toolchain-types"
 
 type ObjectFile = ({
 	path: string
@@ -20,7 +20,7 @@ export type Definition = {
 	getToolchainToInstall: (
 		projectRoot: string,
 		projectConfig: EnkoreConfig
-	) => Promise<ValidToolchainCombinations>
+	) => Promise<ToolchainSpecifiers>
 
 	getBoilerplateFiles?: (
 		f: EnkoreSessionAPI

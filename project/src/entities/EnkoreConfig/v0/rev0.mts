@@ -4,7 +4,7 @@ import type {AllEnkoreTargets} from "#~src/AllEnkoreTargets.mts"
 import type {TargetIdentifier} from "@anio-software/enkore.primitives"
 import type {TargetIdentifierToEntityName} from "#~src/TargetIdentifierToEntityName.mts"
 
-import type {ValidToolchainCombinations} from "@enkore-types/toolchains"
+import type {ToolchainSpecifiers} from "@anio-software/enkore.toolchain-types"
 
 type Map = {
 	[K in TargetIdentifier]: Extract<AllEnkoreTargets, {
@@ -16,7 +16,7 @@ type Targets = {
 	[K in TargetIdentifier]: {
 		name: K
 		options: Map[K]
-		_toolchain?: ValidToolchainCombinations
+		_toolchain?: ToolchainSpecifiers
 	}
 }
 

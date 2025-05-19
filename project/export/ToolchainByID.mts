@@ -1,1 +1,1 @@
-export type {ToolchainByID} from "@enkore-types/toolchains"
+export type {ToolchainByID} from "@anio-software/enkore.toolchain-types"

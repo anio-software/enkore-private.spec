@@ -12,7 +12,7 @@ import type {
 	ToolchainIDs,
 	Toolchains,
 	ToolchainByID
-} from "@enkore-types/toolchains"
+} from "@anio-software/enkore.toolchain-types"
 
 type TargetOptionsMap = {
 	[K in TargetIdentifier]: Extract<AllEnkoreTargets, {

@@ -4,8 +4,8 @@ import type {
 } from "#~export/__aggregatedExports.mts"
 import type {
 	Toolchains,
-	ValidToolchainCombinations
-} from "@enkore-types/toolchains"
+	ToolchainSpecifiers
+} from "@anio-software/enkore.toolchain-types"
 
 export type Definition = {
 	createTemporaryFile: (
@@ -27,7 +27,7 @@ export type Definition = {
 		options?: {
 			npmBinaryPath?: string
 			force?: boolean
-			forceToolchain?: ValidToolchainCombinations|false
+			forceToolchain?: ToolchainSpecifiers|false
 		}
 	) => Promise<{
 		// tells us whether the target integration was loaded from an
