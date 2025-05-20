@@ -29,7 +29,6 @@ export const config: unknown = createConfig({
 			},
 
 			publish: [{
-				packageName: "@anio-software/enkore.spec",
 				registry: "anioSoftware"
 			}]
 		})
