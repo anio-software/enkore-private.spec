@@ -12,6 +12,7 @@ type PublishConfig = {
 	tag?: string // defaults to "latest"
 	packageContents?: "project" | "projectTypes" // defaults to "project"
 	skip?: boolean
+	verbatimVersion?: boolean // don't append tag to version number
 }
 
 export type CommonJSTargetOptions = {
