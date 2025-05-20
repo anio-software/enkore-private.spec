@@ -12,9 +12,9 @@
   "devDependencies": {
     "@anio-software/enkore": "^0.0.54",
     "@anio-software/enkore-private.primitives": "^0.0.12",
+    "@anio-software/enkore-private.toolchain-types": "^0.0.1",
     "@anio-software/enkore.core": "^0.9.5",
     "@anio-software/enkore.target-js-node": "^0.0.30-canary-9be95636-61c27ebe",
-    "@anio-software/enkore.toolchain-types": "^0.0.1",
     "@aniojs/event-emitter": "^0.1.0",
     "@aniojs/node-fs-file": "^0.2.0",
     "@aniojs/node-fs-scandir": "^0.2.2",
