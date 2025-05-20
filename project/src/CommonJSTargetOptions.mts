@@ -6,7 +6,7 @@ type NPMRegistry = {
 }
 
 type PublishConfig = {
-	packageName: string
+	packageName?: string
 	registry?: string // defaults to "default"
 	publishWithProvenance?: boolean // defaults to false
 	tag?: string // defaults to "latest"
