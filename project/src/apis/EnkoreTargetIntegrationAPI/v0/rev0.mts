@@ -6,7 +6,7 @@ import type {
 } from "#~export/__aggregatedExports.mts"
 
 import type {NodeAPIMessage} from "@anio-software/enkore-private.primitives"
-import type {ToolchainSpecifiers} from "@anio-software/enkore.toolchain-types"
+import type {ToolchainSpecifiers} from "@anio-software/enkore-private.toolchain-types"
 
 type ObjectFile = ({
 	path: string

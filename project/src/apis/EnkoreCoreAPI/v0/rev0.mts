@@ -5,7 +5,7 @@ import type {
 import type {
 	Toolchains,
 	ToolchainSpecifiers
-} from "@anio-software/enkore.toolchain-types"
+} from "@anio-software/enkore-private.toolchain-types"
 
 export type Definition = {
 	createTemporaryFile: (

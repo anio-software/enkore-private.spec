@@ -1,4 +1,4 @@
-import type {ToolchainSpecifiers} from "@anio-software/enkore.toolchain-types"
+import type {ToolchainSpecifiers} from "@anio-software/enkore-private.toolchain-types"
 
 export type Definition = {
 	stdIOLogs?: boolean

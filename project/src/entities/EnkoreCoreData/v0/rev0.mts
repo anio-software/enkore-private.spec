@@ -1,4 +1,4 @@
-import type {ToolchainIDs} from "@anio-software/enkore.toolchain-types"
+import type {ToolchainIDs} from "@anio-software/enkore-private.toolchain-types"
 
 type CurrentToolchain = {
 	installedOnPlatform: string
