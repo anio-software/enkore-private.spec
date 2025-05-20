@@ -5,10 +5,6 @@ import {
 
 import {getFilesToAutogenerate} from "./config/enkore/getFilesToAutogenerate.mts"
 
-const isPublicRelease = (
-	process.env?.RELEASE_VERSION ?? ""
-).startsWith("vp")
-
 export const config: unknown = createConfig({
 	target: {
 		name: "js-node",
