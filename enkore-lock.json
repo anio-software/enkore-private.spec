@@ -60,7 +60,7 @@
         }
     },
     "toolchain": [
-        "@enkore/target-js-toolchain",
-        13
+        "js",
+        35
     ]
 }
