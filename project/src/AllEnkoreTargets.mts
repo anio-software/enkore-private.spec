@@ -1,11 +1,7 @@
 import type {
-	EnkoreTargetJSNoneOptions,
-	EnkoreTargetJSNodeOptions,
-	EnkoreTargetJSWebOptions,
+	EnkoreTargetJSOptions,
 	EnkoreTargetCOptions
 } from "#~export/__aggregatedExports.mts"
 
-export type AllEnkoreTargets = EnkoreTargetJSNoneOptions |
-                               EnkoreTargetJSNodeOptions |
-                               EnkoreTargetJSWebOptions  |
+export type AllEnkoreTargets = EnkoreTargetJSOptions |
                                EnkoreTargetCOptions
