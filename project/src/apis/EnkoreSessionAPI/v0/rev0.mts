@@ -5,7 +5,7 @@ import type {
 	EnkoreNodeAPIOptions
 } from "#~export/__aggregatedExports.mts"
 import type {NodeAPIMessage, NodePackageJSON} from "@anio-software/enkore-private.primitives"
-import type {AllEnkoreTargets} from "#~src/AllEnkoreTargets.mts"
+import type {AllEnkoreTargetOptions} from "#~src/AllEnkoreTargetOptions.mts"
 import type {TargetIdentifier} from "@anio-software/enkore-private.primitives"
 import type {TargetIdentifierToEntityName} from "#~src/TargetIdentifierToEntityName.mts"
 import type {
@@ -15,7 +15,7 @@ import type {
 } from "@anio-software/enkore-private.toolchain-types"
 
 type TargetOptionsMap = {
-	[K in TargetIdentifier]: Extract<AllEnkoreTargets, {
+	[K in TargetIdentifier]: Extract<AllEnkoreTargetOptions, {
 		entityKind: TargetIdentifierToEntityName<K>
 	}>
 }
