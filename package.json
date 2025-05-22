@@ -17,7 +17,6 @@
     "@anio-software/enkore.target-js": "^0.0.2-canary-69353116-2276e5c2",
     "@aniojs/event-emitter": "^0.1.0",
     "@aniojs/node-fs-file": "^0.2.0",
-    "@aniojs/node-fs-scandir": "^0.2.2",
-    "@types/node": "^22.15.18"
+    "@aniojs/node-fs-scandir": "^0.2.2"
   }
 }
