@@ -8,8 +8,9 @@
         "verbatimModuleSyntax": true,
         "strict": true,
         "skipLibCheck": false,
-        "types": [
-            "node"
+        "types": [],
+        "lib": [
+            "esnext"
         ],
         "target": "esnext",
         "module": "nodenext",
