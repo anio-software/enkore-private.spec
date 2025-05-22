@@ -9,7 +9,7 @@ export const config: unknown = createConfig({
 	target: {
 		name: "js",
 		options: createTargetJSOptions({
-			environment: [],
+			environment: ["node"],
 
 			registry: {
 				"anioSoftware": {
