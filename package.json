@@ -14,7 +14,6 @@
     "@anio-software/enkore-private.primitives": "^0.0.15",
     "@anio-software/enkore-private.toolchain-types": "^0.0.1",
     "@anio-software/enkore.core": "^0.10.0",
-    "@anio-software/enkore.target-js-node": "^0.0.40-canary-702a983e-659d1061",
     "@aniojs/event-emitter": "^0.1.0",
     "@aniojs/node-fs-file": "^0.2.0",
     "@aniojs/node-fs-scandir": "^0.2.2",
