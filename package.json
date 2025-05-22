@@ -1,6 +1,6 @@
 {
   "name": "@anio-software/enkore-private.spec",
-  "version": "0.277.1",
+  "version": "0.280.0",
   "author": "Anio Software <info@anio.software>",
   "description": "This package contains all APIs and Entities used by the enkore project.",
   "license": "MIT",
