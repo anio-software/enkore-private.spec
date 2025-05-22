@@ -15,7 +15,11 @@ type PublishConfig = {
 	verbatimVersion?: boolean // don't append tag to version number
 }
 
+type Environment = "web" | "node"
+
 export type Definition = {
+	environment: Environment[],
+
 	externalPackages?: string[]
 	externalTypePackages?: string[]
 	preprocess?: {
