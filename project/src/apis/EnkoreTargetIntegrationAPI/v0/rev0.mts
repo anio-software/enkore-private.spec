@@ -66,7 +66,7 @@ export type Definition = {
 		f: EnkoreSessionAPI,
 		file: EnkoreProjectFile,
 		sourceCode: string
-	) => Promise<string>
+	) => Promise<File | File[] | string>
 
 	lint?: (
 		f: EnkoreSessionAPI,
