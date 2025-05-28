@@ -8,7 +8,7 @@ import type {
 import type {NodeAPIMessage} from "@anio-software/enkore-private.primitives"
 import type {ToolchainSpecifiers} from "@anio-software/enkore-private.toolchain-types"
 
-type ObjectFile = ({
+type File = ({
 	path: string
 } | {
 	name: string
@@ -78,7 +78,7 @@ export type Definition = {
 		f: EnkoreSessionAPI,
 		file: EnkoreProjectFile,
 		sourceCode: string
-	) => Promise<ObjectFile | ObjectFile[] | "unsupported" | "skip" | "copy">
+	) => Promise<File | File[] | "unsupported" | "skip" | "copy">
 
 	generateProduct: (
 		f: EnkoreSessionAPI,
