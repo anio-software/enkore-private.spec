@@ -71,7 +71,7 @@ export type Definition = {
 
 	lint?: (
 		f: EnkoreSessionAPI,
-		file: EnkoreProjectFile,
+		file: EnkoreProjectFile|EnkoreVirtualProjectFile,
 		sourceCode: string
 	) => Promise<NodeAPIMessage[]>
 
