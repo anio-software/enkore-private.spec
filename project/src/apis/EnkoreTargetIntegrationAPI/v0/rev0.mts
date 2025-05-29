@@ -2,6 +2,7 @@ import type {
 	EnkoreSessionAPI,
 	EnkoreBoilerplateFile,
 	EnkoreProjectFile,
+	EnkoreVirtualProjectFile,
 	EnkoreConfig
 } from "#~export/__aggregatedExports.mts"
 
@@ -76,7 +77,7 @@ export type Definition = {
 
 	compile: (
 		f: EnkoreSessionAPI,
-		file: EnkoreProjectFile,
+		file: EnkoreProjectFile|EnkoreVirtualProjectFile,
 		sourceCode: string
 	) => Promise<File | File[] | "unsupported" | "skip" | "copy">
 
