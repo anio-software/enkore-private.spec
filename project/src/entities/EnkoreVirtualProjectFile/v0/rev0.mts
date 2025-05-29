@@ -1,0 +1,5 @@
+export type Definition = {
+	fileName: string
+	absolutePath: string
+	relativePath: string
+}
