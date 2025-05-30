@@ -2,7 +2,7 @@ import type {
 	EnkoreSessionAPI,
 	EnkoreBoilerplateFile,
 	EnkoreProjectFile,
-	EnkoreVirtualProjectFile,
+	EnkoreBuildFile,
 	EnkoreConfig
 } from "#~export/__aggregatedExports.mts"
 
@@ -71,13 +71,13 @@ export type Definition = {
 
 	lint?: (
 		f: EnkoreSessionAPI,
-		file: EnkoreProjectFile|EnkoreVirtualProjectFile,
+		file: EnkoreProjectFile|EnkoreBuildFile,
 		sourceCode: string
 	) => Promise<NodeAPIMessage[]>
 
 	compile: (
 		f: EnkoreSessionAPI,
-		file: EnkoreProjectFile|EnkoreVirtualProjectFile,
+		file: EnkoreProjectFile|EnkoreBuildFile,
 		sourceCode: string
 	) => Promise<File | File[] | "unsupported" | "skip" | "copy">
 
