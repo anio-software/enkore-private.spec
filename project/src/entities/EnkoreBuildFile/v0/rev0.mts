@@ -1,5 +1,5 @@
 //
-// NB: "virtual" project files are the ones created by preprocess()
+// NB: those are project files created by preprocess()
 //
 export type Definition = {
 	fileName: string
