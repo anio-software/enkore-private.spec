@@ -33,6 +33,10 @@ export type Definition = {
 		earlySession: EarlySession
 	) => Promise<ToolchainSpecifiers>
 
+	getInitialInternalData?: (
+		earlySession: EarlySession
+	) => Promise<object>
+
 	getBoilerplateFiles?: (
 		f: EnkoreSessionAPI
 	) => Promise<EnkoreBoilerplateFile[]>
@@ -59,10 +63,6 @@ export type Definition = {
 		f: EnkoreSessionAPI,
 		file: EnkoreProjectFile
 	) => Promise<boolean>
-
-	getInitialInternalData?: (
-		earlySession: EarlySession
-	) => Promise<object>
 
 	initialize: (
 		f: EnkoreSessionAPI
