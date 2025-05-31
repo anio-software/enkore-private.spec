@@ -6,7 +6,10 @@ import type {
 	EnkoreConfig
 } from "#~export/__aggregatedExports.mts"
 
-import type {NodeAPIMessage} from "@anio-software/enkore-private.primitives"
+import type {
+	NodeAPIMessage,
+	NodePackageJSON
+} from "@anio-software/enkore-private.primitives"
 import type {ToolchainSpecifiers} from "@anio-software/enkore-private.toolchain-types"
 
 type File = ({
@@ -17,10 +20,17 @@ type File = ({
 	contents: string
 }
 
+type EarlySession = {
+	project: {
+		root: string
+		config: EnkoreConfig
+		packageJSON: NodePackageJSON
+	}
+}
+
 export type Definition = {
 	getToolchainToInstall: (
-		projectRoot: string,
-		projectConfig: EnkoreConfig
+		earlySession: EarlySession
 	) => Promise<ToolchainSpecifiers>
 
 	getBoilerplateFiles?: (
@@ -51,8 +61,7 @@ export type Definition = {
 	) => Promise<boolean>
 
 	getInitialInternalData?: (
-		projectRoot: string,
-		projectConfig: EnkoreConfig
+		earlySession: EarlySession
 	) => Promise<object>
 
 	initialize: (
