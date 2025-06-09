@@ -4,7 +4,7 @@ import type {AllDefinedMajorVersions} from "#~src/entities/AllDefinedMajorVersio
 import type {AllDefinedRevisions} from "#~src/entities/AllDefinedRevisions.mts"
 import type {UnknownEntity} from "./UnknownEntity.mts"
 import type {JSONCompatibleType} from "./JSONCompatibleType.mts"
-import {readFileJSON} from "@aniojs/node-fs-file"
+import {readFileJSON} from "@aniojs/node-fs"
 
 export async function readEntityJSONFile<
 	Kind extends Kinds,

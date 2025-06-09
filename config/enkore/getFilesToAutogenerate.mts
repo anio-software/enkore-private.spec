@@ -7,7 +7,7 @@ import {getDefinedEntities} from "./getDefinedEntities.mts"
 import {getDefinedAPIs} from "./getDefinedAPIs.mts"
 import {generateAllEntitiesCode} from "./generateAllEntitiesCode.mts"
 import {generateAllAPIsCode} from "./generateAllAPIsCode.mts"
-import {readFileJSON} from "@aniojs/node-fs-file"
+import {readFileJSON} from "@aniojs/node-fs"
 import {generateEntityFactoryCode} from "./generateEntityFactoryCode.mts"
 import {getNewestEntityVersions} from "./getNewestEntityVersions.mts"
 

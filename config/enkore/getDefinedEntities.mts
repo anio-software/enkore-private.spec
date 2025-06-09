@@ -1,4 +1,4 @@
-import {scandir} from "@aniojs/node-fs-scandir"
+import {scandir} from "@aniojs/node-fs"
 import {fileURLToPath} from "node:url"
 import path from "node:path"
 
