@@ -28,6 +28,19 @@ type EarlySession = {
 	}
 }
 
+type EmitFileMessage = {
+	(
+		severity: NodeAPIMessage["severity"],
+		message: NodeAPIMessage["message"]
+	) : undefined
+
+	(
+		severity: NodeAPIMessage["severity"],
+		id: NodeAPIMessage["id"],
+		message: NodeAPIMessage["message"]
+	) : undefined
+}
+
 export type Definition = {
 	getToolchainToInstall: (
 		earlySession: EarlySession
@@ -75,19 +88,22 @@ export type Definition = {
 	preprocess?: (
 		f: EnkoreSessionAPI,
 		file: EnkoreProjectFile,
-		sourceCode: string
+		sourceCode: string,
+		emitFileMessage: EmitFileMessage
 	) => Promise<File | File[] | string>
 
 	lint?: (
 		f: EnkoreSessionAPI,
 		file: EnkoreProjectFile|EnkoreBuildFile,
-		sourceCode: string
+		sourceCode: string,
+		emitFileMessage: EmitFileMessage
 	) => Promise<NodeAPIMessage[]>
 
 	compile: (
 		f: EnkoreSessionAPI,
 		file: EnkoreProjectFile|EnkoreBuildFile,
-		sourceCode: string
+		sourceCode: string,
+		emitFileMessage: EmitFileMessage
 	) => Promise<File | File[] | "unsupported" | "skip" | "copy">
 
 	generateProduct: (
