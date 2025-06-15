@@ -20,6 +20,7 @@ type Environment = "web" | "node"
 export type Definition = {
 	environment: Environment | Environment[]
 
+	bundleJSXRuntimePackages?: boolean
 	externalPackages?: string[]
 	externalTypePackages?: string[]
 	preprocess?: {
