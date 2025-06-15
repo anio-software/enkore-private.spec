@@ -18,7 +18,7 @@ type PublishConfig = {
 type Environment = "web" | "node"
 
 export type Definition = {
-	environment: Environment | Environment[],
+	environment: Environment | Environment[]
 
 	externalPackages?: string[]
 	externalTypePackages?: string[]
