@@ -1,10 +1,10 @@
-import type {Kinds} from "#~src/entities/Kinds.mts"
-import type {AllDefinedMajorVersions} from "#~src/entities/AllDefinedMajorVersions.mts"
-import type {AllDefinedRevisions} from "#~src/entities/AllDefinedRevisions.mts"
+import type {Kinds} from "#~src/entities/Kinds.ts"
+import type {AllDefinedMajorVersions} from "#~src/entities/AllDefinedMajorVersions.ts"
+import type {AllDefinedRevisions} from "#~src/entities/AllDefinedRevisions.ts"
 
-import type {EntitiesByKind} from "#~src/maps/EntitiesByKind.mts"
-import type {EntitiesByKindAndMajorVersion} from "#~src/maps/EntitiesByKindAndMajorVersion.mts"
-import type {AllEntities} from "#~src/maps/AllEntities.mts"
+import type {EntitiesByKind} from "#~src/maps/EntitiesByKind.ts"
+import type {EntitiesByKindAndMajorVersion} from "#~src/maps/EntitiesByKindAndMajorVersion.ts"
+import type {AllEntities} from "#~src/maps/AllEntities.ts"
 
 type MajorVersions = AllDefinedMajorVersions | void
 type Revisions = AllDefinedRevisions | void

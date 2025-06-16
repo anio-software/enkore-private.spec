@@ -1,5 +1,5 @@
-import type {EnkoreConfig} from "../__aggregatedExports.mts"
-import {isEntityOfKind} from "../isEntityOfKind.mts"
+import type {EnkoreConfig} from "../__aggregatedExports.ts"
+import {isEntityOfKind} from "../isEntityOfKind.ts"
 import path from "node:path"
 
 export async function readEnkoreConfigFile(

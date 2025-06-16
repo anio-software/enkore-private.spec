@@ -1,4 +1,4 @@
-import type {IDs} from "#~src/apis/IDs.mts"
+import type {IDs} from "#~src/apis/IDs.ts"
 
 //
 // defines a versioned API type

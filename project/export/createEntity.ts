@@ -1,9 +1,9 @@
-import type {AllEntities} from "#~src/maps/AllEntities.mts"
-import type {Kinds} from "#~src/entities/Kinds.mts"
-import type {AllDefinedMajorVersions} from "#~src/entities/AllDefinedMajorVersions.mts"
-import type {AllDefinedRevisions} from "#~src/entities/AllDefinedRevisions.mts"
-import type {UnknownEntity} from "./UnknownEntity.mts"
-import type {RawType} from "./RawType.mts"
+import type {AllEntities} from "#~src/maps/AllEntities.ts"
+import type {Kinds} from "#~src/entities/Kinds.ts"
+import type {AllDefinedMajorVersions} from "#~src/entities/AllDefinedMajorVersions.ts"
+import type {AllDefinedRevisions} from "#~src/entities/AllDefinedRevisions.ts"
+import type {UnknownEntity} from "./UnknownEntity.ts"
+import type {RawType} from "./RawType.ts"
 
 export function createEntity<
 	Kind extends Kinds,

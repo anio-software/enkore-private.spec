@@ -4,7 +4,7 @@ import type {
 	EnkoreJSRuntimeContext,
 	EnkoreJSRuntimeContextOptions,
 	EnkoreJSRuntimeProject
-} from "#~export/__aggregatedExports.mts"
+} from "#~export/__aggregatedExports.ts"
 
 type Operator = ">"  |
                 ">=" |

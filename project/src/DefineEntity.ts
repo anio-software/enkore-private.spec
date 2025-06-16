@@ -1,4 +1,4 @@
-import type {Kinds} from "#~src/entities/Kinds.mts"
+import type {Kinds} from "#~src/entities/Kinds.ts"
 
 //
 // defines a versioned entity type

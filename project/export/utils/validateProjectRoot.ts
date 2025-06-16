@@ -1,7 +1,7 @@
 import path from "node:path"
 import {isFileSync} from "@aniojs/node-fs"
-import {readEnkoreConfigFile} from "./readEnkoreConfigFile.mts"
-import {resolveImportSpecifierFromProjectRoot} from "./resolveImportSpecifierFromProjectRoot.mts"
+import {readEnkoreConfigFile} from "./readEnkoreConfigFile.ts"
+import {resolveImportSpecifierFromProjectRoot} from "./resolveImportSpecifierFromProjectRoot.ts"
 
 function checkIfEnkorePackageIsInstalled(
 	projectRoot: string,

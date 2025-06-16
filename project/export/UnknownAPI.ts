@@ -1,5 +1,5 @@
-import type {DefineAPI} from "#~src/DefineAPI.mts"
-import type {IDs} from "#~src/apis/IDs.mts"
+import type {DefineAPI} from "#~src/DefineAPI.ts"
+import type {IDs} from "#~src/apis/IDs.ts"
 
 export type UnknownAPI = DefineAPI<
 	IDs,

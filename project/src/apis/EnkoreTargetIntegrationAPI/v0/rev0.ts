@@ -4,7 +4,7 @@ import type {
 	EnkoreProjectFile,
 	EnkoreBuildFile,
 	EnkoreConfig
-} from "#~export/__aggregatedExports.mts"
+} from "#~export/__aggregatedExports.ts"
 
 import type {
 	NodeAPIMessage,

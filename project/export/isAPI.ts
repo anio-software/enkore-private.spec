@@ -1,6 +1,6 @@
-import type {IDs} from "#~src/apis/IDs.mts"
-import type {APIsByID} from "#~src/maps/APIsByID.mts"
-import type {UnknownAPI} from "./UnknownAPI.mts"
+import type {IDs} from "#~src/apis/IDs.ts"
+import type {APIsByID} from "#~src/maps/APIsByID.ts"
+import type {UnknownAPI} from "./UnknownAPI.ts"
 
 export function isAPI<
 	ID extends IDs

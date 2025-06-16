@@ -1,8 +1,8 @@
-import type {API} from "#~export/API.mts"
-import type {IDs} from "#~src/apis/IDs.mts"
-import type {AllDefinedMajorVersions} from "#~src/apis/AllDefinedMajorVersions.mts"
-import type {AllDefinedRevisions} from "#~src/apis/AllDefinedRevisions.mts"
-import type {UnknownAPI} from "./UnknownAPI.mts"
+import type {API} from "#~export/API.ts"
+import type {IDs} from "#~src/apis/IDs.ts"
+import type {AllDefinedMajorVersions} from "#~src/apis/AllDefinedMajorVersions.ts"
+import type {AllDefinedRevisions} from "#~src/apis/AllDefinedRevisions.ts"
+import type {UnknownAPI} from "./UnknownAPI.ts"
 
 export async function importAPI<
 	ID extends IDs,

@@ -1,9 +1,9 @@
-import type {AllAPIs} from "#~src/maps/AllAPIs.mts"
-import type {IDs} from "#~src/apis/IDs.mts"
-import type {AllDefinedMajorVersions} from "#~src/apis/AllDefinedMajorVersions.mts"
-import type {AllDefinedRevisions} from "#~src/apis/AllDefinedRevisions.mts"
-import type {UnknownAPI} from "./UnknownAPI.mts"
-import type {RawType} from "./RawType.mts"
+import type {AllAPIs} from "#~src/maps/AllAPIs.ts"
+import type {IDs} from "#~src/apis/IDs.ts"
+import type {AllDefinedMajorVersions} from "#~src/apis/AllDefinedMajorVersions.ts"
+import type {AllDefinedRevisions} from "#~src/apis/AllDefinedRevisions.ts"
+import type {UnknownAPI} from "./UnknownAPI.ts"
+import type {RawType} from "./RawType.ts"
 
 export function createAPI<
 	ID extends IDs,

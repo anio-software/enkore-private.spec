@@ -1,4 +1,4 @@
-import {findProjectRootFromDirectory} from "./findProjectRootFromDirectory.mts"
+import {findProjectRootFromDirectory} from "./findProjectRootFromDirectory.ts"
 import path from "node:path"
 
 function inferProjectRoot(): string {

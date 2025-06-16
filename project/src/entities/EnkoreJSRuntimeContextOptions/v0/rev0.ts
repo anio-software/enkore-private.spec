@@ -1,5 +1,5 @@
 import type {JSRuntimeLogLevel, JSRuntimePackageInformation} from "@anio-software/enkore-private.primitives"
-import type {EnkoreJSRuntimeContext} from "#~export/__aggregatedExports.mts"
+import type {EnkoreJSRuntimeContext} from "#~export/__aggregatedExports.ts"
 
 type ContextOptionsGetCurrentLogLevel = (
 	context: EnkoreJSRuntimeContext

@@ -1,6 +1,6 @@
-import type {Kinds} from "#~src/entities/Kinds.mts"
-import type {EntitiesByKind} from "#~src/maps/EntitiesByKind.mts"
-import type {UnknownEntity} from "./UnknownEntity.mts"
+import type {Kinds} from "#~src/entities/Kinds.ts"
+import type {EntitiesByKind} from "#~src/maps/EntitiesByKind.ts"
+import type {UnknownEntity} from "./UnknownEntity.ts"
 
 export function isEntityOfKind<
 	Kind extends Kinds

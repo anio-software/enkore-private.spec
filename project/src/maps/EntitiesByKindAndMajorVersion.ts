@@ -1,6 +1,6 @@
-import type {Kinds} from "#~src/entities/Kinds.mts"
-import type {AllDefinedEntities} from "#~src/AllDefinedEntities.mts"
-import type {AllDefinedMajorVersions} from "#~src/entities/AllDefinedMajorVersions.mts"
+import type {Kinds} from "#~src/entities/Kinds.ts"
+import type {AllDefinedEntities} from "#~src/AllDefinedEntities.ts"
+import type {AllDefinedMajorVersions} from "#~src/entities/AllDefinedMajorVersions.ts"
 
 export type EntitiesByKindAndMajorVersion = {
 	[Kind in Kinds]: {

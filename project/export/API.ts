@@ -1,10 +1,10 @@
-import type {IDs} from "#~src/apis/IDs.mts"
+import type {IDs} from "#~src/apis/IDs.ts"
 
-import type {AllDefinedMajorVersions} from "#~src/apis/AllDefinedMajorVersions.mts"
-import type {AllDefinedRevisions} from "#~src/apis/AllDefinedRevisions.mts"
-import type {APIsByIDAndMajorVersion} from "#~src/maps/APIsByIDAndMajorVersion.mts"
-import type {APIsByID} from "#~src/maps/APIsByID.mts"
-import type {AllAPIs} from "#~src/maps/AllAPIs.mts"
+import type {AllDefinedMajorVersions} from "#~src/apis/AllDefinedMajorVersions.ts"
+import type {AllDefinedRevisions} from "#~src/apis/AllDefinedRevisions.ts"
+import type {APIsByIDAndMajorVersion} from "#~src/maps/APIsByIDAndMajorVersion.ts"
+import type {APIsByID} from "#~src/maps/APIsByID.ts"
+import type {AllAPIs} from "#~src/maps/AllAPIs.ts"
 
 type MajorVersions = AllDefinedMajorVersions | void | undefined
 type Revisions = AllDefinedRevisions | void | undefined

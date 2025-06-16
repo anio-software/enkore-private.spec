@@ -1,4 +1,4 @@
-import type {EnkoreSessionAPI} from "#~export/__aggregatedExports.mts"
+import type {EnkoreSessionAPI} from "#~export/__aggregatedExports.ts"
 
 export type Definition = {
 	destinationPath: string

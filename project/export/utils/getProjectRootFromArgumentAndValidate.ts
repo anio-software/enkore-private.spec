@@ -1,5 +1,5 @@
-import {getProjectRootFromArgument} from "./getProjectRootFromArgument.mts"
-import {validateProjectRoot} from "./validateProjectRoot.mts"
+import {getProjectRootFromArgument} from "./getProjectRootFromArgument.ts"
+import {validateProjectRoot} from "./validateProjectRoot.ts"
 
 export async function getProjectRootFromArgumentAndValidate(
 	root: Parameters<typeof getProjectRootFromArgument>[0]
