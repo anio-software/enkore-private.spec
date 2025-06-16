@@ -4,6 +4,7 @@
     "compilerOptions": {
         "allowImportingTsExtensions": true,
         "allowSyntheticDefaultImports": true,
+        "allowArbitraryExtensions": true,
         "isolatedModules": true,
         "verbatimModuleSyntax": true,
         "strict": true,
@@ -18,6 +19,12 @@
         "module": "nodenext",
         "moduleResolution": "nodenext",
         "baseUrl": "../",
-        "rootDir": "../"
+        "rootDir": "../",
+        "plugins": [
+            {
+                "name": "css-modules-ts-plugin"
+            }
+        ],
+        "jsx": "react-jsx"
     }
 }
