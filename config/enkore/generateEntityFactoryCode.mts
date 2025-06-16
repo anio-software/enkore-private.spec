@@ -7,7 +7,7 @@ export function generateEntityFactoryCode(
 ) {
 	return `
 import type {Definition} from "${importPath}"
-import {createEntity} from "#~export/createEntity.mts"
+import {createEntity} from "#~export/createEntity.ts"
 
 export function ${factoryName}(data: Definition) {
 	return createEntity("${entityName}", ${majorVersion}, ${revision}, data)
