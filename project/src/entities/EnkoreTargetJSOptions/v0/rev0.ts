@@ -18,6 +18,8 @@ type PublishConfig = {
 type Environment = "web" | "node"
 
 export type Definition = {
+	_disableRuntimeCodeInjection?: boolean
+
 	environment: Environment | Environment[]
 
 	bundleJSXRuntimePackages?: boolean
