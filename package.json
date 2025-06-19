@@ -12,7 +12,7 @@
   "devDependencies": {
     "@anio-software/enkore": "^0.0.68",
     "@anio-software/enkore-private.primitives": "^0.0.18",
-    "@anio-software/enkore-private.toolchain-types": "^0.0.13",
+    "@anio-software/enkore-private.toolchain-types": "^0.0.14",
     "@anio-software/enkore.core": "^0.11.0",
     "@anio-software/enkore.target-js": "^0.0.9-canary-32c188da-282c0489",
     "@aniojs/event-emitter": "^0.1.0",
