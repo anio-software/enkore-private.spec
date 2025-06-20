@@ -7,6 +7,8 @@ export const config: unknown = defineConfig({
 	target: {
 		name: "js",
 		options: defineTargetJSConfig({
+			_disableRuntimeCodeInjection: true,
+
 			environment: ["node"],
 
 			registry: {
