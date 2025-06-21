@@ -13,5 +13,12 @@ export type Kinds = "EnkoreCoreData"                  |
                     "EnkoreJSRuntimeEmbeddedFile"     |
                     "EnkoreJSRuntimeContext"          |
                     "EnkoreJSRuntimeContextOptions"   |
-                    "EnkoreTargetJSOptions"           |
+                    "EnkoreTargetJSNoneOptions"       |
+                    "EnkoreTargetJSWebOptions"        |
+                    "EnkoreTargetJSNodeOptions"       |
+                    "EnkoreTargetJSHybridOptions"     |
+                    "EnkoreTargetJSXNoneOptions"      |
+                    "EnkoreTargetJSXWebOptions"       |
+                    "EnkoreTargetJSXNodeOptions"      |
+                    "EnkoreTargetJSXHybridOptions"    |
                     "EnkoreTargetCOptions"
