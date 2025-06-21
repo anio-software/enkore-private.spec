@@ -15,7 +15,7 @@ type PublishConfig = {
 	verbatimVersion?: boolean // don't append tag to version number
 }
 
-export type Definition = {
+export type CommonTargetJSOptions = {
 	_disableRuntimeCodeInjection?: boolean
 
 	externalPackages?: string[]
