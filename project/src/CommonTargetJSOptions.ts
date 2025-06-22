@@ -34,6 +34,7 @@ export type CommonTargetJSOptions = {
 		registry: string
 	}>
 
+	// maybe rename to 'useExactDependencyVersions'
 	publishWithExactDependencyVersions?: boolean
 
 	publish?: PublishConfig | PublishConfig[]
