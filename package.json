@@ -7,7 +7,7 @@
   "author": "Anio Software <info@anio.software>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enkore-org/spec.git"
+    "url": "git+https://github.com/anio-software/enkore-private.spec.git"
   },
   "license": "MIT",
   "devDependencies": {
