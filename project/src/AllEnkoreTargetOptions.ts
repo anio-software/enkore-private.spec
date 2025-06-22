@@ -4,9 +4,9 @@ import type {
 	EnkoreTargetJSWebOptions,
 	EnkoreTargetJSNodeOptions,
 	EnkoreTargetJSHybridOptions,
-	EnkoreTargetJSXNoneOptions,
+//	EnkoreTargetJSXNoneOptions,
 	EnkoreTargetJSXWebOptions,
-	EnkoreTargetJSXNodeOptions,
+//	EnkoreTargetJSXNodeOptions,
 	EnkoreTargetJSXHybridOptions
 } from "#~export/__aggregatedExports.ts"
 
@@ -15,7 +15,7 @@ export type AllEnkoreTargetOptions = EnkoreTargetCOptions         |
                                      EnkoreTargetJSWebOptions     |
                                      EnkoreTargetJSNodeOptions    |
                                      EnkoreTargetJSHybridOptions  |
-                                     EnkoreTargetJSXNoneOptions   |
+//                                   EnkoreTargetJSXNoneOptions   |
                                      EnkoreTargetJSXWebOptions    |
-                                     EnkoreTargetJSXNodeOptions   |
+//                                   EnkoreTargetJSXNodeOptions   |
                                      EnkoreTargetJSXHybridOptions

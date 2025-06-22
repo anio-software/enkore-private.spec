@@ -10,9 +10,9 @@ export type TargetIdentifierToEntityName<
     T extends "js-node"    ? "EnkoreTargetJSNodeOptions"    :
     T extends "js-hybrid"  ? "EnkoreTargetJSHybridOptions"  :
 
-    T extends "jsx-none"   ? "EnkoreTargetJSXNoneOptions"   :
+//  T extends "jsx-none"   ? "EnkoreTargetJSXNoneOptions"   :
     T extends "jsx-web"    ? "EnkoreTargetJSXWebOptions"    :
-    T extends "jsx-node"   ? "EnkoreTargetJSXNodeOptions"   :
+//  T extends "jsx-node"   ? "EnkoreTargetJSXNodeOptions"   :
     T extends "jsx-hybrid" ? "EnkoreTargetJSXHybridOptions" :
 
     never

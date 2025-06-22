@@ -17,8 +17,8 @@ export type Kinds = "EnkoreCoreData"                  |
                     "EnkoreTargetJSWebOptions"        |
                     "EnkoreTargetJSNodeOptions"       |
                     "EnkoreTargetJSHybridOptions"     |
-                    "EnkoreTargetJSXNoneOptions"      |
+//                    "EnkoreTargetJSXNoneOptions"    |
                     "EnkoreTargetJSXWebOptions"       |
-                    "EnkoreTargetJSXNodeOptions"      |
+//                    "EnkoreTargetJSXNodeOptions"    |
                     "EnkoreTargetJSXHybridOptions"    |
                     "EnkoreTargetCOptions"
