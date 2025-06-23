@@ -21,6 +21,5 @@ export type Definition = {
 
 	readonly currentProject: EnkoreJSRuntimeProject
 	readonly currentPackage: JSRuntimePackageInformation
-
-	options: EnkoreJSRuntimeContextOptions
+	readonly options: EnkoreJSRuntimeContextOptions
 }
