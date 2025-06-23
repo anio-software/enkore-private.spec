@@ -59,4 +59,8 @@ export type Definition = {
 	 * @param tag The tag of the module that is making the request.
 	 */
 	shouldLog?: ContextOptionsShouldLog
+
+	__internalDoNotUse?: {
+		originatingPackage: JSRuntimePackageInformation
+	}
 }
