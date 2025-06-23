@@ -19,7 +19,7 @@ type LogMethod = {
 export type Definition = {
 	log: LogMethod
 
-	currentProject: EnkoreJSRuntimeProject
+	readonly currentProject: EnkoreJSRuntimeProject
 
 	options: EnkoreJSRuntimeContextOptions
 
