@@ -35,10 +35,10 @@ export async function validateProjectRoot(
 
 	const projectConfig = await readEnkoreConfigFile(projectRoot)
 
-	// check for "enkore" package
+	// check for "@anio-software/enkore" package
 	if (checkIfEnkorePackageIsInstalled(projectRoot, ["@anio-software/enkore"]) === false) {
 		throw new Error(
-			`The 'enkore' package is not installed at the project root.\n` +
+			`The '@anio-software/enkore' package is not installed at the project root.\n` +
 			`Please make sure you have it installed.`
 		)
 	}
