@@ -20,8 +20,7 @@ export type Definition = {
 	log: LogMethod
 
 	readonly currentProject: EnkoreJSRuntimeProject
+	readonly currentPackage: JSRuntimePackageInformation
 
 	options: EnkoreJSRuntimeContextOptions
-
-	originatingPackage: JSRuntimePackageInformation
 }
