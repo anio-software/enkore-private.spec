@@ -1,2 +1,2 @@
-// credit to jcalz https://stackoverflow.com/a/67794430
-export type DistributiveOmit<T, K extends PropertyKey> = T extends any ? Omit<T, K> : never
+// source https://davidgomes.com/pick-omit-over-union-types-in-typescript/
+export type DistributiveOmit<T, K extends keyof T> = T extends unknown ? Omit<T, K> : never
