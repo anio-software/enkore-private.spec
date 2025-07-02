@@ -1,20 +1,21 @@
 {
+  "private": true,
+  "type": "module",
   "name": "@anio-software/enkore-private.spec",
-  "version": "0.298.0",
-  "author": "Anio Software <info@anio.software>",
+  "version": "0.342.0",
   "description": "This package contains all APIs and Entities used by the enkore project.",
-  "license": "MIT",
+  "author": "Anio Software <info@anio.software>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anio-software/enkore-private.spec.git"
   },
-  "type": "module",
+  "license": "MIT",
   "devDependencies": {
-    "@anio-software/enkore": "^0.0.61",
-    "@anio-software/enkore-private.primitives": "^0.0.15",
-    "@anio-software/enkore-private.toolchain-types": "^0.0.10",
-    "@anio-software/enkore.core": "^0.10.0",
-    "@anio-software/enkore.target-js": "^0.0.2-canary-69353116-2276e5c2",
+    "@anio-software/enkore": "^0.0.90",
+    "@anio-software/enkore-private.primitives": "^0.0.22",
+    "@anio-software/enkore-private.toolchain-types": "^0.0.20",
+    "@anio-software/enkore.core": "^0.11.2",
+    "@anio-software/enkore.target-js-node": "^0.0.228-canary-831c9a12-0f35a974",
     "@aniojs/event-emitter": "^0.1.0",
     "@aniojs/node-fs": "^0.5.3"
   }

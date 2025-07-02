@@ -1,15 +1,13 @@
-import {
-	createConfig,
-	createTargetJSOptions
-} from "@anio-software/enkore/spec/factory"
+import {defineConfig} from "@anio-software/enkore"
+import {defineTargetConfig} from "@anio-software/enkore.target-js-node"
 
 import {getFilesToAutogenerate} from "./config/enkore/getFilesToAutogenerate.mts"
 
-export const config: unknown = createConfig({
+export const config: unknown = defineConfig({
 	target: {
-		name: "js",
-		options: createTargetJSOptions({
-			environment: ["node"],
+		name: "js-node",
+		options: defineTargetConfig({
+			_disableRuntimeCodeInjection: true,
 
 			registry: {
 				"anioSoftware": {
