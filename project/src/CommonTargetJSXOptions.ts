@@ -1,1 +1,3 @@
-export type CommonTargetJSXOptions = {}
+export type CommonTargetJSXOptions = {
+	bundleReactPackages?: boolean
+}
