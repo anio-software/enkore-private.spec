@@ -1,5 +1,5 @@
 import type {
-	EnkoreSessionAPI,
+	EnkoreSessionExtendedAPI,
 	EnkoreBoilerplateFile,
 	EnkoreProjectFile,
 	EnkoreBuildFile,
@@ -51,34 +51,34 @@ export type Definition = {
 	) => Promise<object>
 
 	getBoilerplateFiles?: (
-		f: EnkoreSessionAPI
+		f: EnkoreSessionExtendedAPI
 	) => Promise<EnkoreBoilerplateFile[]>
 
 	getGitIgnoredFiles?: (
-		f: EnkoreSessionAPI
+		f: EnkoreSessionExtendedAPI
 	) => Promise<string[]>
 
 	hook: {
 		preInitialize?: (
-			f: EnkoreSessionAPI
+			f: EnkoreSessionExtendedAPI
 		) => Promise<undefined>
 
 		preLint?: (
-			f: EnkoreSessionAPI
+			f: EnkoreSessionExtendedAPI
 		) => Promise<undefined>
 
 		preCompile?: (
-			f: EnkoreSessionAPI
+			f: EnkoreSessionExtendedAPI
 		) => Promise<undefined>
 	}
 
 	projectSourceFileFilter?: (
-		f: EnkoreSessionAPI,
+		f: EnkoreSessionExtendedAPI,
 		file: EnkoreProjectFile
 	) => Promise<boolean>
 
 	initialize: (
-		f: EnkoreSessionAPI
+		f: EnkoreSessionExtendedAPI
 	) => Promise<{
 		products: {
 			name: string
@@ -86,38 +86,38 @@ export type Definition = {
 	}>
 
 	preprocess?: (
-		f: EnkoreSessionAPI,
+		f: EnkoreSessionExtendedAPI,
 		file: EnkoreProjectFile,
 		sourceCode: string,
 		emitFileMessage: EmitFileMessage
 	) => Promise<File | File[] | string>
 
 	lint?: (
-		f: EnkoreSessionAPI,
+		f: EnkoreSessionExtendedAPI,
 		file: EnkoreProjectFile|EnkoreBuildFile,
 		sourceCode: string,
 		emitFileMessage: EmitFileMessage
 	) => Promise<NodeAPIMessage[]>
 
 	compile: (
-		f: EnkoreSessionAPI,
+		f: EnkoreSessionExtendedAPI,
 		file: EnkoreProjectFile|EnkoreBuildFile,
 		sourceCode: string,
 		emitFileMessage: EmitFileMessage
 	) => Promise<File | File[] | "unsupported" | "skip" | "copy">
 
 	generateProduct: (
-		f: EnkoreSessionAPI,
+		f: EnkoreSessionExtendedAPI,
 		productName: string
 	) => Promise<undefined>
 
 	testProduct: (
-		f: EnkoreSessionAPI,
+		f: EnkoreSessionExtendedAPI,
 		productName: string
 	) => Promise<undefined>
 
 	publishProduct: (
-		f: EnkoreSessionAPI,
+		f: EnkoreSessionExtendedAPI,
 		productName: string
 	) => Promise<undefined>
 }
