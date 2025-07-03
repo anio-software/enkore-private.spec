@@ -3,6 +3,7 @@
 export type IDs = "EnkoreCoreAPI"                        |
                   "EnkoreNodeAPI"                        |
                   "EnkoreSessionAPI"                     |
+                  "EnkoreSessionExtendedAPI"             |
                   "EnkoreTargetIntegrationAPI"           |
                   "EnkoreJSRuntimeAPI"                   |
                   "EnkoreTargetJSProjectAPI"             |
