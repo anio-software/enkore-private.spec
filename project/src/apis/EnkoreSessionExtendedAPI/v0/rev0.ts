@@ -11,7 +11,7 @@ type ExtendedAPI = {
 			expectedToolchainID: ID
 		) => ToolchainByID<ID>
 
-		getInstalledToolchain: () => Toolchains
+		getCurrentlyInstalledToolchain: () => Toolchains
 	}
 }
 
