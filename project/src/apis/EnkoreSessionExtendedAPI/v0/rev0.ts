@@ -5,14 +5,16 @@ import type {
 	ToolchainByID
 } from "@anio-software/enkore-private.toolchain-types"
 
-export type Definition = EnkoreSessionAPI & {
-	_internal: {
-		target: {
-			getToolchain: <ID extends ToolchainIDs>(
-				expectedToolchainID: ID
-			) => ToolchainByID<ID>
+type ExtendedAPI = {
+	target: {
+		getToolchain: <ID extends ToolchainIDs>(
+			expectedToolchainID: ID
+		) => ToolchainByID<ID>
 
-			getInstalledToolchain: () => Toolchains
-		}
+		getInstalledToolchain: () => Toolchains
 	}
+}
+
+export type Definition = EnkoreSessionAPI & {
+	_internal: ExtendedAPI
 }
