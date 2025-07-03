@@ -6,11 +6,13 @@ import type {
 } from "@anio-software/enkore-private.toolchain-types"
 
 export type Definition = EnkoreSessionAPI & {
-	target: {
-		_getToolchain: <ID extends ToolchainIDs>(
-			expectedToolchainID: ID
-		) => ToolchainByID<ID>
+	_internal: {
+		target: {
+			getToolchain: <ID extends ToolchainIDs>(
+				expectedToolchainID: ID
+			) => ToolchainByID<ID>
 
-		__getInstalledToolchain: () => Toolchains
+			getInstalledToolchain: () => Toolchains
+		}
 	}
 }
