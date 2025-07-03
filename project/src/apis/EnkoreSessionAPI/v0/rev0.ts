@@ -8,11 +8,6 @@ import type {NodeAPIMessage, NodePackageJSON} from "@anio-software/enkore-privat
 import type {AllEnkoreTargetOptions} from "#~src/AllEnkoreTargetOptions.ts"
 import type {TargetIdentifier} from "@anio-software/enkore-private.primitives"
 import type {TargetIdentifierToEntityName} from "#~src/TargetIdentifierToEntityName.ts"
-import type {
-	ToolchainIDs,
-	Toolchains,
-	ToolchainByID
-} from "@anio-software/enkore-private.toolchain-types"
 
 type TargetOptionsMap = {
 	[K in TargetIdentifier]: Extract<AllEnkoreTargetOptions, {
@@ -31,12 +26,6 @@ export type Definition = {
 		getOptions: <T extends TargetIdentifier>(
 			expectedTargetIdentifier: T
 		) => TargetOptionsMap[T]
-
-		_getToolchain: <ID extends ToolchainIDs>(
-			expectedToolchainID: ID
-		) => ToolchainByID<ID>
-
-		__getInstalledToolchain: () => Toolchains
 
 		getInternalData: () => object
 	}
