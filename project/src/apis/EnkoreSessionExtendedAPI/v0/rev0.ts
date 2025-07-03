@@ -5,7 +5,7 @@ import type {
 	ToolchainByID
 } from "@anio-software/enkore-private.toolchain-types"
 
-type ExtendedAPI = {
+type InternalAPI = {
 	target: {
 		getToolchain: <ID extends ToolchainIDs>(
 			expectedToolchainID: ID
@@ -16,5 +16,5 @@ type ExtendedAPI = {
 }
 
 export type Definition = EnkoreSessionAPI & {
-	_internal: ExtendedAPI
+	_internal: InternalAPI
 }
