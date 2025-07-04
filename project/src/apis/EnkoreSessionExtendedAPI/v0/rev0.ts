@@ -1,4 +1,4 @@
-import type {EnkoreSessionAPI} from "#~export/__aggregatedExports.ts"
+import type {Definition as EnkoreSessionAPI} from "#~src/apis/EnkoreSessionAPI/v0/rev0.ts"
 import type {
 	ToolchainIDs,
 	Toolchains,
