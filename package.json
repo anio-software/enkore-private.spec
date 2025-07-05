@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "name": "@anio-software/enkore-private.spec",
-  "version": "0.350.1",
+  "version": "0.360.0",
   "description": "This package contains all APIs and Entities used by the enkore project.",
   "author": "Anio Software <info@anio.software>",
   "repository": {
