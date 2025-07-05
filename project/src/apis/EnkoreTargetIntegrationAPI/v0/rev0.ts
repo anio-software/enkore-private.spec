@@ -1,5 +1,5 @@
 import type {
-	EnkoreSessionExtendedAPI,
+	EnkoreSessionAPI,
 	EnkoreBoilerplateFile,
 	EnkoreProjectFile,
 	EnkoreBuildFile,
@@ -8,9 +8,9 @@ import type {
 
 import type {
 	NodeAPIMessage,
-	NodePackageJSON
+	NodePackageJSON,
+	ToolchainSpecifier
 } from "@anio-software/enkore-private.primitives"
-import type {ToolchainSpecifiers} from "@anio-software/enkore-private.toolchain-types"
 
 type File = ({
 	path: string
@@ -44,41 +44,41 @@ type EmitFileMessage = {
 export type Definition = {
 	getToolchainToInstall: (
 		earlySession: EarlySession
-	) => Promise<ToolchainSpecifiers>
+	) => Promise<ToolchainSpecifier>
 
 	getInitialInternalData?: (
 		earlySession: EarlySession
 	) => Promise<object>
 
 	getBoilerplateFiles?: (
-		f: EnkoreSessionExtendedAPI
+		f: EnkoreSessionAPI
 	) => Promise<EnkoreBoilerplateFile[]>
 
 	getGitIgnoredFiles?: (
-		f: EnkoreSessionExtendedAPI
+		f: EnkoreSessionAPI
 	) => Promise<string[]>
 
 	hook: {
 		preInitialize?: (
-			f: EnkoreSessionExtendedAPI
+			f: EnkoreSessionAPI
 		) => Promise<undefined>
 
 		preLint?: (
-			f: EnkoreSessionExtendedAPI
+			f: EnkoreSessionAPI
 		) => Promise<undefined>
 
 		preCompile?: (
-			f: EnkoreSessionExtendedAPI
+			f: EnkoreSessionAPI
 		) => Promise<undefined>
 	}
 
 	projectSourceFileFilter?: (
-		f: EnkoreSessionExtendedAPI,
+		f: EnkoreSessionAPI,
 		file: EnkoreProjectFile
 	) => Promise<boolean>
 
 	initialize: (
-		f: EnkoreSessionExtendedAPI
+		f: EnkoreSessionAPI
 	) => Promise<{
 		products: {
 			name: string
@@ -86,38 +86,38 @@ export type Definition = {
 	}>
 
 	preprocess?: (
-		f: EnkoreSessionExtendedAPI,
+		f: EnkoreSessionAPI,
 		file: EnkoreProjectFile,
 		sourceCode: string,
 		emitFileMessage: EmitFileMessage
 	) => Promise<File | File[] | string>
 
 	lint?: (
-		f: EnkoreSessionExtendedAPI,
+		f: EnkoreSessionAPI,
 		file: EnkoreProjectFile|EnkoreBuildFile,
 		sourceCode: string,
 		emitFileMessage: EmitFileMessage
 	) => Promise<NodeAPIMessage[]>
 
 	compile: (
-		f: EnkoreSessionExtendedAPI,
+		f: EnkoreSessionAPI,
 		file: EnkoreProjectFile|EnkoreBuildFile,
 		sourceCode: string,
 		emitFileMessage: EmitFileMessage
 	) => Promise<File | File[] | "unsupported" | "skip" | "copy">
 
 	generateProduct: (
-		f: EnkoreSessionExtendedAPI,
+		f: EnkoreSessionAPI,
 		productName: string
 	) => Promise<undefined>
 
 	testProduct: (
-		f: EnkoreSessionExtendedAPI,
+		f: EnkoreSessionAPI,
 		productName: string
 	) => Promise<undefined>
 
 	publishProduct: (
-		f: EnkoreSessionExtendedAPI,
+		f: EnkoreSessionAPI,
 		productName: string
 	) => Promise<undefined>
 }
