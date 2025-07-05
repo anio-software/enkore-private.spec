@@ -1,4 +1,4 @@
-import type {ToolchainSpecifiers} from "@anio-software/enkore-private.toolchain-types"
+import type {ToolchainSpecifier} from "@anio-software/enkore-private.primitives"
 
 export type Definition = {
 	stdIOLogs?: boolean
@@ -9,5 +9,5 @@ export type Definition = {
 	allowTypeErrorsInEnkoreConfigFile?: boolean
 	_partialBuild?: boolean
 	_forceBuild?: boolean
-	_forceToolchain?: ToolchainSpecifiers|false
+	_forceToolchain?: ToolchainSpecifier|false
 }
