@@ -28,6 +28,8 @@ export type Definition = {
 		) => TargetOptionsMap[T]
 
 		getInternalData: () => object
+
+		__getCurrentlyInstalledToolchain: () => unknown
 	}
 
 	enkore: {
