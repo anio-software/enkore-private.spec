@@ -8,9 +8,9 @@ import type {
 
 import type {
 	NodeAPIMessage,
-	NodePackageJSON
+	NodePackageJSON,
+	ToolchainSpecifier
 } from "@anio-software/enkore-private.primitives"
-import type {ToolchainSpecifiers} from "@anio-software/enkore-private.toolchain-types"
 
 type File = ({
 	path: string
@@ -44,7 +44,7 @@ type EmitFileMessage = {
 export type Definition = {
 	getToolchainToInstall: (
 		earlySession: EarlySession
-	) => Promise<ToolchainSpecifiers>
+	) => Promise<ToolchainSpecifier>
 
 	getInitialInternalData?: (
 		earlySession: EarlySession
