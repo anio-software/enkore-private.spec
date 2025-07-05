@@ -27,6 +27,7 @@ export type Definition = {
 			expectedTargetIdentifier: T
 		) => TargetOptionsMap[T]
 
+		// todo: add '__' prefix
 		getInternalData: () => object
 
 		__getCurrentlyInstalledToolchain: () => unknown
