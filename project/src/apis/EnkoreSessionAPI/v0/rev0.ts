@@ -6,7 +6,7 @@ import type {
 } from "#~export/__aggregatedExports.ts"
 import type {NodeAPIMessage, NodePackageJSON} from "@anio-software/enkore-private.primitives"
 import type {AllEnkoreTargetOptions} from "#~src/AllEnkoreTargetOptions.ts"
-import type {TargetIdentifier} from "@anio-software/enkore-private.primitives"
+import type {TargetIdentifier, UnknownToolchain} from "@anio-software/enkore-private.primitives"
 import type {TargetIdentifierToEntityName} from "#~src/TargetIdentifierToEntityName.ts"
 
 type TargetOptionsMap = {
@@ -30,7 +30,7 @@ export type Definition = {
 		// todo: add '__' prefix
 		getInternalData: () => object
 
-		__getCurrentlyInstalledToolchain: () => unknown
+		__getCurrentlyInstalledToolchain: () => UnknownToolchain
 	}
 
 	enkore: {
