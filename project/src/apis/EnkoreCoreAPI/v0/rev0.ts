@@ -2,10 +2,7 @@ import type {
 	EnkoreTargetIntegrationAPI,
 	EnkoreLockFile
 } from "#~export/__aggregatedExports.ts"
-import type {
-	Toolchains,
-	ToolchainSpecifiers
-} from "@anio-software/enkore-private.toolchain-types"
+import type {ToolchainSpecifier} from "@anio-software/enkore-private.primitives"
 
 export type Definition = {
 	createTemporaryFile: (
@@ -27,7 +24,7 @@ export type Definition = {
 		options?: {
 			npmBinaryPath?: string
 			force?: boolean
-			forceToolchain?: ToolchainSpecifiers|false
+			forceToolchain?: ToolchainSpecifier|false
 		}
 	) => Promise<{
 		// tells us whether the target integration was loaded from an
@@ -52,7 +49,7 @@ export type Definition = {
 
 	loadToolchain: (
 		projectRoot: string | ["inferFromCLIArgs"]
-	) => Promise<Toolchains>
+	) => Promise<unknown>
 
 	findProjectRootFromDirectory: (
 		startDirectory: string
