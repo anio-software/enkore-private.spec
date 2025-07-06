@@ -16,8 +16,20 @@ type LogMethod = {
 	(...messages: string[]) : undefined
 }
 
+type LogExceptionFunction = {
+	(description: string, error: unknown): undefined
+	(error: unknown): undefined
+}
+
+type LogExceptionMethod = {
+	[K in JSRuntimeLogLevel]: LogExceptionFunction
+} & LogExceptionFunction
+
 export type Definition = {
 	log: LogMethod
+	// logException is a bit less ambiguous
+	// the default log level for exceptions is 'error'
+	logException: LogExceptionMethod
 
 	readonly currentProject: EnkoreJSRuntimeProject
 	readonly currentPackage: JSRuntimePackageInformation
