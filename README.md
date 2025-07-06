@@ -1,4 +1,4 @@
-# @enkore/spec
+# @anio-software/enkore-private.spec
 
 Entities are the object structures enkore uses in its public API.
 
