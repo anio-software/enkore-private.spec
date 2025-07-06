@@ -12,7 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "@anio-software/enkore": "^0.0.90",
-    "@anio-software/enkore-private.primitives": "^0.0.25",
+    "@anio-software/enkore-private.primitives": "^0.0.26",
     "@anio-software/enkore.core": "^0.11.2",
     "@anio-software/enkore.target-js-node": "^0.0.228-canary-831c9a12-0f35a974",
     "@aniojs/event-emitter": "^0.1.0",
