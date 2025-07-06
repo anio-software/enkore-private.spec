@@ -31,6 +31,9 @@
         "project/export/factory/createTargetJSHybridOptionsV0Rev0.ts": {
             "hash": "623584ade907209fa9423173c31e80521ff4060591556d34a6a9c86cfc65077c"
         },
+        "project/export/factory/createTargetJSHybridLiteOptionsV0Rev0.ts": {
+            "hash": "c26920896ff0c3e631c03ff29069e02c85d87b04c470e4665e6b8e21eae86628"
+        },
         "project/export/factory/createTargetJSXWebOptionsV0Rev0.ts": {
             "hash": "1ad6ec586bd51ed5f4017c9c35369749661a88fba7126011f1bac3648ff6c332"
         },
@@ -63,6 +66,9 @@
         },
         "project/export/factory/createTargetJSHybridOptions.ts": {
             "hash": "02a4bf6c09d0824daa3c5f10a6b1d95de71551324e6f336de1c675e64b294694"
+        },
+        "project/export/factory/createTargetJSHybridLiteOptions.ts": {
+            "hash": "6de43f90262224ba1e5c5f2f0af68c5bb64ba86225efef56fa34f1bb28a8be96"
         },
         "project/export/factory/createTargetJSXWebOptions.ts": {
             "hash": "6aaf29c845ea9a9deca39193e4834418ba86b4b7aca07a1a12b0a4107c4b6434"
