@@ -1,5 +1,5 @@
 import path from "node:path"
-import {isFileSync} from "@anio-software/pkg.node-fs"
+import {isFileSync} from "@aniojs/node-fs"
 import {readEnkoreConfigFile} from "./readEnkoreConfigFile.ts"
 import {resolveImportSpecifierFromProjectRoot} from "./resolveImportSpecifierFromProjectRoot.ts"
 

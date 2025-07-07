@@ -1,4 +1,4 @@
-import {scandir} from "@anio-software/pkg.node-fs"
+import {scandir} from "@aniojs/node-fs"
 import {fileURLToPath} from "node:url"
 import path from "node:path"
 
@@ -17,12 +17,12 @@ export async function getDefinedAPIs(): Promise<DefinedAPIs> {
 	const map: DefinedAPIs = new Map()
 	const entries = await scandir(
 		path.join(__dirname, "..", "..", "project", "src", "apis"), {
-			sort: "alphabetical:ascending"
+			sorted: true
 		}
 	)
 
 	for (const entry of entries) {
-		if (entry.type !== "file:regular") continue
+		if (entry.type !== "regularFile") continue
 		if (entry.parents.length !== 2) continue
 		if (!entry.name.startsWith("rev")) continue
 
@@ -43,7 +43,7 @@ export async function getDefinedAPIs(): Promise<DefinedAPIs> {
 		}
 
 		apiMap.get(apiMajorVersion)!.push({
-			importPath: `#~src/apis/${entry.relativePath}`,
+			importPath: `#~src/apis/${entry.relative_path}`,
 			importAliasName: `${apiID}_V${apiMajorVersion}_Rev${apiRevision}`,
 			revision: apiRevision,
 			apiType(definitionType: string) {

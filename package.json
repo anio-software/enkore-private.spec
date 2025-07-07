@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "name": "@anio-software/enkore-private.spec",
-  "version": "0.372.0",
+  "version": "0.372.1",
   "description": "This package contains all APIs and Entities used by the enkore project.",
   "author": "Anio Software <info@anio.software>",
   "repository": {
@@ -16,6 +16,6 @@
     "@anio-software/enkore.core": "^0.11.2",
     "@anio-software/enkore.target-js-node": "^0.0.228-canary-831c9a12-0f35a974",
     "@anio-software/pkg.event-emitter": "^0.0.1",
-    "@anio-software/pkg.node-fs": "^0.0.2"
+    "@aniojs/node-fs": "^0.6.0"
   }
 }
