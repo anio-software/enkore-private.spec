@@ -1,4 +1,4 @@
-import {scandir} from "@aniojs/node-fs"
+import {scandir} from "@anio-software/pkg.node-fs"
 import {fileURLToPath} from "node:url"
 import path from "node:path"
 
@@ -17,12 +17,12 @@ export async function getDefinedEntities(): Promise<DefinedEntities> {
 	const map: DefinedEntities = new Map()
 	const entries = await scandir(
 		path.join(__dirname, "..", "..", "project", "src", "entities"), {
-			sorted: true
+			sort: "alphabetical:ascending"
 		}
 	)
 
 	for (const entry of entries) {
-		if (entry.type !== "regularFile") continue
+		if (entry.type !== "file:regular") continue
 		if (entry.parents.length !== 2) continue
 		if (!entry.name.startsWith("rev")) continue
 
@@ -41,7 +41,7 @@ export async function getDefinedEntities(): Promise<DefinedEntities> {
 		}
 
 		entityMap.get(entityMajorVersion)!.push({
-			importPath: `#~src/entities/${entry.relative_path}`,
+			importPath: `#~src/entities/${entry.relativePath}`,
 			importAliasName: `${entityName}_V${entityMajorVersion}_Rev${entityRevision}`,
 			revision: entityRevision,
 			entityType(definitionType: string) {

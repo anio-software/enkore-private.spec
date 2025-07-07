@@ -1,4 +1,4 @@
-import {findNearestFileSync} from "@aniojs/node-fs"
+import {findNearestFileSync} from "@anio-software/pkg.node-fs"
 import path from "node:path"
 
 export function findProjectRootFromDirectory(
