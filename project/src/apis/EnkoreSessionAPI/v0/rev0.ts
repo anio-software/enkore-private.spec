@@ -34,6 +34,13 @@ export type Definition = {
 		__getCurrentlyInstalledToolchain: () => UnknownToolchain
 	}
 
+	git?: {
+		readonly commitHash: string
+		readonly commitHashShort: string
+		readonly branch: string
+		readonly tag?: string
+	}
+
 	enkore: {
 		getVersions: () => {
 			enkore: string
