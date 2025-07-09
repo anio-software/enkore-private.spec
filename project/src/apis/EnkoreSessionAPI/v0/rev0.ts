@@ -24,6 +24,8 @@ export type Definition = {
 	}
 
 	target: {
+		readonly identifier: TargetIdentifier
+
 		getOptions: <T extends TargetIdentifier>(
 			expectedTargetIdentifier: T
 		) => TargetOptionsMap[T]
