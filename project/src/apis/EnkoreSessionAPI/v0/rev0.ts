@@ -33,6 +33,12 @@ export type Definition = {
 	}
 
 	enkore: {
+		getVersions: () => {
+			enkore: string
+			core: string
+			target: string
+		}
+
 		// nb: should throw error if called before hashes are updated in the lockfile
 		getLockFile: () => EnkoreLockFile
 
