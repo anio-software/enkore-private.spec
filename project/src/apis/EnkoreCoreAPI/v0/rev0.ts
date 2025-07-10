@@ -47,7 +47,7 @@ export type Definition = {
 					hash: string
 				}
 			}
-		) => Promise<undefined>
+		) => Promise<EnkoreLockFile>
 	}>
 
 	loadToolchain: (
