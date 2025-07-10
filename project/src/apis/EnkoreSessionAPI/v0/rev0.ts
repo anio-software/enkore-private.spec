@@ -38,8 +38,8 @@ export type Definition = {
 		readonly commitHash: string
 		readonly commitHashShort: string
 		readonly branch: string
-		readonly tag?: string
-	}
+		readonly tag?: string|null
+	}|null
 
 	enkore: {
 		getVersions: () => {
