@@ -12,6 +12,7 @@ export type Kinds = "EnkoreCoreData"                  |
                     "EnkoreJSBuildManifestFile"       |
                     "EnkoreJSRuntimeProject"          |
                     "EnkoreJSRuntimeEmbeddedFile"     |
+                    "EnkoreJSRuntimeGlobalState"      |
                     "EnkoreJSRuntimeContext"          |
                     "EnkoreJSRuntimeContextOptions"   |
                     "EnkoreTargetJSNoneOptions"       |
