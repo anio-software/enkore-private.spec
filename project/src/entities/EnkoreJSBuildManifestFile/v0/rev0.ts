@@ -1,7 +1,13 @@
-import type {EnkoreJSRuntimeEmbeddedFile} from "#~export/__aggregatedExports.ts"
+type Embed = {
+	// indicates whether this embedded file was requested as an URL
+	createResourceAtRuntimeInit: boolean
+
+	// sha256 hash
+	integrity: string
+}
 
 export type Definition = {
 	exports: Record<string, {
-		embeds: Record<string, EnkoreJSRuntimeEmbeddedFile>
+		embeds: Record<string, Embed>
 	}>
 }
