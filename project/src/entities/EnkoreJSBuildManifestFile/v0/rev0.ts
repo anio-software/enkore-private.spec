@@ -4,6 +4,9 @@ type Embed = {
 
 	// sha256 hash
 	integrity: string
+
+	url: string
+	sourceFilePath: string
 }
 
 export type Definition = {
