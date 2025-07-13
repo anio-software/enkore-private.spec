@@ -70,6 +70,10 @@ export type Definition = {
 		preCompile?: (
 			f: EnkoreSessionAPI
 		) => Promise<undefined>
+
+		postCompile?: (
+			f: EnkoreSessionAPI
+		) => Promise<undefined>
 	}
 
 	projectSourceFileFilter?: (
