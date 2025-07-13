@@ -1,11 +1,9 @@
 export type Definition = {
-	_projectIdentifier: string
-
 	// indicates whether this embedded file was requested as an URL
-	_createResourceAtRuntimeInit: boolean
+	createResourceAtRuntimeInit: boolean
 
-	projectId: string
-	originalEmbedPath: string
+	url: string
 	sourceFilePath: string
+
 	data: string
 }
