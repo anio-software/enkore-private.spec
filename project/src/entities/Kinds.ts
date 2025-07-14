@@ -11,6 +11,7 @@ export type Kinds = "EnkoreCoreData"                  |
                     "EnkoreNodeAPIOptions"            |
                     "EnkoreJSBuildManifestFile"       |
                     "EnkoreJSRuntimeProject"          |
+                    "EnkoreJSRuntimeProjectContext"   |
                     "EnkoreJSRuntimeEmbeddedFile"     |
                     "EnkoreJSRuntimeGlobalState"      |
                     "EnkoreJSRuntimeContext"          |
