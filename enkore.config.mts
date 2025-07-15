@@ -7,8 +7,6 @@ export const config: unknown = defineConfig({
 	target: {
 		name: "js-node",
 		options: defineTargetConfig({
-			_disableRuntimeCodeInjection: true,
-
 			registry: {
 				"anioSoftware": {
 					url: "https://npm-registry.anio.software",
