@@ -2,8 +2,8 @@ import type {Entity} from "#~export/Entity.ts"
 import type {Kinds} from "#~src/entities/Kinds.ts"
 import type {AllDefinedMajorVersions} from "#~src/entities/AllDefinedMajorVersions.ts"
 import type {AllDefinedRevisions} from "#~src/entities/AllDefinedRevisions.ts"
-import type {UnknownEntity} from "./UnknownEntity.ts"
-import type {JSONCompatibleType} from "./JSONCompatibleType.ts"
+import type {UnknownEntity} from "../UnknownEntity.ts"
+import type {JSONCompatibleType} from "../JSONCompatibleType.ts"
 import {readFileJSON} from "@anio-software/pkg.node-fs"
 
 export async function readEntityJSONFile<
