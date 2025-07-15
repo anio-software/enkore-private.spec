@@ -1,3 +1,4 @@
+// NB: this is here because putting it in utils/ makes it unusable to bundle in the runtime init code
 import {
 	type JSEmbedProtocol,
 	getJSEmbedProtocols
