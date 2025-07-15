@@ -7,6 +7,8 @@ type Embed = {
 
 	url: string
 	sourceFilePath: string
+
+	size: number
 }
 
 export type Definition = {
