@@ -16,6 +16,6 @@
     "@anio-software/enkore.core": "^0.13.1",
     "@anio-software/enkore.target-js-node": "^0.0.402",
     "@anio-software/pkg.event-emitter": "^0.0.3",
-    "@anio-software/pkg.node-fs": "^0.0.8"
+    "@anio-software/pkg.node-fs": "^0.0.20"
   }
 }
