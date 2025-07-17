@@ -39,6 +39,12 @@ export type CommonTargetJSOptions = {
 
 	publish?: PublishConfig | PublishConfig[]
 
+	fileNamingPolicy?: {
+		// could add "policy" property later for more options.
+		// policy: "default" | ".." | "..."
+		exemptions: string[]
+	}
+
 	exports?: {
 		[name: string]: {
 			// todo: maybe have preprocess.expandStarExports here too?
