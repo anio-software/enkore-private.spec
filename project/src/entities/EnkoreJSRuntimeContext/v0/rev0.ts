@@ -33,6 +33,7 @@ export type Definition = {
 
 	readonly currentProject: EnkoreJSRuntimeProject
 	readonly currentPackage: JSRuntimePackageInformation
+	readonly currentFunction: string|undefined
 
 	readonly optionsUsedToCreateContext: EnkoreJSRuntimeContextOptions
 }
