@@ -61,6 +61,7 @@ export type Definition = {
 	shouldLog?: ContextOptionsShouldLog
 
 	__internalDoNotUse?: {
+		originatingFunction: {name: string}
 		originatingPackage: JSRuntimePackageInformation
 	}
 }
