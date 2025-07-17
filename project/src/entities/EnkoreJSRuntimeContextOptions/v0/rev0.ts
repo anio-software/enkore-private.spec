@@ -22,8 +22,11 @@ type ContextOptionsLogWithLevel = (
 type ContextOptionsShouldLog = (
 	context: EnkoreJSRuntimeContext,
 	level: JSRuntimeLogLevel,
-	pkg: JSRuntimePackageInformation,
-	tag: string
+	tag: string,
+	extra: {
+		originatingPackage: JSRuntimePackageInformation
+		originatingFunction: {name: string}
+	}
 ) => boolean|null
 
 export type Definition = {
