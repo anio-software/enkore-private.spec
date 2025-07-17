@@ -25,7 +25,7 @@ type ContextOptionsShouldLog = (
 	tag: string,
 	extra: {
 		originatingPackage: JSRuntimePackageInformation
-		originatingFunction: {name: string}
+		originatingFunction: {name: string}|undefined
 	}
 ) => boolean|null
 
@@ -64,7 +64,7 @@ export type Definition = {
 	shouldLog?: ContextOptionsShouldLog
 
 	__internalDoNotUse?: {
-		originatingFunction: {name: string}
+		originatingFunction: {name: string}|undefined
 		originatingPackage: JSRuntimePackageInformation
 	}
 }
