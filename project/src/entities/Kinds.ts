@@ -1,7 +1,7 @@
 // NB: this list is allowed to expand
 // and is intentionally written by hand
-export type Kinds = "EnkoreCoreData"                  |
-                    "EnkoreLockFile"                  |
+export type Kinds = "EnkoreCoreData"                   |
+                    "EnkoreLockFile"                   |
                     "EnkoreProjectFile"                |
                     "EnkoreBuildFile"                  |
                     "EnkoreBuildInfoFile"              |
