@@ -16,6 +16,7 @@ export type Kinds = "EnkoreCoreData"                  |
                     "EnkoreJSRuntimeGlobalState"       |
                     "EnkoreJSRuntimeContext"           |
                     "EnkoreJSRuntimeContextOptions"    |
+                    "EnkoreJSRuntimeFunctionThis"      |
                     "EnkoreTargetJSNoneOptions"        |
                     "EnkoreTargetJSWebOptions"         |
                     "EnkoreTargetJSNodeOptions"        |
