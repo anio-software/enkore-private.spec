@@ -37,7 +37,7 @@ export type Definition = {
 	git?: {
 		readonly commitHash: string
 		readonly commitHashShort: string
-		readonly tag?: string|null
+		readonly tags: string[]
 	}|null
 
 	enkore: {
