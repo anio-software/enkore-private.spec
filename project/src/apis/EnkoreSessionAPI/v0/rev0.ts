@@ -34,7 +34,7 @@ export type Definition = {
 		__getCurrentlyInstalledToolchain: () => UnknownToolchain
 	}
 
-	git?: {
+	git: {
 		readonly commitHash: string
 		readonly commitHashShort: string
 		readonly tags: string[]
