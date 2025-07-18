@@ -36,6 +36,11 @@ export type Definition = {
 	project: EnkoreJSRuntimeProject
 
 	/**
+	 * @brief Whether the function should return errors or throw them.
+	 */
+	noThrow?: boolean
+
+	/**
 	 * @brief Tag of context, can be empty.
 	 */
 	tag?: string
